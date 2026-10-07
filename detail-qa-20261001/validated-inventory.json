@@ -1,0 +1,777 @@
+[
+  {
+    "page": "Admin / Accounts",
+    "headings": [
+      "Account Management",
+      "User Statistics"
+    ],
+    "buttons": [
+      "Add User [disabled]"
+    ],
+    "fields": [
+      "textbox: Search users... [disabled]",
+      "combobox: (unnamed) [disabled]"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Activity",
+    "headings": [
+      "Activity Feed"
+    ],
+    "buttons": [
+      "Start date",
+      "End date",
+      "Refresh"
+    ],
+    "fields": [
+      "textbox: (unnamed)"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Admin",
+    "headings": [
+      "Admin Dashboard",
+      "Recent Users",
+      "Recent Activity"
+    ],
+    "buttons": [
+      "See users"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Audit",
+    "headings": [
+      "Audit Logs"
+    ],
+    "buttons": [
+      "Export Logs [disabled]",
+      "Apply [disabled]",
+      "Clear [disabled]"
+    ],
+    "fields": [
+      "textbox: Actor email contains...",
+      "textbox: ProjectId (optional)",
+      "combobox: (unnamed)",
+      "textbox: (unnamed)"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Backlog",
+    "headings": [
+      "Backlog",
+      "Backlog"
+    ],
+    "buttons": [
+      "All assignees",
+      "Any update time",
+      "Clear filters [disabled]",
+      "Select visible",
+      "Create sprint",
+      "QARA-1 QA Admin role lifecycle 20261001 - SuperAdmin verified In Progress Oct 3, 2026 HIGH M",
+      "QARA-2 QA Member role lifecycle 20261001 - verified 0% - Blocked by 0/0 - Subtasks 0/1 In Progress Oct 3, 2026 MEDIUM S",
+      "QARA-4 QA UI text <tag> & summary 20261001 - Member verified To Do Oct 3, 2026 MEDIUM \u2014"
+    ],
+    "fields": [
+      "textbox: Search (key or summary)",
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority",
+      "combobox: Status",
+      "checkbox: (unnamed)",
+      "combobox: In Progress",
+      "combobox: To Do"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Board",
+    "headings": [
+      "Board",
+      "To Do",
+      "In Progress",
+      "Done"
+    ],
+    "buttons": [
+      "All assignees",
+      "Recently updated",
+      "Board",
+      "Swimlanes"
+    ],
+    "fields": [
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Calendar",
+    "headings": [
+      "Calendar"
+    ],
+    "buttons": [
+      "Prev [disabled]",
+      "Today [disabled]",
+      "Next [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Dashboard",
+    "headings": [
+      "Dashboard",
+      "Recent Activity",
+      "Active Sprints"
+    ],
+    "buttons": [
+      "View Projects"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Epics",
+    "headings": [
+      "Epics"
+    ],
+    "buttons": [
+      "Export [disabled]",
+      "Create Epic [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Gantt",
+    "headings": [
+      "Gantt",
+      "QA Member Epic 20261001",
+      "QA Role Epic 20261001",
+      "QA Admin role lifecycle 20261001 - SuperAdmin verified",
+      "QA Member role lifecycle 20261001 - verified",
+      "QA UI text <tag> & summary 20261001 - Member verified"
+    ],
+    "buttons": [
+      "Filter",
+      "All assignees",
+      "Any update time",
+      "Clear filters [disabled]",
+      "Show child issues",
+      "Drag to change start date",
+      "Drag to change end date"
+    ],
+    "fields": [
+      "textbox: Search (key or summary)",
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority",
+      "combobox: Status"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Inbox",
+    "headings": [
+      "Inbox"
+    ],
+    "buttons": [
+      "Refresh"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Issues",
+    "headings": [
+      "Issues"
+    ],
+    "buttons": [
+      "Filter [disabled]",
+      "Export [disabled]",
+      "Create Issue [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Profile",
+    "headings": [
+      "Settings",
+      "Profile"
+    ],
+    "buttons": [
+      "Change Password"
+    ],
+    "fields": [
+      "textbox: Full Name [disabled]",
+      "textbox: Email [disabled]"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Project / overview",
+    "headings": [
+      "QA Role Admin 20261001",
+      "Board",
+      "Backlog",
+      "Epics",
+      "Issues",
+      "Sprints"
+    ],
+    "buttons": [
+      "Settings",
+      "Go to chat"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Admin / Projects",
+    "headings": [
+      "Projects"
+    ],
+    "buttons": [
+      "Add Project",
+      "Active projects",
+      "Archived",
+      "Sort by Newest",
+      "Favorite project",
+      "Archive project"
+    ],
+    "fields": [
+      "textbox: Search"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Admin / Sprints",
+    "headings": [
+      "Sprints"
+    ],
+    "buttons": [
+      "Export [disabled]",
+      "Create Sprint [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Activity",
+    "headings": [
+      "Activity Feed"
+    ],
+    "buttons": [
+      "Start date",
+      "End date",
+      "Refresh [disabled]"
+    ],
+    "fields": [
+      "textbox: (unnamed)"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Member / Backlog",
+    "headings": [
+      "Backlog",
+      "Backlog"
+    ],
+    "buttons": [
+      "All assignees",
+      "Any update time",
+      "Clear filters [disabled]",
+      "QARA-1 QA Admin role lifecycle 20261001 - SuperAdmin verified In Progress Oct 3, 2026 HIGH M",
+      "QARA-2 QA Member role lifecycle 20261001 - verified 0% - Blocked by 0/0 - Subtasks 0/1 In Progress Oct 3, 2026 MEDIUM S",
+      "QARA-4 QA UI text <tag> & summary 20261001 - Member verified To Do Oct 3, 2026 MEDIUM \u2014"
+    ],
+    "fields": [
+      "textbox: Search (key or summary)",
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority",
+      "combobox: Status",
+      "combobox: In Progress",
+      "combobox: To Do"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Board",
+    "headings": [
+      "Board",
+      "To Do",
+      "In Progress",
+      "Done"
+    ],
+    "buttons": [
+      "All assignees",
+      "Recently updated",
+      "Board",
+      "Swimlanes"
+    ],
+    "fields": [
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Calendar",
+    "headings": [
+      "Calendar"
+    ],
+    "buttons": [
+      "Prev [disabled]",
+      "Today [disabled]",
+      "Next [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Dashboard",
+    "headings": [
+      "Dashboard",
+      "Recent Activity",
+      "Active Sprints"
+    ],
+    "buttons": [
+      "View Projects"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Member / Epics",
+    "headings": [
+      "Epics"
+    ],
+    "buttons": [
+      "Export [disabled]",
+      "Create Epic [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Gantt",
+    "headings": [
+      "Gantt",
+      "QA Member Epic 20261001",
+      "QA Role Epic 20261001",
+      "QA Admin role lifecycle 20261001 - SuperAdmin verified",
+      "QA Member role lifecycle 20261001 - verified",
+      "QA UI text <tag> & summary 20261001 - Member verified"
+    ],
+    "buttons": [
+      "Filter",
+      "All assignees",
+      "Any update time",
+      "Clear filters [disabled]",
+      "Show child issues",
+      "Drag to change start date",
+      "Drag to change end date"
+    ],
+    "fields": [
+      "textbox: Search (key or summary)",
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority",
+      "combobox: Status"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Inbox",
+    "headings": [
+      "Inbox"
+    ],
+    "buttons": [
+      "Refresh [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Member / Issues",
+    "headings": [
+      "Issues"
+    ],
+    "buttons": [
+      "Filter [disabled]",
+      "Export [disabled]",
+      "Create Issue [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Profile",
+    "headings": [
+      "Settings",
+      "Profile"
+    ],
+    "buttons": [
+      "Change Password"
+    ],
+    "fields": [
+      "textbox: Full Name [disabled]",
+      "textbox: Email [disabled]"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Member / Project / overview",
+    "headings": [
+      "QA Role Admin 20261001",
+      "Board",
+      "Backlog",
+      "Epics",
+      "Issues",
+      "Sprints"
+    ],
+    "buttons": [
+      "Go to chat"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "Member / Projects",
+    "headings": [
+      "Projects"
+    ],
+    "buttons": [
+      "Add Project",
+      "Active projects",
+      "Archived",
+      "Sort by Newest",
+      "Favorite project",
+      "Archive project"
+    ],
+    "fields": [
+      "textbox: Search"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "Member / Sprints",
+    "headings": [
+      "Sprints"
+    ],
+    "buttons": [
+      "Export [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Accounts",
+    "headings": [
+      "Account Management",
+      "User Statistics"
+    ],
+    "buttons": [
+      "Add User [disabled]"
+    ],
+    "fields": [
+      "textbox: Search users... [disabled]",
+      "combobox: (unnamed) [disabled]"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Activity",
+    "headings": [
+      "Activity Feed"
+    ],
+    "buttons": [
+      "Start date",
+      "End date",
+      "Refresh"
+    ],
+    "fields": [
+      "textbox: (unnamed)"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Admin",
+    "headings": [
+      "Admin Dashboard",
+      "Recent Users",
+      "Recent Activity"
+    ],
+    "buttons": [
+      "See users"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Analytics",
+    "headings": [
+      "Analytics & Reports",
+      "Issues by Type",
+      "Issues by Priority",
+      "Project Overview"
+    ],
+    "buttons": [
+      "Prev [disabled]",
+      "Next"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Audit",
+    "headings": [
+      "Audit Logs"
+    ],
+    "buttons": [
+      "Export Logs",
+      "Apply",
+      "Clear",
+      "Metadata",
+      "Prev [disabled]",
+      "Next"
+    ],
+    "fields": [
+      "textbox: Actor email contains...",
+      "textbox: ProjectId (optional)",
+      "combobox: (unnamed)",
+      "textbox: (unnamed)"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Backlog",
+    "headings": [
+      "Backlog",
+      "Backlog"
+    ],
+    "buttons": [
+      "All assignees",
+      "Any update time",
+      "Clear filters [disabled]",
+      "Select visible",
+      "Create sprint",
+      "QARA-1 QA Admin role lifecycle 20261001 - SuperAdmin verified In Progress Oct 3, 2026 HIGH M",
+      "QARA-2 QA Member role lifecycle 20261001 - verified 0% - Blocked by 0/0 - Subtasks 0/1 In Progress Oct 3, 2026 MEDIUM S",
+      "QARA-4 QA UI text <tag> & summary 20261001 - Member verified To Do Oct 3, 2026 MEDIUM \u2014"
+    ],
+    "fields": [
+      "textbox: Search (key or summary)",
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority",
+      "combobox: Status",
+      "checkbox: (unnamed)",
+      "combobox: In Progress",
+      "combobox: To Do"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Board",
+    "headings": [
+      "Board",
+      "To Do",
+      "In Progress",
+      "Done"
+    ],
+    "buttons": [
+      "All assignees",
+      "Recently updated",
+      "Board",
+      "Swimlanes"
+    ],
+    "fields": [
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "superadmin / calendar",
+    "headings": [
+      "Calendar"
+    ],
+    "buttons": [
+      "Prev [disabled]",
+      "Today [disabled]",
+      "Next [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "superadmin / dashboard",
+    "headings": [
+      "Dashboard",
+      "Recent Activity",
+      "Active Sprints"
+    ],
+    "buttons": [
+      "View Projects",
+      "Prev [disabled]",
+      "Next"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Epics",
+    "headings": [
+      "Epics"
+    ],
+    "buttons": [
+      "Export [disabled]",
+      "Create Epic [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Gantt",
+    "headings": [
+      "Gantt",
+      "QA Member Epic 20261001",
+      "QA Role Epic 20261001",
+      "QA Admin role lifecycle 20261001 - SuperAdmin verified",
+      "QA Member role lifecycle 20261001 - verified",
+      "QA UI text <tag> & summary 20261001 - Member verified"
+    ],
+    "buttons": [
+      "Filter",
+      "All assignees",
+      "Any update time",
+      "Clear filters [disabled]",
+      "Show child issues",
+      "Drag to change start date",
+      "Drag to change end date"
+    ],
+    "fields": [
+      "textbox: Search (key or summary)",
+      "combobox: Assignee",
+      "combobox: Type",
+      "combobox: Priority",
+      "combobox: Status"
+    ],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Inbox",
+    "headings": [
+      "Inbox"
+    ],
+    "buttons": [
+      "Refresh",
+      "Reply",
+      "Assign",
+      "Open"
+    ],
+    "fields": [],
+    "unnamed_buttons": 13
+  },
+  {
+    "page": "SuperAdmin / Issues",
+    "headings": [
+      "Issues"
+    ],
+    "buttons": [
+      "Filter [disabled]",
+      "Export [disabled]",
+      "Create Issue [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Profile",
+    "headings": [
+      "Settings",
+      "Profile"
+    ],
+    "buttons": [
+      "Change Password"
+    ],
+    "fields": [
+      "textbox: Full Name [disabled]",
+      "textbox: Email [disabled]"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Project / overview",
+    "headings": [
+      "QA Role Admin 20261001",
+      "Board",
+      "Backlog",
+      "Epics",
+      "Issues",
+      "Sprints"
+    ],
+    "buttons": [
+      "Settings",
+      "Go to chat"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / Projects",
+    "headings": [
+      "Projects"
+    ],
+    "buttons": [
+      "Add Project",
+      "Active projects",
+      "Archived",
+      "Sort by Newest",
+      "Favorite project",
+      "Archive project"
+    ],
+    "fields": [
+      "textbox: Search"
+    ],
+    "unnamed_buttons": 0
+  },
+  {
+    "page": "SuperAdmin / Sprints",
+    "headings": [
+      "Sprints"
+    ],
+    "buttons": [
+      "Export [disabled]",
+      "Create Sprint [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 1
+  },
+  {
+    "page": "SuperAdmin / System",
+    "headings": [
+      "System Settings",
+      "System Configuration",
+      "Maintenance"
+    ],
+    "buttons": [
+      "Refresh Status [disabled]",
+      "Configure [disabled]",
+      "Run Health Check [disabled]",
+      "Optimize Database [disabled]",
+      "Clear Cache [disabled]"
+    ],
+    "fields": [],
+    "unnamed_buttons": 0
+  }
+]

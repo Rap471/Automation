@@ -1,0 +1,29 @@
+{
+  "name": "automation-regressions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:regression": "playwright test tests/game-launcher.regression.spec.ts",
+    "test:chaos": "playwright test --config=playwright.chaos.config.ts",
+    "test:dashboard": "playwright test tests/dashboard-failure-path.spec.ts",
+    "test:balance": "playwright test --config=playwright.balance.config.ts",
+    "live": "node src/live/server.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "eslint": "^10.11.0",
+    "exceljs": "^4.4.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.1"
+  }
+}

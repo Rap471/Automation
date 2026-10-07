@@ -1,0 +1,13 @@
+{
+  "pages": 39,
+  "current_checks": 37,
+  "current_statuses": {
+    "PASS": 29,
+    "FAIL": 5,
+    "OBSERVATION": 2,
+    "BLOCKED": 1
+  },
+  "prior_checks": 54,
+  "images": 19,
+  "pdf": "C:\\Users\\User 4\\automation regressions\\output\\pdf\\FYB-All-Roles-QA-Report-20261001.pdf"
+}

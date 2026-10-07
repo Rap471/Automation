@@ -1,0 +1,66 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link:
+      - /url: /
+    - link:
+      - /url: /activity
+    - link:
+      - /url: /notifications/inbox
+    - link:
+      - /url: /projects
+    - link:
+      - /url: /slack
+    - link:
+      - /url: /wiki
+  - link:
+    - /url: /settings
+- banner:
+  - button "2 Notifications":
+    - generic: "2"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - complementary:
+    - generic: T
+    - generic: Tististeng
+    - button "Filter spaces":
+    - combobox:
+      - option "Select a space" [disabled]
+      - option "Admin Stuff"
+      - option "Big Town Lottery"
+      - option "FYB Tech Infrastructure"
+      - option "Game Studio"
+      - option "Tististeng" [selected]
+      - option "Torrospin"
+      - option "TorroSpin"
+      - option "Whitelabel Projects"
+    - generic: Content
+    - button "Create at root" [active]:
+    - button "More":
+    - searchbox "Search by title"
+    - generic "Wiki pages":
+      - generic "Tististeng":
+        - link "Tististeng":
+          - /url: /wiki/page/2d2a9c0c-960a-45c5-8c6d-2172333dd0e7
+        - button:
+        - button "Create under content":
+        - button "Content actions":
+      - generic "QA UI Draft 20261001":
+        - link "QA UI Draft 20261001":
+          - /url: /wiki/page/6f667d9b-f9e9-46c3-be60-6af91904aa64
+        - button:
+        - button "Create under content":
+        - button "Content actions":
+    - button "+ Create":
+      - generic: +
+      - generic: Create
+  - generic: Welcome to Wiki
+  - generic: Choose a space in the sidebar, then open a page to view or edit content. Nothing is selected until you pick one.
+- button "Create page"
+- button "Create folder"

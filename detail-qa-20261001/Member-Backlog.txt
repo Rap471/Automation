@@ -1,0 +1,107 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - button "QARA":
+      - text: QARA
+    - link "Board":
+      - /url: /projects/QARA/board
+      - text: Board
+    - link "Calendar":
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link "Backlog":
+      - /url: /projects/QARA/backlog
+    - link "Epics":
+      - /url: /projects/QARA/epics
+    - link "Issues":
+      - /url: /projects/QARA/issues
+    - link "Sprints":
+      - /url: /projects/QARA/sprints
+    - link "Gantt":
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "2 Notifications":
+    - generic: "2"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA
+    - button:
+  - generic: QARA
+  - heading "Backlog" [level=1]
+  - paragraph: 0 in sprints • 3 in backlog
+  - textbox "Search (key or summary)"
+  - combobox "Assignee":
+    - generic: Assignee
+  - combobox "Type":
+    - generic: Type
+  - combobox "Priority":
+    - generic: Priority
+  - combobox "Status":
+    - generic: Status
+  - button "All assignees"
+  - button "Any update time"
+  - button "Clear filters" [disabled]
+  - heading "Backlog" [level=2]
+  - generic: "Epic: None"
+  - button "QARA-1 QA Admin role lifecycle 20261001 - SuperAdmin verified In Progress Oct 3, 2026 HIGH M":
+    - generic "Drag to reorder":
+    - generic: QARA-1
+    - generic: QA Admin role lifecycle 20261001 - SuperAdmin verified
+    - combobox "In Progress":
+      - generic: In Progress
+    - generic: Oct 3, 2026
+    - generic: HIGH
+    - generic "moce": M
+  - button "QARA-2 QA Member role lifecycle 20261001 - verified 0% - Blocked by 0/0 - Subtasks 0/1 In Progress Oct 3, 2026 MEDIUM S":
+    - generic "Drag to reorder":
+    - generic: QARA-2
+    - generic: QA Member role lifecycle 20261001 - verified
+    - generic: 0% - Blocked by 0/0 - Subtasks 0/1
+    - combobox "In Progress":
+      - generic: In Progress
+    - generic: Oct 3, 2026
+    - generic: MEDIUM
+    - generic "sabye": S
+  - button "QARA-4 QA UI text <tag> & summary 20261001 - Member verified To Do Oct 3, 2026 MEDIUM —":
+    - generic "Drag to reorder":
+    - generic: QARA-4
+    - generic: QA UI text <tag> & summary 20261001 - Member verified
+    - combobox "To Do":
+      - generic: To Do
+    - generic: Oct 3, 2026
+    - generic: MEDIUM
+    - generic "Unassigned": —

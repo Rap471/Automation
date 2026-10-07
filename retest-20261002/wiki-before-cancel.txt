@@ -1,0 +1,136 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link:
+      - /url: /
+    - link:
+      - /url: /activity
+    - link:
+      - /url: /notifications/inbox
+    - link:
+      - /url: /projects
+    - link:
+      - /url: /slack
+    - link:
+      - /url: /wiki
+  - link:
+    - /url: /settings
+- banner:
+  - searchbox "Search issues..."
+  - button "2 Notifications":
+    - generic: "2"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - complementary:
+    - generic: T
+    - generic: Tististeng
+    - button "Filter spaces":
+    - combobox:
+      - option "Select a space" [disabled]
+      - option "Big Town Lottery" [selected]
+      - option "FYB Tech Infrastructure"
+      - option "Game Studio"
+      - option "Tististeng"
+      - option "Torrospin"
+      - option "TorroSpin"
+      - option "Whitelabel Projects"
+    - generic: Content
+    - button "Create at root":
+    - button "More":
+    - searchbox "Search by title"
+    - generic "Wiki pages":
+      - generic "Tististeng":
+        - link "Tististeng":
+          - /url: /wiki/page/2d2a9c0c-960a-45c5-8c6d-2172333dd0e7
+        - button:
+        - button "Create under content":
+        - button "Content actions":
+      - generic "QA UI Draft 20261001":
+        - link "QA UI Draft 20261001":
+          - /url: /wiki/page/6f667d9b-f9e9-46c3-be60-6af91904aa64
+        - button:
+        - button "Create under content":
+        - button "Content actions":
+    - button "+ Create":
+      - generic: +
+      - generic: Create
+  - generic: 8013455b-5591-4d3f-89c7-1f4745f07406
+  - navigation "Breadcrumb":
+    - link "Wiki":
+      - /url: /wiki
+    - generic: /
+    - generic: QA UI Draft 20261001
+  - heading "QA UI Draft 20261001" [level=1]
+  - generic: S
+  - generic: sabaye4398@pumpoly.com
+  - generic: •
+  - generic: Last edited 1 min ago
+  - generic: •
+  - generic: v2
+  - button "#qa"
+  - button "#retest20261002"
+  - button "Edit"
+  - button "New child"
+  - paragraph
+  - generic: Attachments
+  - generic: Upload
+  - generic: No attachments yet.
+  - generic: Backlinks
+  - generic: No pages link here yet.
+  - generic: Comments
+  - toolbar:
+    - button "bold":
+    - button "italic":
+    - button "underline":
+    - button "strike":
+    - button "code":
+    - button "blockquote":
+    - button "code-block":
+    - button "Normal":
+      - text: Normal
+    - text: Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Normal
+    - 'button "list: ordered"':
+    - 'button "list: bullet"':
+    - 'button "list: check"':
+    - 'button "indent: -1"':
+    - 'button "indent: +1"':
+    - 'button "script: sub"':
+    - 'button "script: super"':
+    - 'button "direction: rtl"':
+    - button:
+    - button "link":
+    - button "image":
+    - button "video":
+    - button:
+    - button:
+    - button "Sans Serif":
+      - text: Sans Serif
+    - text: Sans Serif Serif Monospace
+    - button "Normal":
+      - text: Normal
+    - text: Small Normal Large Huge
+    - button "clean":
+  - text: Add a comment…
+  - paragraph
+  - text: "Visit URL: EditRemove"
+  - button "@sabaye4398@pumpoly.com"
+  - button "Comment" [disabled]
+  - generic: No comments yet.
+  - complementary:
+    - generic: Table of contents
+    - generic: No headings
+    - generic: Version history
+    - generic: Oct 2, 2026 9:27 AM · sabaye4398@pumpoly.com
+    - generic: QA UI Draft 20261001
+    - generic "You don't have permission":
+      - button "Restore" [disabled]
+    - generic: Oct 1, 2026 6:22 PM · sabaye4398@pumpoly.com
+    - generic: Untitled
+    - generic "You don't have permission":
+      - button "Restore" [disabled]

@@ -1,0 +1,243 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "3 Notifications":
+    - generic: "3"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Analytics & Reports" [level=1]
+  - paragraph: System-wide metrics and insights
+  - paragraph: Total Issues
+  - paragraph: "15351"
+  - paragraph: Completed
+  - paragraph: "12189"
+  - paragraph: In Progress
+  - paragraph: "1087"
+  - paragraph: Active Sprints
+  - paragraph: "8"
+  - heading "Issues by Type" [level=2]
+  - generic: task
+  - generic: "8240"
+  - generic: bug
+  - generic: "3984"
+  - generic: story
+  - generic: "3127"
+  - heading "Issues by Priority" [level=2]
+  - generic: medium
+  - generic: "12675"
+  - generic: highest
+  - generic: "1"
+  - generic: low
+  - generic: "122"
+  - generic: lowest
+  - generic: "1"
+  - generic: high
+  - generic: "2552"
+  - heading "Project Overview" [level=2]
+  - table:
+    - rowgroup:
+      - row "Project Key Lead Issues Completed":
+        - columnheader "Project"
+        - columnheader "Key"
+        - columnheader "Lead"
+        - columnheader "Issues"
+        - columnheader "Completed"
+    - rowgroup:
+      - row "29Black TNBLK — 104 0":
+        - cell "29Black"
+        - cell "TNBLK"
+        - cell "—"
+        - cell "104"
+        - cell "0"
+      - row "88QueenCasino EEQC — 77 73":
+        - cell "88QueenCasino"
+        - cell "EEQC"
+        - cell "—"
+        - cell "77"
+        - cell "73"
+      - row "90 days Action plan for Head of IT OX90 — 14 0":
+        - cell "90 days Action plan for Head of IT"
+        - cell "OX90"
+        - cell "—"
+        - cell "14"
+        - cell "0"
+      - row "9 Floor FL9 — 37 24":
+        - cell "9 Floor"
+        - cell "FL9"
+        - cell "—"
+        - cell "37"
+        - cell "24"
+      - row "Alfa6688 ALFA — 199 193":
+        - cell "Alfa6688"
+        - cell "ALFA"
+        - cell "—"
+        - cell "199"
+        - cell "193"
+      - row "Bet24Star B24S — 107 83":
+        - cell "Bet24Star"
+        - cell "B24S"
+        - cell "—"
+        - cell "107"
+        - cell "83"
+      - row "Big Town Lottery BTL — 575 503":
+        - cell "Big Town Lottery"
+        - cell "BTL"
+        - cell "—"
+        - cell "575"
+        - cell "503"
+      - row "BTL BL — 0 0":
+        - cell "BTL"
+        - cell "BL"
+        - cell "—"
+        - cell "0"
+        - cell "0"
+      - row "bwpwallet BWPWAL — 296 246":
+        - cell "bwpwallet"
+        - cell "BWPWAL"
+        - cell "—"
+        - cell "296"
+        - cell "246"
+      - row "Casino CRM SSP — 52 43":
+        - cell "Casino CRM"
+        - cell "SSP"
+        - cell "—"
+        - cell "52"
+        - cell "43"
+      - row "Casino Marriott MRT — 84 78":
+        - cell "Casino Marriott"
+        - cell "MRT"
+        - cell "—"
+        - cell "84"
+        - cell "78"
+      - row "Comontec CNB — 0 0":
+        - cell "Comontec"
+        - cell "CNB"
+        - cell "—"
+        - cell "0"
+        - cell "0"
+      - row "Comontec CT — 5 2":
+        - cell "Comontec"
+        - cell "CT"
+        - cell "—"
+        - cell "5"
+        - cell "2"
+      - row "ComonTec Gaming Software CGS — 3567 2881":
+        - cell "ComonTec Gaming Software"
+        - cell "CGS"
+        - cell "—"
+        - cell "3567"
+        - cell "2881"
+      - row "ComonTec Marketing CTQA — 26 23":
+        - cell "ComonTec Marketing"
+        - cell "CTQA"
+        - cell "—"
+        - cell "26"
+        - cell "23"
+      - row "Comontec (New System-On Hold) CP — 50 4":
+        - cell "Comontec (New System-On Hold)"
+        - cell "CP"
+        - cell "—"
+        - cell "50"
+        - cell "4"
+      - row "Comontec (Old Board) ARSCRM — 2765 2370":
+        - cell "Comontec (Old Board)"
+        - cell "ARSCRM"
+        - cell "—"
+        - cell "2765"
+        - cell "2370"
+      - row "COMONTEC (SCRUM) CS — 58 27":
+        - cell "COMONTEC (SCRUM)"
+        - cell "CS"
+        - cell "—"
+        - cell "58"
+        - cell "27"
+      - row "Comontec (Whitelabel) CW — 52 10":
+        - cell "Comontec (Whitelabel)"
+        - cell "CW"
+        - cell "—"
+        - cell "52"
+        - cell "10"
+      - row "CTPHGOA765 CTPHGOA7 — 0 0":
+        - cell "CTPHGOA765"
+        - cell "CTPHGOA7"
+        - cell "—"
+        - cell "0"
+        - cell "0"
+      - row "CTPH LBC CL — 0 0":
+        - cell "CTPH LBC"
+        - cell "CL"
+        - cell "—"
+        - cell "0"
+        - cell "0"
+      - row "Customer On-boarding COB — 47 26":
+        - cell "Customer On-boarding"
+        - cell "COB"
+        - cell "—"
+        - cell "47"
+        - cell "26"
+      - row "DiJoker - Assets DJD — 267 163":
+        - cell "DiJoker - Assets"
+        - cell "DJD"
+        - cell "—"
+        - cell "267"
+        - cell "163"
+      - row "DiJoker Assets DJA — 82 0":
+        - cell "DiJoker Assets"
+        - cell "DJA"
+        - cell "—"
+        - cell "82"
+        - cell "0"
+      - row "DiJoker Contract DJC — 10 3":
+        - cell "DiJoker Contract"
+        - cell "DJC"
+        - cell "—"
+        - cell "10"
+        - cell "3"
+  - generic: Page 1 of 4 · 82 total
+  - button "Prev" [disabled]
+  - button "Next"

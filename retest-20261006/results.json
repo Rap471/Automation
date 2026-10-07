@@ -1,0 +1,398 @@
+[
+  {
+    "id": "O001",
+    "role": "SuperAdmin",
+    "feature": "Login",
+    "expected": "Authenticate valid account",
+    "actual": "Dashboard and role navigation available.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O002",
+    "role": "SuperAdmin",
+    "feature": "Theme tooltip",
+    "expected": "Target tooltip changes in dark mode",
+    "actual": "Switch to dark theme remains after dark toggle.",
+    "status": "FAIL",
+    "prior": "F02"
+  },
+  {
+    "id": "O003",
+    "role": "SuperAdmin",
+    "feature": "Preference names",
+    "expected": "Distinct accessible checkbox names",
+    "actual": "Three checkboxes remain unnamed.",
+    "status": "FAIL",
+    "prior": "F03"
+  },
+  {
+    "id": "O004",
+    "role": "SuperAdmin",
+    "feature": "Empty project validation",
+    "expected": "Required feedback",
+    "actual": "Name/Key required and key format messages shown after response.",
+    "status": "PASS",
+    "prior": "F01 not reproduced"
+  },
+  {
+    "id": "O005",
+    "role": "SuperAdmin",
+    "feature": "Project search",
+    "expected": "Only QARA fixture returned",
+    "actual": "QARA retained project matches search.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O006",
+    "role": "SuperAdmin",
+    "feature": "Administration totals",
+    "expected": "Dashboard agrees with loaded directory",
+    "actual": "Dashboard Total/Active Users 0/0 versus loaded directory 255/41; Recent Users and Activity unavailable.",
+    "status": "FAIL",
+    "prior": "D01"
+  },
+  {
+    "id": "O007",
+    "role": "SuperAdmin",
+    "feature": "Retained issue data",
+    "expected": "Summary/link/comment persist",
+    "actual": "October2 Member summary, Relates toQARA1 and edited QA comment present.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O008",
+    "role": "SuperAdmin",
+    "feature": "Whitespace summary guard",
+    "expected": "Disable Save",
+    "actual": "Save disabled for three spaces.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O009",
+    "role": "SuperAdmin",
+    "feature": "Issue Cancel",
+    "expected": "Preserve summary",
+    "actual": "Original summary restored.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O010",
+    "role": "SuperAdmin",
+    "feature": "Issue Export",
+    "expected": "Produce and inspect export file",
+    "actual": "No download captured within15seconds; content unverified.",
+    "status": "INCONCLUSIVE",
+    "prior": "U021"
+  },
+  {
+    "id": "O011",
+    "role": "SuperAdmin",
+    "feature": "Undated epic Gantt",
+    "expected": "No fabricated epic dates",
+    "actual": "Current Gantt shows0epics and2InProgressissues; prior Plannedepics excluded. Earlier date symptom cannot be evaluated under changed scope.",
+    "status": "NOT REPRODUCED",
+    "prior": "D02 scope changed; not proof of fix"
+  },
+  {
+    "id": "O012",
+    "role": "SuperAdmin",
+    "feature": "Epic fixture availability",
+    "expected": "Prior epics remain readable",
+    "actual": "QA Role Epic andQA Member Epic retained.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O013",
+    "role": "Admin",
+    "feature": "Login",
+    "expected": "AuthenticateAdmin",
+    "actual": "Dashboard opens.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O014",
+    "role": "Admin",
+    "feature": "Prior sprint persistence",
+    "expected": "Completedstate retained",
+    "actual": "Both October1/2 QA sprints remainCompleted.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O015",
+    "role": "Admin",
+    "feature": "Sprint required name",
+    "expected": "Show requiredvalidation",
+    "actual": "Sprint name is required shown.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O016",
+    "role": "Admin",
+    "feature": "Create sprint",
+    "expected": "Valid sprint becomesPlanned",
+    "actual": "QA Retest Sprint20261006 createdPlanned.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O017",
+    "role": "Admin",
+    "feature": "Sprint assignment",
+    "expected": "Selected sprint persists",
+    "actual": "QARA4 savedto freshQA sprint.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O018",
+    "role": "Admin",
+    "feature": "Start sprint",
+    "expected": "Planned becomesActive",
+    "actual": "Complete sprintcontrolavailable.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O019",
+    "role": "Admin",
+    "feature": "Sprint Board",
+    "expected": "Assigned issue shown",
+    "actual": "FreshsprintBoard showsQARA4ToDo,1of1.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O020",
+    "role": "Admin",
+    "feature": "Completion immediate refresh",
+    "expected": "Unfinished issue immediatelyreturnsbacklog",
+    "actual": "Completedtoast andsprintsectiongone; counters1/0,emptybacklog. Reloadshows0/1andQA4.",
+    "status": "FAIL",
+    "prior": "N01"
+  },
+  {
+    "id": "O021",
+    "role": "Admin",
+    "feature": "Completion persistedstate",
+    "expected": "Completed andunfinishedworkreturned",
+    "actual": "ReloadshowsQARA4backlog. Currentbacklog excludesInProgressissues, so1parentratherthan prior3.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O022",
+    "role": "Admin",
+    "feature": "Velocity consistency",
+    "expected": "Reflectcompletedstate, no unsupportedemptyaverage",
+    "actual": "Completed header,3completedQAsprints; reportNocompletedsprints yet,3.2days average,0issues.",
+    "status": "FAIL",
+    "prior": "N02"
+  },
+  {
+    "id": "O023",
+    "role": "Admin",
+    "feature": "Audit lifecycle",
+    "expected": "Newchangestraceable",
+    "actual": "CurrentQA sprintcreate/start/complete andQA4update entriespresent.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O024",
+    "role": "Member",
+    "feature": "Login",
+    "expected": "AuthenticateMember",
+    "actual": "Dashboard opens, noAdminnavigation.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O025",
+    "role": "Member",
+    "feature": "Direct /admin",
+    "expected": "DenyadministrativeUI",
+    "actual": "Access denied.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O026",
+    "role": "Member",
+    "feature": "Direct /admin/accounts",
+    "expected": "DenyadministrativeUI",
+    "actual": "Access denied.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O027",
+    "role": "Member",
+    "feature": "Direct /admin/analytics",
+    "expected": "DenyadministrativeUI",
+    "actual": "Access denied.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O028",
+    "role": "Member",
+    "feature": "Direct /admin/system",
+    "expected": "DenyadministrativeUI",
+    "actual": "Access denied.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O029",
+    "role": "Member",
+    "feature": "Direct /admin/audit-logs",
+    "expected": "DenyadministrativeUI",
+    "actual": "Access denied.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O030",
+    "role": "Member",
+    "feature": "My issues scope",
+    "expected": "OnlyMemberassignedissue",
+    "actual": "QARA2assignedsabye,1total.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O031",
+    "role": "Member",
+    "feature": "Singular grammar",
+    "expected": "1 active issue",
+    "actual": "1 active issues stillshown.",
+    "status": "FAIL",
+    "prior": "F04"
+  },
+  {
+    "id": "O032",
+    "role": "Member",
+    "feature": "Clear My issues",
+    "expected": "RestoreallQAissues",
+    "actual": "FourQAissuesrestored.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O033",
+    "role": "Member",
+    "feature": "Otherauthorcomment",
+    "expected": "Readcommentwithoutedit/delete",
+    "actual": "SuperAdmincommentvisible, noEdit/Deletecommentcontrols.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O034",
+    "role": "Member",
+    "feature": "Sharedissuesummarysave",
+    "expected": "Memberupdatepersistsliteraltext",
+    "actual": "October6suffixsavedonQA4with<tag>&.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O035",
+    "role": "Member",
+    "feature": "Wiki Create feedback",
+    "expected": "Respondor explainrestriction",
+    "actual": "+Createinertbefore/afterspace; rootCreatepage/foldermenuresponds.",
+    "status": "FAIL",
+    "prior": "F05"
+  },
+  {
+    "id": "O036",
+    "role": "Member",
+    "feature": "Wiki prototypesave",
+    "expected": "Title/tags/authorvisibleafterSave",
+    "actual": "QA drafttagsqa/retest20261006 andMemberauthor saved; UI explicitlylocalStorageprototype.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O037",
+    "role": "Member",
+    "feature": "Wiki Cancel metadata",
+    "expected": "Preserveauthor/tags/versionanddiscardtitle",
+    "actual": "Originaltitle,Memberemail,qa/retest20261006tags andv3preserved afterCancel.",
+    "status": "PASS",
+    "prior": "F06 not reproduced"
+  },
+  {
+    "id": "O038",
+    "role": "Member",
+    "feature": "Forbidden archiveUI",
+    "expected": "Hide/disableunavailablearchive",
+    "actual": "Enabledconfirmation; serverInsufficientprojectrole,QAprojectactive.",
+    "status": "FAIL",
+    "prior": "D04"
+  },
+  {
+    "id": "O039",
+    "role": "Member",
+    "feature": "Project denialtext",
+    "expected": "Relevantprojectpermissionmessage",
+    "actual": "Create rejectedwithattachmentpermissionerror;QAMR6notcreated.",
+    "status": "FAIL",
+    "prior": "D03"
+  },
+  {
+    "id": "O040",
+    "role": "Member",
+    "feature": "Settingsrestriction",
+    "expected": "Denyprojectmanagement",
+    "actual": "DirectprojectsettingsredirectDashboard.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O041",
+    "role": "Member",
+    "feature": "Sprintmanagementrestriction",
+    "expected": "Readwithoutmanagementcontrols",
+    "actual": "3completedQAsprintsvisible; noCreate/Start/Complete.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O042",
+    "role": "Member",
+    "feature": "Chat whitespaceguard",
+    "expected": "DisabledwhitespaceSend",
+    "actual": "Senddisabled forthreespaces; composer cleared,noactualmessage.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O043",
+    "role": "Member",
+    "feature": "Channelmanagementrestriction",
+    "expected": "Forbiddenmanagementdisabled",
+    "actual": "MemberssettingsandDeletechanneldisabled;2membersreadable.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "O044",
+    "role": "Member",
+    "feature": "Logout",
+    "expected": "Endsession",
+    "actual": "Signedoutloginshown.",
+    "status": "PASS",
+    "prior": ""
+  }
+]

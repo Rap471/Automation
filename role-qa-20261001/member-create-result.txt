@@ -1,0 +1,72 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "2 Notifications":
+    - generic: "2"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Projects" [level=1]
+  - paragraph: Browse and manage your projects
+  - button "Add Project":
+    - text: Add Project
+  - generic: You do not have permission to attach files to this issue.
+  - heading "Create Project" [level=2]
+  - button "Cancel"
+  - text: Name
+  - textbox "Name": QA Role Member 20261001
+  - text: Key
+  - textbox "Key":
+    - /placeholder: E.g. XFYB
+    - text: QARM
+  - text: Summary
+  - textbox "Summary": Role-based functional QA test data
+  - text: Project type
+  - combobox "Project type":
+    - option "Scrum"
+    - option "Kanban" [selected]
+  - button "Create"
+  - button "Active projects"
+  - button "Archived"
+  - button "Sort by Newest":
+    - generic: Sort by
+    - generic: Newest
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Name Key Summary Your Role Progress Action":
+        - columnheader "Name"
+        - columnheader "Key"
+        - columnheader "Summary"
+        - columnheader "Your Role"
+        - columnheader "Progress"
+        - columnheader "Action"
+    - rowgroup

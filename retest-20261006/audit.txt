@@ -1,0 +1,487 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Audit Logs" [level=1]
+  - paragraph: Track all system activities and changes
+  - button "Export Logs":
+    - text: Export Logs
+  - textbox "Actor email contains..."
+  - textbox "ProjectId (optional)"
+  - combobox:
+    - option "All Entities" [selected]
+    - option "System"
+    - option "Project"
+    - option "Project Member"
+    - option "Sprint"
+    - option "Issue"
+    - option "Issue Comment"
+    - option "Issue Attachment"
+    - option "Issue Link"
+    - option "User"
+  - combobox:
+    - option "All Actions" [selected]
+    - option "Created"
+    - option "Updated"
+    - option "Deleted"
+    - option "Transitioned"
+    - option "Added"
+    - option "Removed"
+    - option "Role Changed"
+  - generic "From":
+    - textbox
+  - generic "To":
+    - textbox
+  - button "Apply":
+    - text: Apply
+  - button "Clear"
+  - table:
+    - rowgroup:
+      - row "Time (UTC) Actor Entity Action Summary":
+        - columnheader "Time (UTC)"
+        - columnheader "Actor"
+        - columnheader "Entity"
+        - columnheader "Action"
+        - columnheader "Summary"
+        - columnheader
+    - rowgroup:
+      - row "2026-10-06T07:10:29.888677Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-190 Metadata":
+        - cell "2026-10-06T07:10:29.888677Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-190"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:10:22.695958Z rommel.ar@patolomius.com Issue Transitioned Transitioned issue DDK-190 Metadata":
+        - cell "2026-10-06T07:10:22.695958Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue DDK-190"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:10:17.080385Z rommel.ar@patolomius.com Issue Created Created issue DDK-190 Metadata":
+        - cell "2026-10-06T07:10:17.080385Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue DDK-190"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:10:10.136576Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-189 Metadata":
+        - cell "2026-10-06T07:10:10.136576Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-189"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:10:06.211792Z mocekij762@pumpoly.com Sprint Transitioned Completed sprint QA Retest Sprint 20261006 Metadata":
+        - cell "2026-10-06T07:10:06.211792Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Transitioned"
+        - cell "Completed sprint QA Retest Sprint 20261006"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:53.422201Z mocekij762@pumpoly.com Sprint Transitioned Started sprint QA Retest Sprint 20261006 Metadata":
+        - cell "2026-10-06T07:09:53.422201Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Transitioned"
+        - cell "Started sprint QA Retest Sprint 20261006"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:50.236834Z mocekij762@pumpoly.com Issue Updated Updated issue QARA-4 Metadata":
+        - cell "2026-10-06T07:09:50.236834Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-4"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:50.074526Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-189 Metadata":
+        - cell "2026-10-06T07:09:50.074526Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-189"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:41.204131Z rommel.ar@patolomius.com Issue Transitioned Transitioned issue DDK-189 Metadata":
+        - cell "2026-10-06T07:09:41.204131Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue DDK-189"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:36.354497Z mocekij762@pumpoly.com Sprint Created Created sprint QA Retest Sprint 20261006 Metadata":
+        - cell "2026-10-06T07:09:36.354497Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Created"
+        - cell "Created sprint QA Retest Sprint 20261006"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:32.049634Z rommel.ar@patolomius.com Issue Created Created issue DDK-189 Metadata":
+        - cell "2026-10-06T07:09:32.049634Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue DDK-189"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:23.439686Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-188 Metadata":
+        - cell "2026-10-06T07:09:23.439686Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-188"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:03.509728Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-188 Metadata":
+        - cell "2026-10-06T07:09:03.509728Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-188"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:09:00.421427Z rommel.ar@patolomius.com Issue Transitioned Transitioned issue DDK-188 Metadata":
+        - cell "2026-10-06T07:09:00.421427Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue DDK-188"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:08:50.922337Z rommel.ar@patolomius.com Issue Created Created issue DDK-188 Metadata":
+        - cell "2026-10-06T07:08:50.922337Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue DDK-188"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:08:21.617968Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-187 Metadata":
+        - cell "2026-10-06T07:08:21.617968Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-187"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:08:09.807158Z rommel.ar@patolomius.com Issue Transitioned Transitioned issue DDK-187 Metadata":
+        - cell "2026-10-06T07:08:09.807158Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue DDK-187"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:07:16.696728Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-187 Metadata":
+        - cell "2026-10-06T07:07:16.696728Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-187"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:07:12.33854Z rommel.ar@patolomius.com Issue Updated Updated issue DDK-187 Metadata":
+        - cell "2026-10-06T07:07:12.33854Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-187"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:06:47.841441Z rommel.ar@patolomius.com Issue Created Created issue DDK-187 Metadata":
+        - cell "2026-10-06T07:06:47.841441Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue DDK-187"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:02:25.881143Z john.peralta@patolomius.com Issue Updated Updated issue DDK-186 Metadata":
+        - cell "2026-10-06T07:02:25.881143Z"
+        - cell "john.peralta@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-186"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:02:16.478851Z john.peralta@patolomius.com Issue Updated Updated issue DDK-186 Metadata":
+        - cell "2026-10-06T07:02:16.478851Z"
+        - cell "john.peralta@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue DDK-186"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.047363Z rommel.ar@patolomius.com Project Updated Archived project XFYB Metadata":
+        - cell "2026-10-06T07:01:48.047363Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project XFYB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.046416Z rommel.ar@patolomius.com Project Updated Archived project FL9 Metadata":
+        - cell "2026-10-06T07:01:48.046416Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project FL9"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.041151Z rommel.ar@patolomius.com Project Updated Archived project TNBLK Metadata":
+        - cell "2026-10-06T07:01:48.041151Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project TNBLK"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.040683Z rommel.ar@patolomius.com Project Updated Archived project BTL Metadata":
+        - cell "2026-10-06T07:01:48.040683Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project BTL"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.039973Z rommel.ar@patolomius.com Project Updated Archived project DJD Metadata":
+        - cell "2026-10-06T07:01:48.039973Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project DJD"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.039361Z rommel.ar@patolomius.com Project Updated Archived project EEQC Metadata":
+        - cell "2026-10-06T07:01:48.039361Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project EEQC"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.033467Z rommel.ar@patolomius.com Project Updated Archived project MRT Metadata":
+        - cell "2026-10-06T07:01:48.033467Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project MRT"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.029757Z rommel.ar@patolomius.com Project Updated Archived project BWPWAL Metadata":
+        - cell "2026-10-06T07:01:48.029757Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project BWPWAL"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.024531Z rommel.ar@patolomius.com Project Updated Archived project CP Metadata":
+        - cell "2026-10-06T07:01:48.024531Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project CP"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.024021Z rommel.ar@patolomius.com Project Updated Archived project OX90 Metadata":
+        - cell "2026-10-06T07:01:48.024021Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project OX90"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.023497Z rommel.ar@patolomius.com Project Updated Archived project ALFA Metadata":
+        - cell "2026-10-06T07:01:48.023497Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project ALFA"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.023023Z rommel.ar@patolomius.com Project Updated Archived project SSP Metadata":
+        - cell "2026-10-06T07:01:48.023023Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project SSP"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.016027Z rommel.ar@patolomius.com Project Updated Archived project B24S Metadata":
+        - cell "2026-10-06T07:01:48.016027Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project B24S"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.013906Z rommel.ar@patolomius.com Project Updated Archived project CW Metadata":
+        - cell "2026-10-06T07:01:48.013906Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project CW"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.009978Z rommel.ar@patolomius.com Project Updated Archived project ARSCRM Metadata":
+        - cell "2026-10-06T07:01:48.009978Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project ARSCRM"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.009401Z rommel.ar@patolomius.com Project Updated Archived project CGS Metadata":
+        - cell "2026-10-06T07:01:48.009401Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project CGS"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.00525Z rommel.ar@patolomius.com Project Updated Archived project CTQA Metadata":
+        - cell "2026-10-06T07:01:48.00525Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project CTQA"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:48.004521Z rommel.ar@patolomius.com Project Updated Archived project COB Metadata":
+        - cell "2026-10-06T07:01:48.004521Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project COB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.999064Z rommel.ar@patolomius.com Project Updated Archived project GST Metadata":
+        - cell "2026-10-06T07:01:47.999064Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project GST"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.998607Z rommel.ar@patolomius.com Project Updated Archived project GD Metadata":
+        - cell "2026-10-06T07:01:47.998607Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project GD"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.995675Z rommel.ar@patolomius.com Project Updated Archived project FYBM Metadata":
+        - cell "2026-10-06T07:01:47.995675Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project FYBM"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.99241Z rommel.ar@patolomius.com Project Updated Archived project LBC Metadata":
+        - cell "2026-10-06T07:01:47.99241Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project LBC"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.989774Z rommel.ar@patolomius.com Project Updated Archived project GOA7 Metadata":
+        - cell "2026-10-06T07:01:47.989774Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project GOA7"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.98876Z rommel.ar@patolomius.com Project Updated Archived project IC24 Metadata":
+        - cell "2026-10-06T07:01:47.98876Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project IC24"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.979209Z rommel.ar@patolomius.com Project Updated Archived project LGBP Metadata":
+        - cell "2026-10-06T07:01:47.979209Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project LGBP"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.976214Z rommel.ar@patolomius.com Project Updated Archived project MDP Metadata":
+        - cell "2026-10-06T07:01:47.976214Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project MDP"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.853225Z rommel.ar@patolomius.com Project Updated Archived project RING Metadata":
+        - cell "2026-10-06T07:01:47.853225Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project RING"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-06T07:01:47.852741Z rommel.ar@patolomius.com Project Updated Archived project PTKA Metadata":
+        - cell "2026-10-06T07:01:47.852741Z"
+        - cell "rommel.ar@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project PTKA"
+        - cell "Metadata":
+          - button "Metadata"
+  - generic: Page 1 of 101 · 5020 total
+  - button "Prev" [disabled]
+  - button "Next"

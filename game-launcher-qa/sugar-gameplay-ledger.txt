@@ -1,0 +1,219 @@
+Sami"
+    - option "sg – Sango"
+    - option "si – Sinhala"
+    - option "sk – Slovak"
+    - option "sl – Slovenian"
+    - option "sm – Samoan"
+    - option "sn – Shona"
+    - option "so – Somali"
+    - option "sq – Albanian"
+    - option "sr – Serbian"
+    - option "ss – Swati"
+    - option "st – Southern Sotho"
+    - option "su – Sundanese"
+    - option "sv – Swedish"
+    - option "sw – Swahili"
+    - option "ta – Tamil"
+    - option "te – Telugu"
+    - option "tg – Tajik"
+    - option "th – Thai"
+    - option "ti – Tigrinya"
+    - option "tk – Turkmen"
+    - option "tl – Tagalog"
+    - option "tn – Tswana"
+    - option "to – Tonga"
+    - option "tr – Turkish"
+    - option "ts – Tsonga"
+    - option "tt – Tatar"
+    - option "tw – Twi"
+    - option "ty – Tahitian"
+    - option "ug – Uighur"
+    - option "uk – Ukrainian"
+    - option "ur – Urdu"
+    - option "uz – Uzbek"
+    - option "ve – Venda"
+    - option "vi – Vietnamese"
+    - option "vo – Volapük"
+    - option "wa – Walloon"
+    - option "wo – Wolof"
+    - option "xh – Xhosa"
+    - option "yi – Yiddish"
+    - option "yo – Yoruba"
+    - option "za – Zhuang"
+    - option "zh – Chinese"
+    - option "zh-cn – Chinese (Simplified)"
+    - option "zh-tw – Chinese (Traditional)"
+    - option "zu – Zulu"
+  - generic: Throttle
+  - combobox:
+    - option "0 ms"
+    - option "100 ms" [selected]
+    - option "200 ms"
+    - option "500 ms"
+    - option "750 ms"
+    - option "1000 ms"
+    - option "1500 ms"
+    - option "2000 ms"
+    - option "3000 ms"
+    - option "4000 ms"
+    - option "10000 ms"
+  - generic: Scenario
+  - combobox "no-scenario (default)":
+    - option "block-init"
+    - option "no-scenario (default)" [selected]
+    - option "fail-bet"
+    - option "fail-win"
+    - option "locked-player"
+    - option "fail-bet-after-5-spins"
+    - option "fail-bet-refund-retry-0"
+    - option "fail-bet-refund-retry-1"
+    - option "fail-bet-refund-retry-2"
+    - option "fail-bet-refund-retry-3"
+    - option "fail-bet-refund-retry-4"
+    - option "fail-bet-refund-retry-5"
+    - option "fail-win-after-5-spins"
+    - option "fail-win-retry-0"
+    - option "fail-win-retry-1"
+    - option "fail-win-retry-2"
+    - option "fail-win-retry-3"
+    - option "fail-win-retry-4"
+    - option "fail-win-retry-5"
+  - combobox "Filter games by type":
+    - option "All types" [selected]
+    - option "crash"
+    - option "slot"
+  - searchbox "Search games by name, ID, or type": "00010525"
+  - generic: "Balance: 12,249.55"
+  - button "Update"
+  - generic: "Bet limit:"
+  - spinbutton "Bet limit": "100"
+  - button "Set"
+  - generic: "Remaining: -"
+  - generic: "Session: 86400s"
+  - button "Extend"
+  - img "Sugar Wonderland"
+  - generic: Sugar Wonderland
+  - generic: "00010525"
+  - button "Grant free spins for 00010525":
+  - button "Play in modal":
+- region "Notifications alt+T"
+- alert
+- button
+- generic: Game Player
+- generic: "Playing: 00010525"
+- generic: "Session ID: d2228fa0-a31d-4689-917a-47ec06b709b1"
+- generic: "Balance: 12,249.55"
+- text: "TTL:"
+- generic: 86400s
+- generic: "Bet limit: Disabled"
+- generic "Sandbox WebSocket status":
+  - generic: "Status:"
+- button "Copy URL"
+- button "Copy Token"
+- button "Copy Refresh Token"
+- button "Close"
+- iframe [active]
+- generic: Live history
+- generic: Socket snapshot
+- generic: BET
+- generic: "-100"
+- generic: 01a0fb48-b700-742e-b77d-e7a9c4fc9e75
+- generic: 2:24:01 PM
+- generic: "Balance: 12249.55"
+- generic: WIN
+- generic: "+1.4"
+- generic: 01a0fb48-5340-7639-a5e4-fdf21031bf13
+- generic: 2:23:36 PM
+- generic: "Balance: 12349.55"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-5340-7639-a5e4-fdf21031bf13
+- generic: 2:23:36 PM
+- generic: "Balance: 12348.15"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb48-4982-7332-9d65-4617986c1e6b
+- generic: 2:23:33 PM
+- generic: "Balance: 12349.15"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-4982-7332-9d65-4617986c1e6b
+- generic: 2:23:33 PM
+- generic: "Balance: 12349.15"
+- generic: WIN
+- generic: "+0.4"
+- generic: 01a0fb48-3cd1-746e-8974-b51968a3508b
+- generic: 2:23:30 PM
+- generic: "Balance: 12350.15"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-3cd1-746e-8974-b51968a3508b
+- generic: 2:23:30 PM
+- generic: "Balance: 12349.75"
+- generic: WIN
+- generic: "+0.4"
+- generic: 01a0fb48-2f16-72b8-a8d1-5b220a9531a3
+- generic: 2:23:27 PM
+- generic: "Balance: 12350.75"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-2f16-72b8-a8d1-5b220a9531a3
+- generic: 2:23:27 PM
+- generic: "Balance: 12350.35"
+- generic: WIN
+- generic: "+10"
+- generic: 01a0fb48-2283-766a-a770-904b4af9859f
+- generic: 2:23:24 PM
+- generic: "Balance: 12351.35"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-2283-766a-a770-904b4af9859f
+- generic: 2:23:23 PM
+- generic: "Balance: 12341.35"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb48-1cd8-7651-99b5-0e0f36a0ca15
+- generic: 2:23:22 PM
+- generic: "Balance: 12342.35"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-1cd8-7651-99b5-0e0f36a0ca15
+- generic: 2:23:22 PM
+- generic: "Balance: 12342.35"
+- generic: WIN
+- generic: "+2.4"
+- generic: 01a0fb48-09a1-75fe-9cb6-db31048400da
+- generic: 2:23:17 PM
+- generic: "Balance: 12343.35"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb48-09a1-75fe-9cb6-db31048400da
+- generic: 2:23:17 PM
+- generic: "Balance: 12340.95"
+- generic: WIN
+- generic: "+0.8"
+- generic: 01a0fb47-fcf6-7754-b9d9-f02e9b441ac7
+- generic: 2:23:14 PM
+- generic: "Balance: 12341.95"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb47-fcf6-7754-b9d9-f02e9b441ac7
+- generic: 2:23:14 PM
+- generic: "Balance: 12341.15"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb47-f73b-715b-91c0-74b7e5612535
+- generic: 2:23:12 PM
+- generic: "Balance: 12342.15"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb47-f73b-715b-91c0-74b7e5612535
+- generic: 2:23:12 PM
+- generic: "Balance: 12342.15"
+- generic: WIN
+- generic: "+0.9"
+- generic: 01a0fb47-e412-71b8-b163-8a1b38c31787
+- generic: 2:23:08 PM
+- generic: "Balance: 12343.15"
+- button "Hide live history":
+  - generic: <

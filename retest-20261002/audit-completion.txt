@@ -1,0 +1,491 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Audit Logs" [level=1]
+  - paragraph: Track all system activities and changes
+  - button "Export Logs":
+    - text: Export Logs
+  - textbox "Actor email contains..."
+  - textbox "ProjectId (optional)"
+  - combobox:
+    - option "All Entities" [selected]
+    - option "System"
+    - option "Project"
+    - option "Project Member"
+    - option "Sprint"
+    - option "Issue"
+    - option "Issue Comment"
+    - option "Issue Attachment"
+    - option "Issue Link"
+    - option "User"
+  - combobox:
+    - option "All Actions" [selected]
+    - option "Created"
+    - option "Updated"
+    - option "Deleted"
+    - option "Transitioned"
+    - option "Added"
+    - option "Removed"
+    - option "Role Changed"
+  - generic "From":
+    - textbox
+  - generic "To":
+    - textbox
+  - button "Apply":
+    - text: Apply
+  - button "Clear"
+  - table:
+    - rowgroup:
+      - row "Time (UTC) Actor Entity Action Summary":
+        - columnheader "Time (UTC)"
+        - columnheader "Actor"
+        - columnheader "Entity"
+        - columnheader "Action"
+        - columnheader "Summary"
+        - columnheader
+    - rowgroup:
+      - row "2026-10-02T01:23:56.927814Z mocekij762@pumpoly.com Sprint Transitioned Completed sprint QA Retest Sprint 20261002 Metadata":
+        - cell "2026-10-02T01:23:56.927814Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Transitioned"
+        - cell "Completed sprint QA Retest Sprint 20261002"
+        - cell "Metadata":
+          - button "Metadata" [active]
+      - 'row "{\"projectId\":\"d9cdabff-526d-44ba-adb6-6d8ee62d74a8\",\"sprintId\":\"ecfb4dd9-0e95-4cd4-864a-e9ffeb8341a1\",\"name\":\"QA Retest Sprint 20261002\",\"toStatus\":2}"':
+        - 'cell "{\"projectId\":\"d9cdabff-526d-44ba-adb6-6d8ee62d74a8\",\"sprintId\":\"ecfb4dd9-0e95-4cd4-864a-e9ffeb8341a1\",\"name\":\"QA Retest Sprint 20261002\",\"toStatus\":2}"':
+          - generic: "{\"projectId\":\"d9cdabff-526d-44ba-adb6-6d8ee62d74a8\",\"sprintId\":\"ecfb4dd9-0e95-4cd4-864a-e9ffeb8341a1\",\"name\":\"QA Retest Sprint 20261002\",\"toStatus\":2}"
+      - row "2026-10-02T01:23:40.55349Z mocekij762@pumpoly.com Sprint Transitioned Started sprint QA Retest Sprint 20261002 Metadata":
+        - cell "2026-10-02T01:23:40.55349Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Transitioned"
+        - cell "Started sprint QA Retest Sprint 20261002"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-02T01:23:30.664909Z mocekij762@pumpoly.com Issue Updated Updated issue QARA-4 Metadata":
+        - cell "2026-10-02T01:23:30.664909Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-4"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-02T01:23:01.431084Z mocekij762@pumpoly.com Sprint Created Created sprint QA Retest Sprint 20261002 Metadata":
+        - cell "2026-10-02T01:23:01.431084Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Created"
+        - cell "Created sprint QA Retest Sprint 20261002"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:28:56.254189Z rafael.pineda@patolomius.com Project Updated Updated project QARA Metadata":
+        - cell "2026-10-01T10:28:56.254189Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Updated project QARA"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:20:07.889793Z sabaye4398@pumpoly.com Issue Updated Updated issue QARA-4 Metadata":
+        - cell "2026-10-01T10:20:07.889793Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-4"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:16:44.146818Z mocekij762@pumpoly.com Sprint Transitioned Completed sprint QA Role Sprint 20261001 Metadata":
+        - cell "2026-10-01T10:16:44.146818Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Transitioned"
+        - cell "Completed sprint QA Role Sprint 20261001"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:15:57.147175Z mocekij762@pumpoly.com Sprint Transitioned Started sprint QA Role Sprint 20261001 Metadata":
+        - cell "2026-10-01T10:15:57.147175Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Transitioned"
+        - cell "Started sprint QA Role Sprint 20261001"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:15:43.315523Z mocekij762@pumpoly.com Issue Updated Updated issue QARA-4 Metadata":
+        - cell "2026-10-01T10:15:43.315523Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-4"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:13:05.674944Z rafael.pineda@patolomius.com IssueComment Updated Updated comment 5da9ebd1-2082-474b-8c8c-69dd39e87a0e Metadata":
+        - cell "2026-10-01T10:13:05.674944Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "IssueComment"
+        - cell "Updated"
+        - cell "Updated comment 5da9ebd1-2082-474b-8c8c-69dd39e87a0e"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:12:25.347312Z rafael.pineda@patolomius.com IssueComment Created Added comment on issue QARA-4 Metadata":
+        - cell "2026-10-01T10:12:25.347312Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "IssueComment"
+        - cell "Created"
+        - cell "Added comment on issue QARA-4"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:12:02.846827Z rafael.pineda@patolomius.com IssueLink Created Created issue link (RelatesTo) Metadata":
+        - cell "2026-10-01T10:12:02.846827Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "IssueLink"
+        - cell "Created"
+        - cell "Created issue link (RelatesTo)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T10:10:45.385928Z rafael.pineda@patolomius.com Issue Created Created issue QARA-4 Metadata":
+        - cell "2026-10-01T10:10:45.385928Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue QARA-4"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:35:44.953574Z rafael.pineda@patolomius.com Issue Updated Updated issue QARA-1 Metadata":
+        - cell "2026-10-01T06:35:44.953574Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-1"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:33:42.809658Z sabaye4398@pumpoly.com Issue Created Created issue QARA-3 Metadata":
+        - cell "2026-10-01T06:33:42.809658Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue QARA-3"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:33:31.022963Z sabaye4398@pumpoly.com Issue Removed Removed watcher on issue QARA-2 Metadata":
+        - cell "2026-10-01T06:33:31.022963Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Removed"
+        - cell "Removed watcher on issue QARA-2"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:33:12.439477Z sabaye4398@pumpoly.com Issue Updated Updated issue QARA-2 Metadata":
+        - cell "2026-10-01T06:33:12.439477Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-2"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:33:01.378473Z sabaye4398@pumpoly.com Issue Added Added watcher on issue QARA-2 Metadata":
+        - cell "2026-10-01T06:33:01.378473Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Added"
+        - cell "Added watcher on issue QARA-2"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:33:00.673463Z sabaye4398@pumpoly.com Issue Updated Updated issue QARA-2 Metadata":
+        - cell "2026-10-01T06:33:00.673463Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-2"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:32:59.74019Z sabaye4398@pumpoly.com Issue Transitioned Transitioned issue QARA-2 Metadata":
+        - cell "2026-10-01T06:32:59.74019Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue QARA-2"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:32:39.868435Z sabaye4398@pumpoly.com Issue Created Created issue QARA-2 Metadata":
+        - cell "2026-10-01T06:32:39.868435Z"
+        - cell "sabaye4398@pumpoly.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue QARA-2"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:30:22.101531Z mocekij762@pumpoly.com Sprint Created Created sprint QA Role Sprint 20261001 Metadata":
+        - cell "2026-10-01T06:30:22.101531Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Sprint"
+        - cell "Created"
+        - cell "Created sprint QA Role Sprint 20261001"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:29:57.697612Z mocekij762@pumpoly.com Issue Updated Updated issue QARA-1 Metadata":
+        - cell "2026-10-01T06:29:57.697612Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-1"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:29:43.907304Z mocekij762@pumpoly.com Issue Updated Updated issue QARA-1 Metadata":
+        - cell "2026-10-01T06:29:43.907304Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue QARA-1"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:29:42.958543Z mocekij762@pumpoly.com Issue Transitioned Transitioned issue QARA-1 Metadata":
+        - cell "2026-10-01T06:29:42.958543Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue QARA-1"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:29:22.135497Z mocekij762@pumpoly.com Issue Created Created issue QARA-1 Metadata":
+        - cell "2026-10-01T06:29:22.135497Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue QARA-1"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:28:54.934428Z mocekij762@pumpoly.com ProjectMember Added Added project member sabaye4398@pumpoly.com (Member) Metadata":
+        - cell "2026-10-01T06:28:54.934428Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member sabaye4398@pumpoly.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T06:28:01.060742Z mocekij762@pumpoly.com Project Created Created project QARA Metadata":
+        - cell "2026-10-01T06:28:01.060742Z"
+        - cell "mocekij762@pumpoly.com"
+        - cell "Project"
+        - cell "Created"
+        - cell "Created project QARA"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:54:11.714338Z rafael.pineda@patolomius.com Issue Updated Updated issue SPS-19 Metadata":
+        - cell "2026-10-01T05:54:11.714338Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:53:52.605002Z rafael.pineda@patolomius.com Issue Created Created issue SPS-20 Metadata":
+        - cell "2026-10-01T05:53:52.605002Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue SPS-20"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:53:19.043216Z rafael.pineda@patolomius.com Project Updated Updated project QAFYB Metadata":
+        - cell "2026-10-01T05:53:19.043216Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Updated project QAFYB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:52:52.856594Z rafael.pineda@patolomius.com Project Updated Restored project QAFYB Metadata":
+        - cell "2026-10-01T05:52:52.856594Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Restored project QAFYB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:52:25.792628Z rafael.pineda@patolomius.com Project Updated Archived project QAFYB Metadata":
+        - cell "2026-10-01T05:52:25.792628Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project QAFYB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:51:44.302223Z rafael.pineda@patolomius.com Project Created Created project QAFYB Metadata":
+        - cell "2026-10-01T05:51:44.302223Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Project"
+        - cell "Created"
+        - cell "Created project QAFYB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:43:52.74278Z rafael.pineda@patolomius.com Sprint Created Created sprint QA Regression Sprint 20261001 Metadata":
+        - cell "2026-10-01T05:43:52.74278Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Sprint"
+        - cell "Created"
+        - cell "Created sprint QA Regression Sprint 20261001"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:42:17.71233Z rafael.pineda@patolomius.com Issue Removed Removed watcher on issue SPS-19 Metadata":
+        - cell "2026-10-01T05:42:17.71233Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Removed"
+        - cell "Removed watcher on issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:42:11.185686Z rafael.pineda@patolomius.com Issue Added Added watcher on issue SPS-19 Metadata":
+        - cell "2026-10-01T05:42:11.185686Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Added"
+        - cell "Added watcher on issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:42:06.217966Z rafael.pineda@patolomius.com IssueComment Created Added comment on issue SPS-19 Metadata":
+        - cell "2026-10-01T05:42:06.217966Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "IssueComment"
+        - cell "Created"
+        - cell "Added comment on issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:41:41.346735Z rafael.pineda@patolomius.com Issue Updated Updated issue SPS-19 Metadata":
+        - cell "2026-10-01T05:41:41.346735Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:41:35.301986Z rafael.pineda@patolomius.com Issue Updated Updated issue SPS-19 Metadata":
+        - cell "2026-10-01T05:41:35.301986Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Updated"
+        - cell "Updated issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:41:13.857883Z rafael.pineda@patolomius.com Issue Transitioned Transitioned issue SPS-19 Metadata":
+        - cell "2026-10-01T05:41:13.857883Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Transitioned"
+        - cell "Transitioned issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-10-01T05:40:28.41067Z rafael.pineda@patolomius.com Issue Created Created issue SPS-19 Metadata":
+        - cell "2026-10-01T05:40:28.41067Z"
+        - cell "rafael.pineda@patolomius.com"
+        - cell "Issue"
+        - cell "Created"
+        - cell "Created issue SPS-19"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-30T09:03:21.42417Z john.peralta@patolomius.com Project Updated Archived project BTL Metadata":
+        - cell "2026-09-30T09:03:21.42417Z"
+        - cell "john.peralta@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project BTL"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-30T09:03:21.424162Z john.peralta@patolomius.com Project Updated Archived project XFYB Metadata":
+        - cell "2026-09-30T09:03:21.424162Z"
+        - cell "john.peralta@patolomius.com"
+        - cell "Project"
+        - cell "Updated"
+        - cell "Archived project XFYB"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-29T09:51:18.260555Z katheryn@patolomius.com ProjectMember Added Added project member harold@patolomius.com (Member) Metadata":
+        - cell "2026-09-29T09:51:18.260555Z"
+        - cell "katheryn@patolomius.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member harold@patolomius.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-29T09:51:05.558423Z katheryn@patolomius.com ProjectMember Added Added project member john.peralta@patolomius.com (Member) Metadata":
+        - cell "2026-09-29T09:51:05.558423Z"
+        - cell "katheryn@patolomius.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member john.peralta@patolomius.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-29T09:50:57.538612Z katheryn@patolomius.com ProjectMember Added Added project member alexandra.de@patolomius.com (Member) Metadata":
+        - cell "2026-09-29T09:50:57.538612Z"
+        - cell "katheryn@patolomius.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member alexandra.de@patolomius.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-29T09:50:43.669117Z katheryn@patolomius.com ProjectMember Added Added project member paul.cortezano@patolomius.com (Member) Metadata":
+        - cell "2026-09-29T09:50:43.669117Z"
+        - cell "katheryn@patolomius.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member paul.cortezano@patolomius.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-29T09:50:35.675807Z katheryn@patolomius.com ProjectMember Added Added project member lorraine@patolomius.com (Member) Metadata":
+        - cell "2026-09-29T09:50:35.675807Z"
+        - cell "katheryn@patolomius.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member lorraine@patolomius.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+      - row "2026-09-29T09:50:27.674584Z katheryn@patolomius.com ProjectMember Added Added project member loko@sharklasers.com (Member) Metadata":
+        - cell "2026-09-29T09:50:27.674584Z"
+        - cell "katheryn@patolomius.com"
+        - cell "ProjectMember"
+        - cell "Added"
+        - cell "Added project member loko@sharklasers.com (Member)"
+        - cell "Metadata":
+          - button "Metadata"
+  - generic: Page 1 of 92 · 4586 total
+  - button "Prev" [disabled]
+  - button "Next"

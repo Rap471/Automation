@@ -1,0 +1,95 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - button "6 Notifications":
+    - generic: "6"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme" [active]:
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Dashboard" [level=1]
+  - link "View Projects":
+    - /url: /projects
+    - button "View Projects"
+  - paragraph: Active Projects
+  - paragraph: "7"
+  - paragraph: Completed Issues
+  - paragraph: "87"
+  - paragraph: In Progress
+  - paragraph: "26"
+  - paragraph: High Priority
+  - paragraph: "2"
+  - heading "Recent Activity" [level=2]
+  - link "View all":
+    - /url: /activity
+  - generic: Rommel Ariola
+  - generic "Project DDK": DDK
+  - generic: DDK-187 assigned to Jose Lorenzo
+  - generic: Oct 6, 2026 3:07 PM assignment
+  - generic: Rommel Ariola
+  - generic "Project DDK": DDK
+  - generic: Created issue DDK-187 — Add Scratch Game (side game)
+  - generic: Oct 6, 2026 3:06 PM issue_created
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: DDK-186 assigned to Ivan Vestidas
+  - generic: Oct 6, 2026 3:02 PM assignment
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: DDK-186 assigned to Lalen Duero
+  - generic: Oct 6, 2026 3:02 PM assignment
+  - generic: Rommel Ariola
+  - generic "Project XFYB": XFYB
+  - generic: Archived project XFYB — XFYB
+  - generic: Oct 6, 2026 3:01 PM project_archived
+  - generic: Rommel Ariola
+  - generic "Project FL9": FL9
+  - generic: Archived project FL9 — 9 Floor
+  - generic: Oct 6, 2026 3:01 PM project_archived
+  - generic: Page 1 of 6
+  - button "Prev" [disabled]
+  - button "Next"
+  - heading "Active Sprints" [level=2]
+  - generic: No active sprints

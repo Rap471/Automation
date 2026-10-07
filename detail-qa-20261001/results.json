@@ -1,0 +1,474 @@
+[
+  {
+    "id": "U001",
+    "role": "Signed out",
+    "feature": "Login labels/empty submit",
+    "expected": "Clear labels and disabled empty submission",
+    "actual": "Email/Password labels and examples present; Sign in disabled empty.",
+    "status": "PASS"
+  },
+  {
+    "id": "U002",
+    "role": "Signed out",
+    "feature": "Malformed email validation",
+    "expected": "Reject malformed email clearly",
+    "actual": "Input type text; malformed email reached server; response uses generic credential failure rather than format feedback.",
+    "status": "OBSERVATION"
+  },
+  {
+    "id": "U003",
+    "role": "Signed out",
+    "feature": "Forgot-password text/back link",
+    "expected": "Recovery explanation, empty validation and return navigation",
+    "actual": "Reset password heading, non-disclosing explanation and disabled empty Send reset link. Email not submitted.",
+    "status": "PASS"
+  },
+  {
+    "id": "U004",
+    "role": "SuperAdmin",
+    "feature": "Profile shortcut/text",
+    "expected": "Shortcut opens correct profile with clear editability",
+    "actual": "Profile settings opens Settings/Profile, read-only name/email and explanation.",
+    "status": "PASS"
+  },
+  {
+    "id": "U005",
+    "role": "SuperAdmin",
+    "feature": "Theme toggle",
+    "expected": "Appearance changes; target-theme tooltip updates",
+    "actual": "Dark appearance verified in screenshot; light restored. Tooltip still says Switch to dark theme in dark mode.",
+    "status": "FAIL - tooltip text"
+  },
+  {
+    "id": "U006",
+    "role": "SuperAdmin",
+    "feature": "Preference labels",
+    "expected": "Every checkbox has accessible name and behavior explanation",
+    "actual": "Email/Desktop/Reaction explanatory text visible, but three checkboxes have no accessible names in DOM snapshot.",
+    "status": "FAIL - accessibility"
+  },
+  {
+    "id": "U007",
+    "role": "SuperAdmin",
+    "feature": "Account tab",
+    "expected": "Destructive account action clearly identified",
+    "actual": "Permanent warning visible; Delete Account disabled.",
+    "status": "PASS"
+  },
+  {
+    "id": "U008",
+    "role": "SuperAdmin",
+    "feature": "Project key search/sort/summary",
+    "expected": "Matching project and sort-mode feedback",
+    "actual": "QARA alone returned with correct name/key/summary, 2 parent issues; Sort by Newest toggled Name.",
+    "status": "PASS"
+  },
+  {
+    "id": "U009",
+    "role": "SuperAdmin",
+    "feature": "Empty project submission",
+    "expected": "Disabled submit or visible field-specific validation",
+    "actual": "Create enabled with all fields empty; click leaves form without visible validation or project creation.",
+    "status": "FAIL"
+  },
+  {
+    "id": "U010",
+    "role": "SuperAdmin",
+    "feature": "Issue whitespace summary",
+    "expected": "Whitespace must not enable Create",
+    "actual": "Whitespace-only summary leaves Create disabled.",
+    "status": "PASS"
+  },
+  {
+    "id": "U011",
+    "role": "SuperAdmin",
+    "feature": "Summary special characters",
+    "expected": "Persist and render literal text safely",
+    "actual": "QARA-4 saved literal <tag> & text in issue list and detail.",
+    "status": "PASS"
+  },
+  {
+    "id": "U012",
+    "role": "SuperAdmin",
+    "feature": "Issue edit cancel",
+    "expected": "Cancel discards unsaved summary",
+    "actual": "Original literal summary remains after Cancel.",
+    "status": "PASS"
+  },
+  {
+    "id": "U013",
+    "role": "SuperAdmin",
+    "feature": "Empty edit summary",
+    "expected": "Save disabled when summary empty",
+    "actual": "Empty edit Summary disabled Save; cancel restored original.",
+    "status": "PASS"
+  },
+  {
+    "id": "U014",
+    "role": "SuperAdmin",
+    "feature": "Issue link search/save",
+    "expected": "Find target and persist relationship",
+    "actual": "QARA-1 found by key; Relates to link added under QARA-4.",
+    "status": "PASS"
+  },
+  {
+    "id": "U015",
+    "role": "SuperAdmin",
+    "feature": "Comment editor/add",
+    "expected": "Empty disabled; entered text persists with author",
+    "actual": "Add Comment disabled empty; QA detail text & comment saved with rafael.pineda author.",
+    "status": "PASS"
+  },
+  {
+    "id": "U016",
+    "role": "SuperAdmin",
+    "feature": "Issue More actions",
+    "expected": "Menu has clear actions and avoids accidental execution",
+    "actual": "Watch, Send to chat and Delete displayed; sending/deletion not executed.",
+    "status": "INSPECTED"
+  },
+  {
+    "id": "U017",
+    "role": "SuperAdmin",
+    "feature": "Comment edit/save",
+    "expected": "Edited comment persists",
+    "actual": "QA detail comment edited 20261001 replaces original, author retained.",
+    "status": "PASS"
+  },
+  {
+    "id": "U018",
+    "role": "SuperAdmin",
+    "feature": "Priority HIGH filter",
+    "expected": "Only High issue remains",
+    "actual": "HIGH selection returns QARA-1 only, total 1; filter clear subsequent interaction diverted navigation, not counted as app defect.",
+    "status": "PASS"
+  },
+  {
+    "id": "U019",
+    "role": "SuperAdmin",
+    "feature": "Recent-update toggle",
+    "expected": "Label and filter activation change",
+    "actual": "Any update time toggles Recently updated; Clear filters enabled; all four today-updated issues remain.",
+    "status": "PASS"
+  },
+  {
+    "id": "U020",
+    "role": "SuperAdmin",
+    "feature": "Clear filters",
+    "expected": "Restore defaults and disable reset",
+    "actual": "Any update time restored and four records shown.",
+    "status": "PASS"
+  },
+  {
+    "id": "U021",
+    "role": "SuperAdmin",
+    "feature": "Issue Export download",
+    "expected": "Produce file or clear feedback",
+    "actual": "Export clicked, disabled during operation; no download captured within 10 seconds. Contents unverified.",
+    "status": "INCONCLUSIVE"
+  },
+  {
+    "id": "U022",
+    "role": "SuperAdmin",
+    "feature": "Calendar Next/Today text",
+    "expected": "Next changes month; Today returns current month",
+    "actual": "October to November then Today returns October 2026. Four events overflow to +1 more, which is plain generic text rather than link/button.",
+    "status": "OBSERVATION"
+  },
+  {
+    "id": "U023",
+    "role": "SuperAdmin",
+    "feature": "Story point validation",
+    "expected": "Reject invalid/non-positive values",
+    "actual": "0, -1, abc disables Save; explanatory positive integer text present.",
+    "status": "PASS"
+  },
+  {
+    "id": "U024",
+    "role": "Admin",
+    "feature": "Sprint assignment save",
+    "expected": "Selected sprint persists",
+    "actual": "QARA-4 Sprint displays QA Role Sprint 20261001 after Save.",
+    "status": "PASS"
+  },
+  {
+    "id": "U025",
+    "role": "Admin",
+    "feature": "Start sprint button",
+    "expected": "Planned transitions Active with controls updated",
+    "actual": "QA sprint changed Active; start date Oct1 and Complete sprint displayed.",
+    "status": "PASS"
+  },
+  {
+    "id": "U026",
+    "role": "Admin",
+    "feature": "Sprint Board consistency",
+    "expected": "Assigned issue appears in selected sprint",
+    "actual": "Active sprint Board shows QARA-4, 1 of 1 issue, To Do. Detail still displays QA Role Sprint.",
+    "status": "PASS"
+  },
+  {
+    "id": "U027",
+    "role": "Admin",
+    "feature": "Backlog counters after assignment",
+    "expected": "Show saved sprint membership",
+    "actual": "Initial navigation stale 0; fresh revisit/reload shows 1 in sprint and 2 parents in backlog.",
+    "status": "OBSERVATION"
+  },
+  {
+    "id": "U028",
+    "role": "Admin",
+    "feature": "Complete sprint",
+    "expected": "Sprint Completed; unfinished work returns backlog",
+    "actual": "Sprint list shows completed; QARA-4 moved to backlog; 0 in sprints and 3 in backlog.",
+    "status": "PASS"
+  },
+  {
+    "id": "U029",
+    "role": "Admin",
+    "feature": "Sprint required name",
+    "expected": "Empty submission reports required field",
+    "actual": "Sprint name is required message displayed; form remains.",
+    "status": "PASS"
+  },
+  {
+    "id": "U030",
+    "role": "Admin",
+    "feature": "Epic required name",
+    "expected": "Empty submission reports required field",
+    "actual": "Epic name is required message displayed; no object created.",
+    "status": "PASS"
+  },
+  {
+    "id": "U031",
+    "role": "Admin",
+    "feature": "Account role filter/search",
+    "expected": "Role filter restricts rows; nonexistent query empty",
+    "actual": "Admin option returned four Admin rows; zz-no-user-qa yields empty directory result. Global Admins statistic 15 includes broader semantics (likely SuperAdmin), requires label definition.",
+    "status": "PASS"
+  },
+  {
+    "id": "U032",
+    "role": "Admin",
+    "feature": "Audit empty filter",
+    "expected": "No matching actor shows clear empty state",
+    "actual": "No audit logs found matching your filters message.",
+    "status": "PASS"
+  },
+  {
+    "id": "U033",
+    "role": "Admin",
+    "feature": "Audit Clear",
+    "expected": "Restore unfiltered records",
+    "actual": "Clear returned populated records, Page 1 of 92, 4580 total.",
+    "status": "PASS"
+  },
+  {
+    "id": "U034",
+    "role": "Admin",
+    "feature": "Audit metadata expand",
+    "expected": "Reveal matching event metadata",
+    "actual": "Completed QA sprint row expands JSON including projectId, sprintId, name and toStatus2; start/assignment/comment/link records also present.",
+    "status": "PASS"
+  },
+  {
+    "id": "U035",
+    "role": "Member",
+    "feature": "Only my issues filter",
+    "expected": "Only current assignee records remain",
+    "actual": "Only my issues returns QARA-2 assigned sabye, 1 total.",
+    "status": "PASS"
+  },
+  {
+    "id": "U036",
+    "role": "Member",
+    "feature": "Issue/sprint count grammar",
+    "expected": "Singular nouns agree with count",
+    "actual": "Heading reads 1 active issues and 1 completed sprints.",
+    "status": "FAIL - text"
+  },
+  {
+    "id": "U037",
+    "role": "Member",
+    "feature": "Clear My issues",
+    "expected": "Full scoped list restores",
+    "actual": "Four issues visible, All assignees restored.",
+    "status": "PASS"
+  },
+  {
+    "id": "U038",
+    "role": "Member",
+    "feature": "Status Done filter",
+    "expected": "Empty match has explanatory text",
+    "actual": "Done filter shows zero total and No issues match your filters.",
+    "status": "PASS"
+  },
+  {
+    "id": "U039",
+    "role": "Member",
+    "feature": "Cross-author issue edit",
+    "expected": "Project Member can update ordinary shared issue if permitted",
+    "actual": "SuperAdmin-created QARA-4 summary saved with Member verified suffix.",
+    "status": "PASS"
+  },
+  {
+    "id": "U040",
+    "role": "Member",
+    "feature": "Other author comment controls",
+    "expected": "Ordinary Member cannot edit/delete someone else comment",
+    "actual": "SuperAdmin comment readable; no Edit/Delete controls shown in Comments tab.",
+    "status": "PASS"
+  },
+  {
+    "id": "U041",
+    "role": "Member",
+    "feature": "New message recipient search",
+    "expected": "Open searchable recipient UI and empty feedback",
+    "actual": "Find a person field opens; nonexistent query has no visible match; no DM created.",
+    "status": "INSPECTED"
+  },
+  {
+    "id": "U042",
+    "role": "Member",
+    "feature": "Group chat form/cancel",
+    "expected": "Empty creation disabled and cancellable",
+    "actual": "Group name, member search/choices; Create disabled empty; no group created.",
+    "status": "INSPECTED"
+  },
+  {
+    "id": "U043",
+    "role": "Member",
+    "feature": "Channel Members restrictions",
+    "expected": "Members readable; management restricted",
+    "actual": "Two members listed; Members settings and Delete channel disabled.",
+    "status": "PASS"
+  },
+  {
+    "id": "U044",
+    "role": "Member",
+    "feature": "Chat whitespace validation",
+    "expected": "Whitespace should not enable Send",
+    "actual": "Send remains disabled for three spaces; composer cleared, no message sent.",
+    "status": "PASS"
+  },
+  {
+    "id": "U045",
+    "role": "Member",
+    "feature": "Wiki Create without space",
+    "expected": "Disable or explain selection requirement",
+    "actual": "Enabled +Create produces no dialog or feedback without selected space; welcome text mentions selecting space.",
+    "status": "FAIL - control feedback"
+  },
+  {
+    "id": "U046",
+    "role": "Member",
+    "feature": "Wiki root create/save",
+    "expected": "Named QA draft saves title/tags with version",
+    "actual": "Create at root > Create page opens template/editor; QA UI Draft 20261001 title and qa/regression tags saved, v2. UI explicitly says frontend-only prototype/localStorage; server persistence not established.",
+    "status": "PASS"
+  },
+  {
+    "id": "U047",
+    "role": "Member",
+    "feature": "Wiki +Create alternative",
+    "expected": "Same creation action should respond or explain restriction",
+    "actual": "+Create did nothing before and after space selection, while Create at root opened choices.",
+    "status": "FAIL"
+  },
+  {
+    "id": "U048",
+    "role": "Member",
+    "feature": "Wiki Cancel title/metadata",
+    "expected": "Cancel discards title edit and preserves saved metadata",
+    "actual": "Title reverted correctly, but author changed sabaye4398 to api@system; version v2 to v0, tags disappeared after Cancel.",
+    "status": "FAIL"
+  },
+  {
+    "id": "U049",
+    "role": "Member",
+    "feature": "Password form labels/cancel",
+    "expected": "Correct three fields, empty update blocked, cancellable",
+    "actual": "Current/New/Confirm password labels and disabled empty Update visible. No credential entered.",
+    "status": "PASS"
+  },
+  {
+    "id": "U050",
+    "role": "Member",
+    "feature": "Direct /admin",
+    "expected": "Deny all administrative pages",
+    "actual": "Access denied shown.",
+    "status": "PASS"
+  },
+  {
+    "id": "U051",
+    "role": "Member",
+    "feature": "Direct /admin/accounts",
+    "expected": "Deny all administrative pages",
+    "actual": "Access denied shown.",
+    "status": "PASS"
+  },
+  {
+    "id": "U052",
+    "role": "Member",
+    "feature": "Direct /admin/analytics",
+    "expected": "Deny all administrative pages",
+    "actual": "Access denied shown.",
+    "status": "PASS"
+  },
+  {
+    "id": "U053",
+    "role": "Member",
+    "feature": "Direct /admin/system",
+    "expected": "Deny all administrative pages",
+    "actual": "Access denied shown.",
+    "status": "PASS"
+  },
+  {
+    "id": "U054",
+    "role": "Member",
+    "feature": "Direct /admin/audit-logs",
+    "expected": "Deny all administrative pages",
+    "actual": "Access denied shown.",
+    "status": "PASS"
+  },
+  {
+    "id": "U055",
+    "role": "SuperAdmin",
+    "feature": "System disabled actions",
+    "expected": "Unavailable diagnostic/configuration actions explained",
+    "actual": "Unknown services/resources; Refresh/Configure/HealthCheck/Optimize/ClearCache all disabled, without explicit reason.",
+    "status": "OBSERVATION"
+  },
+  {
+    "id": "U056",
+    "role": "SuperAdmin",
+    "feature": "Project edit Cancel",
+    "expected": "Unsaved name discarded",
+    "actual": "Original QA Role Admin 20261001 retained.",
+    "status": "PASS"
+  },
+  {
+    "id": "U057",
+    "role": "SuperAdmin",
+    "feature": "Project description save",
+    "expected": "Literal updated description persists",
+    "actual": "Description saved UI summary & description verified text. Project key/type unchanged.",
+    "status": "PASS"
+  },
+  {
+    "id": "U058",
+    "role": "SuperAdmin",
+    "feature": "Project Group Add/Save",
+    "expected": "Named group persists",
+    "actual": "QA UI group saved; Unassigned team lead; Active status.",
+    "status": "PASS"
+  },
+  {
+    "id": "U059",
+    "role": "SuperAdmin",
+    "feature": "Enabled Pages controls",
+    "expected": "Available page toggles reflect enabled state and have distinct names",
+    "actual": "All four checkboxes and Save Changes disabled; all named toggle. Timeline unchecked while Gantt nav exists. No settings change possible.",
+    "status": "OBSERVATION"
+  }
+]

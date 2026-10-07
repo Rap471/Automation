@@ -1,0 +1,298 @@
+[
+  {
+    "id": "M01",
+    "role": "Member",
+    "feature": "Login / empty dashboard",
+    "expected": "Authenticate and show only scoped data",
+    "actual": "Signed in as sabaye4398; all dashboard totals zero; Admin absent",
+    "status": "PASS"
+  },
+  {
+    "id": "M02",
+    "role": "Member",
+    "feature": "Project creation permission",
+    "expected": "Allow permitted creation or show relevant denial",
+    "actual": "Add Project form visible, but Create denied with unrelated file-attachment permission message",
+    "status": "FAIL - error feedback"
+  },
+  {
+    "id": "M03",
+    "role": "Member",
+    "feature": "Direct Admin route",
+    "expected": "Deny non-admin access",
+    "actual": "Access denied page shown",
+    "status": "PASS"
+  },
+  {
+    "id": "M04",
+    "role": "Member",
+    "feature": "Unrelated project settings",
+    "expected": "Deny non-member access",
+    "actual": "QAFYB settings redirected to Dashboard",
+    "status": "PASS"
+  },
+  {
+    "id": "M05",
+    "role": "Member",
+    "feature": "Activity / notifications / chat",
+    "expected": "Load scoped pages and explain empty states",
+    "actual": "No activity; one assignment notification; chat no-project state; send disabled",
+    "status": "PASS - load only"
+  },
+  {
+    "id": "M06",
+    "role": "Member",
+    "feature": "Wiki / profile / logout",
+    "expected": "Load UI and end session",
+    "actual": "Wiki spaces visible; profile read-only; Logout returned to login",
+    "status": "PASS - load/logout"
+  },
+  {
+    "id": "A01",
+    "role": "Admin",
+    "feature": "Login / navigation",
+    "expected": "Authenticate with Admin UI",
+    "actual": "moce signed in; Admin present; no assigned projects; dashboard zero",
+    "status": "PASS"
+  },
+  {
+    "id": "A02",
+    "role": "Admin",
+    "feature": "Account directory / own account",
+    "expected": "Directory usable and self-delete blocked",
+    "actual": "253 users / 38 active; moce role Admin; detail read-only; own Delete disabled",
+    "status": "PASS"
+  },
+  {
+    "id": "A03",
+    "role": "Admin",
+    "feature": "Create-user form",
+    "expected": "Limit assignable roles and block empty submit",
+    "actual": "User/Admin options only; no SuperAdmin; empty Create disabled; not submitted",
+    "status": "PASS - form only"
+  },
+  {
+    "id": "A04",
+    "role": "Admin",
+    "feature": "Administration dashboard and analytics",
+    "expected": "System totals should agree with the user directory and audit data",
+    "actual": "Dashboard shows 0 users and no audits; directory has 253 users and audit logs 4558 records. Analytics global issue counts remain populated.",
+    "status": "FAIL"
+  },
+  {
+    "id": "A05",
+    "role": "Admin",
+    "feature": "Audit log filter",
+    "expected": "Actor filter should restrict visible records",
+    "actual": "Actor filter shows 21 records, all attributed to mocekij762@pumpoly.com.",
+    "status": "PASS"
+  },
+  {
+    "id": "A06",
+    "role": "Admin",
+    "feature": "Create Scrum project",
+    "expected": "Admin may create a project and receive Project Admin membership",
+    "actual": "QARA created successfully; list shows Project Admin and 0 issues.",
+    "status": "PASS"
+  },
+  {
+    "id": "A07",
+    "role": "Admin",
+    "feature": "Add project Member",
+    "expected": "Project Admin may add supplied test user as Member to QA-only project",
+    "actual": "sabye added to QARA as Member; existing Admin remains Project Admin.",
+    "status": "PASS"
+  },
+  {
+    "id": "A08",
+    "role": "Admin",
+    "feature": "Create/edit/transition/assign issue",
+    "expected": "Changes should persist and history identify actor",
+    "actual": "QARA-1 created; summary updated, High priority, In Progress and assigned moce. History records transitions and assignment.",
+    "status": "PASS"
+  },
+  {
+    "id": "A09",
+    "role": "Admin",
+    "feature": "Create sprint",
+    "expected": "Sprint should persist as planned",
+    "actual": "QA Role Sprint 20261001 saved as planned, 0 issues, capacity 0.",
+    "status": "PASS"
+  },
+  {
+    "id": "A10",
+    "role": "Admin",
+    "feature": "Create epic",
+    "expected": "Undated epic should persist as Planned",
+    "actual": "QA Role Epic 20261001 appears Planned with 0 linked issues.",
+    "status": "PASS"
+  },
+  {
+    "id": "A11",
+    "role": "Admin",
+    "feature": "Board/calendar/backlog",
+    "expected": "Views should respect sprint and issue dates",
+    "actual": "Board empty for selected empty sprint; backlog shows QARA-1; calendar start Oct1/due Oct3.",
+    "status": "PASS"
+  },
+  {
+    "id": "A12",
+    "role": "Admin",
+    "feature": "Gantt undated epic",
+    "expected": "Missing dates should remain unset",
+    "actual": "Undated QA epic plotted Oct1 2025–Oct1 2027.",
+    "status": "FAIL"
+  },
+  {
+    "id": "M07",
+    "role": "Member",
+    "feature": "Assigned project/dashboard",
+    "expected": "Membership should make QA project and its issue metrics visible",
+    "actual": "Dashboard now shows 1 active project, 1 In Progress, 1 High Priority. Project role Member.",
+    "status": "PASS"
+  },
+  {
+    "id": "M08",
+    "role": "Member",
+    "feature": "Project settings authorization",
+    "expected": "Member should not manage project configuration",
+    "actual": "Settings link hidden; direct QARA/settings redirects to dashboard.",
+    "status": "PASS"
+  },
+  {
+    "id": "M09",
+    "role": "Member",
+    "feature": "Issue lifecycle/watch",
+    "expected": "Member may create and update issues in assigned project",
+    "actual": "QARA-2 created, edited, In Progress, assigned sabye. Watch/unwatch history persisted.",
+    "status": "PASS"
+  },
+  {
+    "id": "M10",
+    "role": "Member",
+    "feature": "Create subtask",
+    "expected": "Subtask should be linked to parent",
+    "actual": "QARA-3 QA Member subtask appears in QARA-2 details.",
+    "status": "PASS"
+  },
+  {
+    "id": "M11",
+    "role": "Member",
+    "feature": "Sprint administration controls",
+    "expected": "Member should view sprint without creation/management controls",
+    "actual": "Create Sprint hidden; sprint detail shows read-only dates/state/issues and no start/complete controls.",
+    "status": "PASS"
+  },
+  {
+    "id": "M12",
+    "role": "Member",
+    "feature": "Epic access",
+    "expected": "Member epic permissions should match the product role policy.",
+    "actual": "Member successfully created QA Member Epic 20261001 (QARA-4AD804), Planned. This is broader than sprint permissions; intended epic policy was not provided.",
+    "status": "OBSERVATION"
+  },
+  {
+    "id": "M13",
+    "role": "Member",
+    "feature": "Board/calendar/backlog/Gantt",
+    "expected": "Read views should match scoped QA records",
+    "actual": "Empty selected sprint board; 2 parent backlog issues; calendar includes 3 issues/subtask; Gantt renders all 3 plus undated epic fallback. Backlog start/create sprint hidden.",
+    "status": "PASS"
+  },
+  {
+    "id": "M14",
+    "role": "Member",
+    "feature": "Project chat",
+    "expected": "Member should access project channel after membership",
+    "actual": "QARA general channel visible, 2 members and empty composer; no messages sent.",
+    "status": "PASS"
+  },
+  {
+    "id": "S01",
+    "role": "SuperAdmin",
+    "feature": "Login/global scope",
+    "expected": "SuperAdmin should see global projects and administer QA fixture",
+    "actual": "Dashboard 80 active projects; QARA settings accessible despite not being its project member.",
+    "status": "PASS"
+  },
+  {
+    "id": "S02",
+    "role": "SuperAdmin",
+    "feature": "Issue key search",
+    "expected": "Key search should restrict results",
+    "actual": "QARA-2 search returns just the Member parent issue.",
+    "status": "PASS"
+  },
+  {
+    "id": "S03",
+    "role": "SuperAdmin",
+    "feature": "Cross-project issue edit",
+    "expected": "SuperAdmin can edit QA issue created by Admin",
+    "actual": "QARA-1 summary updated with SuperAdmin verified suffix.",
+    "status": "PASS"
+  },
+  {
+    "id": "S04",
+    "role": "SuperAdmin",
+    "feature": "User role verification/create-user form",
+    "expected": "SuperAdmin role choices should exceed Admin choices",
+    "actual": "Member account is global User/Active, display sabye. SuperAdmin new-user form offers User/Admin/SuperAdmin versus Admin User/Admin only; not submitted.",
+    "status": "PASS"
+  },
+  {
+    "id": "S05",
+    "role": "SuperAdmin",
+    "feature": "Project configuration tabs",
+    "expected": "All configuration tabs should render",
+    "actual": "Story Points, Dependencies, Workflow, Enabled Pages and Project Groups open; no configurations submitted.",
+    "status": "PASS"
+  },
+  {
+    "id": "S06",
+    "role": "SuperAdmin",
+    "feature": "Admin dashboard metrics",
+    "expected": "Global user totals should match directory",
+    "actual": "SuperAdmin dashboard repeats zero users/active users and no recent user/audit data, while directory shows 253/38.",
+    "status": "FAIL"
+  },
+  {
+    "id": "A13",
+    "role": "Admin",
+    "feature": "SuperAdmin account edit protection",
+    "expected": "Admin should not change SuperAdmin role",
+    "actual": "Role dropdown disabled; Name/Email/Active editable UI; no account changes submitted. Delete/Assign controls enabled, backend restrictions unverified.",
+    "status": "OBSERVATION"
+  },
+  {
+    "id": "A14",
+    "role": "Admin",
+    "feature": "Activity/inbox/wiki/profile",
+    "expected": "Ancillary views should load under Admin",
+    "actual": "Activity shows QARA actions including Member events; inbox clear; wiki spaces listed; profile moce and supplied email displayed. No messages or profile edits submitted.",
+    "status": "PASS"
+  },
+  {
+    "id": "M15",
+    "role": "Member",
+    "feature": "Project archive enforcement",
+    "expected": "Member should not archive project and controls should reflect permission",
+    "actual": "Archive control and confirmation visible, submission denied with Insufficient project role. QARA remains active. Backend permission passes; misleading enabled control fails usability.",
+    "status": "FAIL"
+  },
+  {
+    "id": "M16",
+    "role": "Member",
+    "feature": "Logout",
+    "expected": "Logout should end session",
+    "actual": "Login screen displayed after logout.",
+    "status": "PASS"
+  },
+  {
+    "id": "A15",
+    "role": "Admin",
+    "feature": "Sprint detail/report follow-up",
+    "expected": "Sprint detail should remain responsive",
+    "actual": "Browser tab stalled when revisiting sprint detail as Admin; clean-tab recovery succeeded. Cannot attribute to app or browser; report/export tests incomplete.",
+    "status": "BLOCKED"
+  }
+]

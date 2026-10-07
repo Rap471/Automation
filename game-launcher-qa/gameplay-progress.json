@@ -1,0 +1,182 @@
+[
+  {
+    "id": "00010525",
+    "name": "Sugar Wonderland",
+    "spin": "pass",
+    "scratch": "purchase/manual/scratch-all/payout pass",
+    "turbo": "toggle and turbo autoplay pass",
+    "autoplay": "10 spins completed",
+    "buy": "100 debited, 426.30 bonus, reload recovery pass"
+  },
+  {
+    "id": "00020525",
+    "name": "Kobo Ass",
+    "spin": "pass",
+    "scratch": "purchase/manual/Scratch All completed (0 win)",
+    "turbo": "toggle and autoplay pass",
+    "autoplay": "started and stopped with 3 remaining",
+    "buy": "100 debited; 13-spin bonus recovered after competing session; 231.30 credited (12577.55 to 12808.85)"
+  },
+  {
+    "id": "00030525",
+    "name": "Felice in Space",
+    "spin": "pass",
+    "scratch": "manual/Scratch All, 2-credit payout",
+    "turbo": "toggle/autoplay pass",
+    "autoplay": "isolated run stopped with 4 remaining",
+    "buy": "100 buy; 10 free spins completed; displayed bonus total 21.45"
+  },
+  {
+    "id": "00040625",
+    "name": "Hustle The Blazing Horse",
+    "spin": "pass",
+    "scratch": "purchase/Scratch All completed",
+    "turbo": "toggle and autoplay pass",
+    "autoplay": "10-spin run completed",
+    "buy": "100 buy completed; displayed win 276.30; balance 10636.75"
+  },
+  {
+    "id": "00050725",
+    "name": "War Freaks",
+    "spin": "pass",
+    "scratch": "3x3 purchase/Scratch All pass",
+    "turbo": "toggle/autoplay pass",
+    "autoplay": "run entered natural 15-spin bonus; displayed 19.75; resumed",
+    "buy": "100 buy completed; balance 10074.15 after settlement"
+  },
+  {
+    "name": "Rainbow Fist",
+    "id": "00060725",
+    "spin": "Pass; 0.40 win settled",
+    "scratch": "Pass; manual scratch and Scratch All 4x4",
+    "turbo": "Pass; enabled green",
+    "autoplay": "10 selected; observed remaining 4 then stop",
+    "buy": "Pass; 100 purchased, free spins total79.50 credited, balance9976.35"
+  },
+  {
+    "name": "That's Bait",
+    "id": "00070725",
+    "spin": "Pass",
+    "scratch": "Pass; 5x5 purchased2.40 manual/ScratchAll",
+    "turbo": "Pass; green enabled",
+    "autoplay": "Pass; observed7remaining and stop",
+    "buy": "Completed15.50 credited; clicking completion near spin also triggered one normalspin (needs reproduction)"
+  },
+  {
+    "name": "Sk8leton",
+    "id": "00080925",
+    "spin": "Pass",
+    "scratch": "Pass;4x4 manual/ScratchAll",
+    "turbo": "Pass;enabled green",
+    "autoplay": "10run completed; stop attempt during win did not immediately cancel",
+    "buy": "Pass;100 purchase completed, balance9897->9952 (+55)"
+  },
+  {
+    "name": "Grave Threat",
+    "id": "00090725",
+    "spin": "Pass",
+    "scratch": "Pass;4x4 manual/ScratchAll",
+    "turbo": "Pass",
+    "autoplay": "Pass;10 completed",
+    "buy": "v1 100 completed; balance9892.45->9893.85; v2 untested"
+  },
+  {
+    "name": "Boobie Trap",
+    "id": "00100925",
+    "spin": "Pass",
+    "scratch": "Pass;4x4 ScratchAll",
+    "turbo": "Pass;enabled green",
+    "autoplay": "Pass;10run observed; Beelze stop before completion",
+    "buy": "Pass;v1 78 purchased;balance9910.95->9974.20 (+63.25);other variants untested"
+  },
+  {
+    "name": "Zero Law",
+    "id": "00110925",
+    "spin": "Pass",
+    "scratch": "Pass;4x4 manual/ScratchAll",
+    "turbo": "Pass;enabled green",
+    "autoplay": "Pass;10run observed; Beelze stop before completion",
+    "buy": "Pass;v1 78 purchased;balance9913.30->10003.40 (+90.10);other variants untested"
+  },
+  {
+    "name": "Beelze-Bop",
+    "id": "00120925",
+    "spin": "Pass",
+    "scratch": "Pass;4x4 manual/ScratchAll",
+    "turbo": "Pass;enabled green",
+    "autoplay": "Pass;10run observed; Beelze stop before completion",
+    "buy": "Pass;100 bonus completed;balance9892.95->9932.85"
+  },
+  {
+    "index": 13,
+    "name": "The Shuten Doji",
+    "spin": "Pass",
+    "scratch": "Manual and Scratch All completed",
+    "turbo": "Enabled",
+    "autoplay": "10 spins completed",
+    "buy": "Default bonus completed; credited 80.85"
+  },
+  {
+    "index": 14,
+    "name": "Genghis Bao",
+    "spin": "Pass",
+    "scratch": "Manual and Scratch All completed",
+    "turbo": "Enabled",
+    "autoplay": "10 spins completed",
+    "buy": "Default100 bonus completed; balance9897.50->10351.50 (+454)"
+  },
+  {
+    "index": 15,
+    "name": "Trippy Cat",
+    "spin": "Pass",
+    "scratch": "Manual and Scratch All completed",
+    "turbo": "Enabled",
+    "autoplay": "10 spins completed",
+    "buy": "Default USD75 feature completed; 30.30 credited"
+  },
+  {
+    "index": 16,
+    "name": "Pastry Cub",
+    "spin": "Pass",
+    "scratch": "Manual and Scratch All completed",
+    "turbo": "Enabled",
+    "autoplay": "10 spins completed",
+    "buy": "Default bonus completed; credited 11.30"
+  },
+  {
+    "index": 17,
+    "name": "Blockchain Blitz",
+    "spin": "Pass",
+    "scratch": "4x4 manual and Scratch All completed;0win",
+    "turbo": "Enabled",
+    "autoplay": "10 completed; Oppals natural bonus1.50",
+    "buy": "75 feature completed;balance9914.90->9918.20"
+  },
+  {
+    "index": 19,
+    "name": "Oppals",
+    "spin": "Pass",
+    "scratch": "4x4 manual and Scratch All completed;0win",
+    "turbo": "Enabled",
+    "autoplay": "10 completed; Oppals natural bonus1.50",
+    "buy": "Default100 bonus completed;balance9888.50->9994.20 (+105.70)"
+  },
+  {
+    "index": 21,
+    "name": "Mars Triumph",
+    "spin": "Pass",
+    "scratch": "4x4 manual and Scratch All completed;0win",
+    "turbo": "Enabled",
+    "autoplay": "10 completed; Oppals natural bonus1.50",
+    "buy": "100 feature completed;balance9889.80->9900.30"
+  },
+  {
+    "index": 23,
+    "name": "Jungle Fruity",
+    "spin": "Pass",
+    "scratch": "4x4 manual and Scratch All completed;0win",
+    "turbo": "Enabled",
+    "autoplay": "10 completed; Oppals natural bonus1.50",
+    "buy": "100 debited; scatter result remained for >3min; bonus not started; recovery pending"
+  }
+]

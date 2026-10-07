@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Live QA Center</title>
+  <style>
+    :root { color-scheme: dark; --bg:#10141c; --card:#1b2330; --text:#e7eef8; --muted:#93a1b5; --line:#2d3a4d; --ok:#1f8f4e; --bad:#c43838; --warn:#b8860b; --run:#2f6fed; }
+    * { box-sizing: border-box; }
+    body { margin:0; font:14px/1.45 Segoe UI, sans-serif; background:var(--bg); color:var(--text); }
+    header, main { padding:20px 24px; }
+    header { display:flex; justify-content:space-between; gap:16px; align-items:flex-end; border-bottom:1px solid var(--line); }
+    h1, h2 { margin:0; font-weight:650; }
+    h2 { font-size:16px; margin-bottom:10px; }
+    .muted { color:var(--muted); }
+    .row { display:flex; gap:8px; align-items:center; flex-wrap:wrap; }
+    button, select { background:var(--card); color:var(--text); border:1px solid var(--line); border-radius:999px; padding:6px 12px; cursor:pointer; font:inherit; }
+    button.active { border-color:var(--text); }
+    button.go { background:var(--ok); border-color:var(--ok); color:#fff; }
+    button.halt { background:var(--bad); border-color:var(--bad); color:#fff; }
+    button:disabled, select:disabled { opacity:.45; cursor:default; }
+    #controls { justify-content:flex-end; margin-bottom:8px; }
+    .game-list { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 18px; }
+    .game-pick { display:flex; gap:8px; align-items:center; background:var(--card); border:1px solid var(--line); border-radius:999px; padding:6px 12px; }
+    .game-pick input { accent-color: var(--ok); }
+    #runner-log { max-width:420px; max-height:72px; overflow:auto; white-space:pre-wrap; font:12px/1.35 Consolas, monospace; text-align:right; }
+    .layout { display:grid; grid-template-columns: minmax(0, 1fr) 340px; gap:20px; }
+    .stats, .health, .cards { display:grid; gap:10px; }
+    .stats { grid-template-columns: repeat(6, minmax(90px, 1fr)); margin:16px 0; }
+    .health { grid-template-columns: 160px repeat(4, minmax(90px, 1fr)); margin-bottom:16px; }
+    .stat, .card, .panel { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px; }
+    .stat strong, .score { display:block; font-size:28px; }
+    .cards { grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); }
+    .card { cursor:pointer; }
+    .card.selected { outline:1px solid var(--text); }
+    .dot { width:10px; height:10px; border-radius:50%; display:inline-block; background:var(--muted); }
+    .PASS, .ok { background:var(--ok); }
+    .FAIL, .bad { background:var(--bad); }
+    .RUNNING, .run { background:var(--run); }
+    .BLOCKED, .WARN, .warn { background:var(--warn); }
+    .PENDING, .not-applicable, .blocked { background:var(--muted); }
+    .pill { display:inline-block; min-width:72px; text-align:center; padding:2px 8px; border-radius:999px; font-size:12px; font-weight:700; background:#66788d; }
+    .pill.pass { background:var(--ok); }
+    .pill.fail { background:var(--bad); }
+    .pill.warn { background:var(--warn); }
+    .pill.running { background:var(--run); }
+    .balance-table td:last-child, .balance-table th:last-child { text-align:left; }
+    .balance-table { margin:8px 0 18px; }
+    .checks { margin:8px 0 0; padding:0; list-style:none; }
+    .checks li { display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-top:6px; }
+    .checks li .name { flex:1; }
+    .checks img { flex: 1 0 100%; width: 100%; max-height: 520px; object-fit: contain; object-position: left top; background: #111; border-radius: 8px; border: 1px solid var(--line); }
+    .feed { display:flex; flex-direction:column; gap:8px; max-height:70vh; overflow:auto; }
+    .event { border-bottom:1px solid var(--line); padding-bottom:8px; }
+    .alert { border-color:#6e2a2a; }
+    a { color:#9ec1ff; }
+    img { max-width:100%; margin-top:8px; border-radius:8px; border:1px solid var(--line); }
+    table { width:100%; border-collapse:collapse; }
+    td { padding:4px 0; vertical-align:top; }
+    td:last-child { text-align:right; }
+    @media (max-width: 980px) { .layout, .stats, .health { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Live QA Center</h1>
+      <p class="muted" id="subtitle">Waiting for workers</p>
+    </div>
+    <div>
+      <div class="row" id="controls">
+        <select id="suite" aria-label="Test suite">
+          <option value="balance">Balance</option>
+          <option value="scratch">Scratch</option>
+          <option value="regression">Regression</option>
+        </select>
+        <button type="button" class="go" id="start">Start</button>
+        <button type="button" class="halt" id="stop" disabled>Stop</button>
+        <span class="muted" id="runner">Idle</span>
+      </div>
+      <div class="row" id="modes">
+        <button type="button" class="active" data-mode="live">Live</button>
+        <button type="button" data-mode="history">History</button>
+      </div>
+      <p class="muted" id="runner-log"></p>
+    </div>
+  </header>
+  <main>
+    <section class="stats" id="stats"></section>
+    <section class="health" id="health"></section>
+    <div class="layout">
+      <div>
+        <section id="alerts"></section>
+        <h2>Games to test</h2>
+        <p class="muted">Check the games for the next run. Scratch and Balance test every checked game, one after another.</p>
+        <div class="row" style="margin-bottom:8px">
+          <button type="button" id="games-all">All</button>
+          <button type="button" id="games-none">None</button>
+        </div>
+        <div class="game-list" id="game-list"></div>
+        <h2>Games</h2>
+        <p class="muted" id="reports"></p>
+        <section class="cards" id="cards"></section>
+        <section id="detail"></section>
+      </div>
+      <aside>
+        <h2>Live events</h2>
+        <div class="feed" id="feed"></div>
+      </aside>
+    </div>
+  </main>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    let mode = "live";
+    let run = "";
+    let selected = "";
+    let selectedSpin = null;
+    let latest = null;
+
+    const money = (value) => value == null || Number.isNaN(Number(value)) ? "—" : `$${Number(value).toFixed(2)}`;
+    const esc = (value) => String(value ?? "").replace(/[&<>"]/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[char]));
+    const clock = (iso) => iso ? new Date(iso).toLocaleTimeString() : "";
+    const runWhen = (name) => {
+      const match = String(name).match(/^(\d{4})-(\d{2})-(\d{2})T(\d{2})-(\d{2})-(\d{2})/);
+      if (!match) return String(name).replace(/\.json$/, "");
+      const when = new Date(Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]), Number(match[4]), Number(match[5]), Number(match[6])));
+      return when.toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", second: "2-digit" });
+    };
+    const duration = (start, now) => {
+      if (!start) return "—";
+      const seconds = Math.max(0, Math.round((new Date(now) - new Date(start)) / 1000));
+      const hours = String(Math.floor(seconds / 3600)).padStart(2, "0");
+      const minutes = String(Math.floor((seconds % 3600) / 60)).padStart(2, "0");
+      const rest = String(seconds % 60).padStart(2, "0");
+      return `${hours}:${minutes}:${rest}`;
+    };
+    const mark = (value) => value == null ? "—" : value ? "Match" : "Mismatch";
+
+    function render(state) {
+      latest = state;
+      $("subtitle").textContent = `${state.status} · started ${state.started ? new Date(state.started).toLocaleTimeString() : "—"} · ${duration(state.started, state.now)} · refreshed ${new Date(state.now).toLocaleTimeString()}`;
+      const count = (label, value) => `<div class="stat"><span class="muted">${label}</span><strong>${value}</strong></div>`;
+      $("stats").innerHTML = [
+        count("Games", state.counts.games),
+        count("Running", state.counts.running),
+        count("Passed", state.counts.passed),
+        count("Failed", state.counts.failed),
+        count("Pending", state.counts.pending),
+        count("Blocked", state.counts.blocked),
+        count("Spins", state.spins),
+        count("Wins", state.wins),
+        count("Errors", state.errors),
+      ].join("");
+      const score = (label, value) => `<div class="stat"><span class="muted">${label}</span><strong>${value == null ? "—" : `${value}%`}</strong></div>`;
+      const tone = state.health.overall == null ? "No scored checks yet" : state.health.overall >= 90 ? "Healthy" : state.health.overall >= 75 ? "Watch" : "At risk";
+      $("health").innerHTML = `<div class="stat"><span class="muted">QA health</span><span class="score">${state.health.overall == null ? "—" : `${state.health.overall}%`}</span><span class="muted">${tone}</span></div>${score("Functional", state.health.functional)}${score("Balance", state.health.balance)}${score("Network", state.health.network)}${score("UI", state.health.ui)}`;
+      $("alerts").innerHTML = state.alerts.length ? `<h2>Balance mismatches</h2>${state.alerts.map((alert) => `<article class="panel alert"><strong>${esc(alert.game)} · Spin #${esc(alert.spin)}</strong><table><tr><td>UI balance</td><td>${money(alert.ui)}</td></tr><tr><td>Backend balance</td><td>${money(alert.be)}</td></tr><tr><td>Difference</td><td>${money(alert.difference)}</td></tr><tr><td>Transaction</td><td>${esc(alert.transaction || "—")}</td></tr><tr><td>Popup</td><td>${esc(alert.popup || "—")}</td></tr></table><p>${esc(alert.details)}</p>${alert.screenshot ? `<a href="/artifacts/${esc(alert.screenshot)}">Screenshot</a>` : ""}${alert.responsePath ? ` <a href="/artifacts/${esc(alert.responsePath)}">Network response</a>` : ""}</article>`).join("")}` : "";
+      const cards = [...state.cards].sort((left, right) => Number((right.checks || []).some((check) => check.name === "Buy Scratch")) - Number((left.checks || []).some((check) => check.name === "Buy Scratch")));
+      const reportLinks = (state.reports || []).map((item) => `<a href="${esc(item.href)}">${esc(item.label)}</a>`).join(" · ");
+      if ($("reports").dataset.sig !== reportLinks) {
+        $("reports").dataset.sig = reportLinks;
+        $("reports").innerHTML = reportLinks;
+      }
+      const cardSig = `${selected}|${cards.map((card) => `${card.name}:${card.status}:${card.lastEvent}:${(card.checks || []).map((check) => `${check.name}:${check.status}:${check.screenshot || ""}`).join(",")}`).join("|")}`;
+      if ($("cards").dataset.sig !== cardSig) {
+        $("cards").dataset.sig = cardSig;
+      $("cards").innerHTML = cards.length ? cards.map((card) => {
+        const scenarios = (card.checks || []).map((check) => `<li><span class="dot ${esc(check.status)}"></span><span class="name">${esc(check.name)}</span>${pill(check.status)}${check.screenshot ? `<a href="/artifacts/${esc(check.screenshot)}"><img src="/artifacts/${esc(check.screenshot)}" alt="Staging and game for ${esc(check.name)}"></a>` : ""}</li>`).join("");
+        const fallback = `<li><span class="dot ${card.balanceMatch ? "PASS" : card.balanceMatch == null ? "PENDING" : "FAIL"}"></span><span class="name">Balance ${mark(card.balanceMatch)}</span></li><li><span class="dot ${card.betMatch ? "PASS" : card.betMatch == null ? "PENDING" : "FAIL"}"></span><span class="name">Bet ${mark(card.betMatch)}</span></li><li><span class="dot ${card.winMatch ? "PASS" : card.winMatch == null ? "PENDING" : "FAIL"}"></span><span class="name">Win ${mark(card.winMatch)}</span></li>`;
+        return `<article class="card ${selected === card.name ? "selected" : ""}" data-game="${esc(card.name)}"><div class="row"><span class="dot ${esc(card.status)}"></span><strong>${esc(card.name)}</strong></div><p class="muted">${card.worker ? `Worker ${card.worker} · ` : ""}${esc(card.status)}</p><table><tr><td>Spin</td><td>${card.spin == null ? "—" : `#${card.spin}`}</td></tr><tr><td>Bet</td><td>${money(card.bet)}</td></tr><tr><td>Win</td><td>${money(card.win)}</td></tr><tr><td>UI balance</td><td>${money(card.ui)}</td></tr><tr><td>Backend balance</td><td>${money(card.be)}</td></tr></table><ul class="checks">${scenarios || fallback}</ul><p class="muted">Last: ${esc(card.lastEvent || "waiting")}</p></article>`;
+      }).join("") : `<p class="muted">No test is running. Open Last report above to read which scenarios passed or failed.</p>`;
+      }
+      const card = state.cards.find((item) => item.name === selected);
+      $("detail").innerHTML = card ? renderDetail(card) : "";
+      $("feed").innerHTML = state.feed.map((item) => `<article class="event"><div class="row"><span class="dot ${esc(item.status)}"></span><strong>${clock(item.t)} ${esc(item.game)}</strong></div><div>${esc(item.message)}</div>${item.details ? `<div class="muted">${esc(item.details)}</div>` : ""}${item.screenshot ? `<a href="/artifacts/${esc(item.screenshot)}">Screenshot</a>` : ""}</article>`).join("") || `<p class="muted">Events show here only while a test is running.</p>`;
+      $("modes").innerHTML = `<button type="button" class="${mode === "live" ? "active" : ""}" data-mode="live">Live</button><button type="button" class="${mode === "history" ? "active" : ""}" data-mode="history">History</button>${mode === "history" ? state.runs.map((name, index) => `<button type="button" data-run="${esc(name)}" class="${run === name ? "active" : ""}">${esc(index === 0 ? `Latest · ${runWhen(name)}` : runWhen(name))}</button>`).join("") || `<span class="muted">A finished run is saved here.</span>` : ""}`;
+      if (state.runner) paintRunner(state.runner);
+      paintGames(state.games || [], state.runner || {});
+    }
+
+    function paintGames(games, run) {
+      const box = $("game-list");
+      if (!box) return;
+      const busy = run.status === "running" || run.status === "stopping";
+      const sig = `${busy}|${games.map((game) => `${game.name}:${game.selected ? 1 : 0}`).join("|")}`;
+      if (box.dataset.sig === sig) return;
+      box.dataset.sig = sig;
+      box.innerHTML = games.map((game) => `<label class="game-pick"><input type="checkbox" data-game-name="${esc(game.name)}" ${game.selected ? "checked" : ""} ${busy ? "disabled" : ""}>${esc(game.name)}</label>`).join("") || `<p class="muted">No games are listed in the config.</p>`;
+    }
+
+    async function saveGames(names) {
+      const games = (latest?.games || []).map((game) => ({ ...game, selected: names.includes(game.name) }));
+      if (latest) latest.games = games;
+      paintGames(games, latest?.runner || {});
+      await fetch("/api/games", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ names }),
+      });
+      tick();
+    }
+
+    function paintRunner(run) {
+      const busy = run.status === "running" || run.status === "stopping";
+      $("start").disabled = busy;
+      $("stop").disabled = !busy;
+      $("suite").disabled = busy;
+      if ($("games-all")) $("games-all").disabled = busy;
+      if ($("games-none")) $("games-none").disabled = busy;
+      if (busy && run.suite) $("suite").value = run.suite;
+      else if (!$("suite").dataset.chosen && run.suite) $("suite").value = run.suite;
+      const label = { idle: "Idle", running: "Running", stopping: "Stopping", passed: "Passed", failed: "Failed", stopped: "Stopped" }[run.status] || "Idle";
+      const elapsed = run.started && busy ? ` · ${duration(run.started, new Date().toISOString())}` : "";
+      $("runner").textContent = `${label}${run.label ? ` · ${run.label}` : ""}${elapsed}`;
+      const lines = String(run.log || "").trim().split("\n").filter((line) => line.trim() && !/NO_COLOR|trace-warnings|node --trace-warnings/.test(line)).slice(-4).join("\n");
+      $("runner-log").textContent = lines;
+    }
+
+    function pill(status) {
+      const tone = String(status || "").toLowerCase().replace(/\s/g, "-");
+      return `<span class="pill ${esc(tone)}">${esc(status)}</span>`;
+    }
+
+    function renderBalance(balance) {
+      if (!balance || !Array.isArray(balance.scenarios)) return "";
+      const counters = balance.counters || {};
+      const cards = [
+        ["Scenarios", counters.total],
+        ["Passed", counters.passed],
+        ["Failed", counters.failed],
+        ["Balance mismatches", counters.balanceMismatches],
+        ["Temporary UI", counters.temporaryUi],
+        ["Double deductions", counters.doubleDeductions],
+        ["Buy Scratch", counters.buyScratchIssues],
+        ["Buy Feature", counters.buyFeatureIssues],
+        ["Currency", counters.currencyIssues],
+        ["Race conditions", counters.raceIssues],
+      ];
+      const stats = cards.map(([label, value]) => `<div class="stat"><span class="muted">${esc(label)}</span><strong>${value ?? 0}</strong></div>`).join("");
+      const rows = balance.scenarios.map((item) => `<tr><td><span class="dot ${esc(item.status)}"></span></td><td>${esc(item.name)}</td><td>${pill(item.status)}</td><td class="muted">${esc(item.details || "")}</td></tr>`).join("");
+      const compare = (balance.comparison || []).map((row) => `<tr><td>${esc(row.flow)}</td><td>${money(row.bet)}</td><td>${money(row.deduction)}</td><td>${money(row.win)}</td><td>${money(row.expected)}</td><td>${money(row.backend)}</td><td>${money(row.ui)}</td><td>${pill(row.match === "MATCH" ? "PASS" : row.match === "MISMATCH" ? "FAIL" : "RUNNING")}</td></tr>`).join("");
+      return `<h2>${esc(balance.game || "Balance")} · same bet ${money(balance.bet)}</h2><p class="muted">Player ${esc(balance.playerId || "")} · ${esc(balance.currency || "")} · live on this page</p><section class="stats">${stats}</section><table class="balance-table"><thead><tr><th></th><th>Scenario</th><th>Status</th><th>What was checked</th></tr></thead><tbody>${rows}</tbody></table>${compare ? `<h2>Same bet amount</h2><table class="balance-table"><thead><tr><th>Flow</th><th>Bet / cost</th><th>Backend deduction</th><th>Win</th><th>Expected</th><th>Backend</th><th>UI</th><th>Match</th></tr></thead><tbody>${compare}</tbody></table>` : ""}`;
+    }
+
+    function renderDetail(card) {
+      const spin = card.spins.find((item) => item.spin === selectedSpin) || card.spins.at(-1);
+      const checks = card.checks.map((check) => `<li><span class="dot ${esc(check.status)}"></span><span><strong>${esc(check.name)}</strong> ${esc(check.status)}<br><span class="muted">${esc(check.details)}</span>${check.screenshot ? `<br><a href="/artifacts/${esc(check.screenshot)}">Screenshot</a><img src="/artifacts/${esc(check.screenshot)}" alt="">` : ""}</span></li>`).join("");
+      const spinBlock = spin ? `<h2>Spin #${spin.spin}</h2><table><tr><td>Bet UI / backend</td><td>${money(spin.betUi)} / ${money(spin.betBe)}</td></tr><tr><td>Balance UI / backend</td><td>${money(spin.ui)} / ${money(spin.be)}</td></tr><tr><td>Win UI / backend</td><td>${money(spin.winUi)} / ${money(spin.winBe)}</td></tr><tr><td>HTTP</td><td>${spin.http ?? "—"}</td></tr></table><ul class="checks">${spin.comparisons.map((row) => `<li><span class="dot ${row.result === "MATCH" ? "PASS" : row.result === "MISMATCH" ? "FAIL" : "PENDING"}"></span>${esc(row.field)} ${esc(row.result)} · UI ${esc(JSON.stringify(row.frontend))} / BE ${esc(JSON.stringify(row.backend))}</li>`).join("")}</ul>${spin.screenshot ? `<a href="/artifacts/${esc(spin.screenshot)}">Screenshot</a>` : ""}${spin.responsePath ? ` <a href="/artifacts/${esc(spin.responsePath)}">Network response</a>` : ""}` : "";
+      return `<section class="panel" style="margin-top:16px"><h2>${esc(card.name)}</h2>${spinBlock}<ul class="checks">${checks}</ul></section>`;
+    }
+
+    async function tick() {
+      const query = mode === "history" && run ? `?run=${encodeURIComponent(run)}` : "";
+      const state = await fetch(`/api/state${query}`).then((response) => response.json());
+      render(state);
+    }
+
+    document.body.addEventListener("click", (event) => {
+      const game = event.target.closest("[data-game]");
+      const modeButton = event.target.closest("[data-mode]");
+      const runButton = event.target.closest("[data-run]");
+      if (game) {
+        selected = game.dataset.game;
+        selectedSpin = null;
+        if (latest) render(latest);
+      }
+      if (modeButton) {
+        mode = modeButton.dataset.mode;
+        if (mode === "live") run = "";
+        tick();
+      }
+      if (runButton) {
+        mode = "history";
+        run = runButton.dataset.run;
+        tick();
+      }
+    });
+
+    $("suite").addEventListener("change", () => { $("suite").dataset.chosen = "1"; });
+    $("start").addEventListener("click", async () => {
+      $("start").disabled = true;
+      $("runner").textContent = "Starting";
+      const response = await fetch("/api/run", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ suite: $("suite").value }),
+      });
+      const body = await response.json().catch(() => ({}));
+      if (!body.ok) $("runner").textContent = body.error || "Could not start";
+      tick();
+    });
+    $("stop").addEventListener("click", async () => {
+      $("stop").disabled = true;
+      $("runner").textContent = "Stopping";
+      await fetch("/api/stop", { method: "POST" });
+      tick();
+    });
+    document.body.addEventListener("change", (event) => {
+      const input = event.target.closest("[data-game-name]");
+      if (!input || input.disabled) return;
+      const names = [...document.querySelectorAll("[data-game-name]:checked")].map((item) => item.dataset.gameName);
+      saveGames(names);
+    });
+    $("games-all").addEventListener("click", () => saveGames((latest?.games || []).map((game) => game.name)));
+    $("games-none").addEventListener("click", () => saveGames([]));
+
+    let ticking = false;
+    async function poll() {
+      if (ticking || (mode !== "live" && !run)) return;
+      ticking = true;
+      try { await tick(); } finally { ticking = false; }
+    }
+    poll();
+    setInterval(poll, 2000);
+  </script>
+</body>
+</html>

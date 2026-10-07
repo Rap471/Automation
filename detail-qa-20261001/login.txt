@@ -1,0 +1,18 @@
+- img "FYB"
+- heading "Welcome back" [level=2]
+- paragraph: Sign in to access your account and manage your projects.
+- generic: FUTURE YOU BELIEVE Tech.
+- heading "Sign in" [level=1]
+- paragraph: Enter your email and password to continue.
+- text: Email
+- textbox "Email":
+  - /placeholder: you@company.com
+- text: Password
+- textbox "Password":
+  - /placeholder: Enter your password
+- checkbox "Remember me" [checked]
+- text: Remember me
+- link "Forgot password?":
+  - /url: /forgot-password
+- button "Sign in" [disabled]
+- paragraph: © FUTURE YOU BELIEVE Tech. All rights reserved.

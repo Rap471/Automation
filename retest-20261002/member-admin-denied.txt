@@ -1,0 +1,5 @@
+- heading "Access denied" [level=1]
+- paragraph: You don’t have permission to view this page.
+- link "Go to dashboard":
+  - /url: /
+  - button "Go to dashboard"

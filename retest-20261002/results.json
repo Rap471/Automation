@@ -1,0 +1,452 @@
+[
+  {
+    "id": "R001",
+    "role": "SuperAdmin",
+    "feature": "Login",
+    "expected": "Valid credentials open authenticated dashboard",
+    "actual": "Signed in; Logout and role navigation visible.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R002",
+    "role": "SuperAdmin",
+    "feature": "Theme tooltip",
+    "expected": "Dark mode target tooltip changes to light",
+    "actual": "Tooltip remains Switch to dark theme after toggle.",
+    "status": "FAIL",
+    "prior": "F02"
+  },
+  {
+    "id": "R003",
+    "role": "SuperAdmin",
+    "feature": "Preference accessible labels",
+    "expected": "Each checkbox has distinct accessible name",
+    "actual": "Three unnamed checkboxes with visible explanatory text.",
+    "status": "FAIL",
+    "prior": "F03"
+  },
+  {
+    "id": "R004",
+    "role": "SuperAdmin",
+    "feature": "Empty project validation",
+    "expected": "Required field feedback after empty Create",
+    "actual": "Completed response shows Name must not be empty, Key must not be empty and key format message.",
+    "status": "PASS",
+    "prior": "F01 - not reproduced"
+  },
+  {
+    "id": "R005",
+    "role": "SuperAdmin",
+    "feature": "Project search and description",
+    "expected": "QARA returns one correct project with persisted literal summary",
+    "actual": "QARA alone displayed retained description containing & and 3 parent issues.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R006",
+    "role": "SuperAdmin",
+    "feature": "Administration metrics",
+    "expected": "Dashboard totals agree with populated directory",
+    "actual": "Dashboard total/active users 0/0, no recent users/audits; directory 253 total and 38 active.",
+    "status": "FAIL",
+    "prior": "D01"
+  },
+  {
+    "id": "R007",
+    "role": "SuperAdmin",
+    "feature": "Issue search empty state",
+    "expected": "No matching query gives clear empty state",
+    "actual": "Zero results and No issues match your filters; reset enabled.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R008",
+    "role": "SuperAdmin",
+    "feature": "Clear issue filters",
+    "expected": "Restore four retained issues",
+    "actual": "Defaults restored and four issues visible.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R009",
+    "role": "SuperAdmin",
+    "feature": "Issue export",
+    "expected": "Capture produced file and verify contents",
+    "actual": "No download event captured within 15 seconds; Export returned enabled. File production/content unverified.",
+    "status": "INCONCLUSIVE",
+    "prior": "U021"
+  },
+  {
+    "id": "R010",
+    "role": "SuperAdmin",
+    "feature": "Retained summary/link/comment",
+    "expected": "Prior saved issue data persists across fresh login",
+    "actual": "Literal <tag> & Member verified summary, Relates to QARA-1 and edited QA comment present.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R011",
+    "role": "SuperAdmin",
+    "feature": "Whitespace summary edit",
+    "expected": "Save disabled for whitespace-only summary",
+    "actual": "Save disabled with three spaces; Cancel used.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R012",
+    "role": "SuperAdmin",
+    "feature": "Issue Cancel",
+    "expected": "Preserve original summary",
+    "actual": "Original Member verified literal summary restored.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R013",
+    "role": "SuperAdmin",
+    "feature": "Undated epic Gantt fallback",
+    "expected": "Unscheduled epic not presented as actual dates",
+    "actual": "Epic detail Start/End Not set; Gantt displays Oct2 2025 to Oct2 2027, one day later than yesterday.",
+    "status": "FAIL",
+    "prior": "D02"
+  },
+  {
+    "id": "R014",
+    "role": "SuperAdmin",
+    "feature": "Calendar Next/Today",
+    "expected": "Advance month then return October2026",
+    "actual": "November displayed; Today returned October2026.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R015",
+    "role": "Admin",
+    "feature": "Login",
+    "expected": "Admin authenticated with assigned project scope",
+    "actual": "Dashboard opens after valid credentials.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R016",
+    "role": "Admin",
+    "feature": "Completed sprint persistence",
+    "expected": "Prior completed QA sprint retains state",
+    "actual": "Completed, zero issues, capacity0, Oct1 toOct1; Create Sprint available.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R017",
+    "role": "Admin",
+    "feature": "Sprint required name",
+    "expected": "Empty create displays required-field message",
+    "actual": "Sprint name is required displayed, no sprint created.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R018",
+    "role": "Admin",
+    "feature": "Create QA sprint",
+    "expected": "Valid name and goal create Planned sprint",
+    "actual": "QA Retest Sprint20261002 created Planned, zero issues.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R019",
+    "role": "Admin",
+    "feature": "Sprint assignment and immediate refresh",
+    "expected": "Persist assignment and refresh backlog immediately",
+    "actual": "QARA4 displays fresh sprint; closing dialog shows1 in sprints and2 backlog without reload.",
+    "status": "PASS",
+    "prior": "U027 - not reproduced"
+  },
+  {
+    "id": "R020",
+    "role": "Admin",
+    "feature": "Start sprint",
+    "expected": "Planned becomes Active",
+    "actual": "Complete sprint replaces Start sprint.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R021",
+    "role": "Admin",
+    "feature": "Active sprint Board",
+    "expected": "Assigned QA4 shown in scoped ToDo",
+    "actual": "Board names QA Retest Sprint and shows1 of1 issue, QA4ToDo.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R022",
+    "role": "Admin",
+    "feature": "Completion immediate backlog refresh",
+    "expected": "Completed unfinished issue appears without reload",
+    "actual": "Immediately sprint section vanished but counters stayed1/2 andQA4 absent; reload shows0/3 andQA4.",
+    "status": "FAIL",
+    "prior": "New N01 - stale completion view"
+  },
+  {
+    "id": "R023",
+    "role": "Admin",
+    "feature": "Complete sprint persisted state",
+    "expected": "Completed sprint and unfinished issue returned",
+    "actual": "After reload QA4backlog; fresh sprint list Completed,0issues.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R024",
+    "role": "Admin",
+    "feature": "Velocity report empty/completed consistency",
+    "expected": "Completed sprint appears consistently; empty metrics not invented",
+    "actual": "Selected sprint Completed and two completed in list; report No completed sprints yet, AvgCompletion3.2days despite0issues.",
+    "status": "FAIL",
+    "prior": "Earlier velocity observation - confirmed UI inconsistency"
+  },
+  {
+    "id": "R025",
+    "role": "Admin",
+    "feature": "Burndown empty rendering",
+    "expected": "Report switches and shows zero-data state",
+    "actual": "Burndown chart opens for completed zero-issue sprint; no numerical reconciliation performed.",
+    "status": "INSPECTED",
+    "prior": ""
+  },
+  {
+    "id": "R026",
+    "role": "Admin",
+    "feature": "Audit unmatched actor",
+    "expected": "Explicit empty state",
+    "actual": "No audit logs found matching your filters displayed.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R027",
+    "role": "Admin",
+    "feature": "Audit reset and lifecycle entries",
+    "expected": "Reset restores created/start/complete records",
+    "actual": "Latest rows show current QA sprint creation,start,completion andQA4update by Admin.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R028",
+    "role": "Admin",
+    "feature": "Audit Metadata",
+    "expected": "Expand completed event metadata",
+    "actual": "Completed sprint metadata expanded inline.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R029",
+    "role": "Member",
+    "feature": "Login",
+    "expected": "Member dashboard authenticates",
+    "actual": "Dashboard opens, noAdmin nav.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R030",
+    "role": "Member",
+    "feature": "My issues scope",
+    "expected": "Only Member assigned issue",
+    "actual": "QARA2only, assignedsabye,1total.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R031",
+    "role": "Member",
+    "feature": "Count grammar",
+    "expected": "1 active issue singular",
+    "actual": "1 active issues still displayed.",
+    "status": "FAIL",
+    "prior": "F04"
+  },
+  {
+    "id": "R032",
+    "role": "Member",
+    "feature": "Clear My issues",
+    "expected": "Restore four issues",
+    "actual": "Four retained issues restored.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R033",
+    "role": "Member",
+    "feature": "Other-author comment controls",
+    "expected": "Comment readable; noedit/delete for Member",
+    "actual": "SuperAdmin comment readable, tabpanel noEdit/Delete.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R034",
+    "role": "Member",
+    "feature": "Cross-author summary update",
+    "expected": "Project Member can update shared QAissue",
+    "actual": "QA4saved Member retested20261002 suffix and literal special characters.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R035",
+    "role": "Member",
+    "feature": "Direct /admin",
+    "expected": "Deny administrative UI",
+    "actual": "Access denied shown.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R036",
+    "role": "Member",
+    "feature": "Direct /admin/accounts",
+    "expected": "Deny administrative UI",
+    "actual": "Access denied shown.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R037",
+    "role": "Member",
+    "feature": "Direct /admin/analytics",
+    "expected": "Deny administrative UI",
+    "actual": "Access denied shown.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R038",
+    "role": "Member",
+    "feature": "Direct /admin/system",
+    "expected": "Deny administrative UI",
+    "actual": "Access denied shown.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R039",
+    "role": "Member",
+    "feature": "Direct /admin/audit-logs",
+    "expected": "Deny administrative UI",
+    "actual": "Access denied shown.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R040",
+    "role": "Member",
+    "feature": "Wiki +Create feedback",
+    "expected": "Respond or explain unavailable action",
+    "actual": "Before/after selectingTististeng +Create no dialog; Create at root opens menu.",
+    "status": "FAIL",
+    "prior": "F05"
+  },
+  {
+    "id": "R041",
+    "role": "Member",
+    "feature": "Wiki save prototype metadata",
+    "expected": "Saved tags and author displayed",
+    "actual": "QA draft saved withqa/retest20261002 tags; frontend-only localStorage prototype, sharedserver persistence unverified.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R042",
+    "role": "Member",
+    "feature": "Wiki Cancel metadata",
+    "expected": "Cancel retains savedtags/author/version",
+    "actual": "Title reverts; author changes from Member email to api@system and saved qa/retest tags disappear. Version remains v2 in this retest (earlier run showed v0).",
+    "status": "FAIL",
+    "prior": "F06"
+  },
+  {
+    "id": "R043",
+    "role": "Member",
+    "feature": "Forbidden archive UI",
+    "expected": "Hide/disable prohibited archive before submission",
+    "actual": "EnabledArchive confirmation; submission Insufficient project role, QAprojectremainsactive.",
+    "status": "FAIL",
+    "prior": "D04 - UI mismatch; backend blocks"
+  },
+  {
+    "id": "R044",
+    "role": "Member",
+    "feature": "Project denial message",
+    "expected": "Explain project permission denial",
+    "actual": "Create rejected with unrelated You do not have permission to attach files to this issue; QAMR2notcreated.",
+    "status": "FAIL",
+    "prior": "D03"
+  },
+  {
+    "id": "R045",
+    "role": "Member",
+    "feature": "Sprint management restriction",
+    "expected": "Read completed sprints with creation/management unavailable",
+    "actual": "Two completed QA sprints visible; no Create Sprint/Start/Complete controls.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R046",
+    "role": "Member",
+    "feature": "Project settings route",
+    "expected": "Member cannot manage project configuration",
+    "actual": "Direct QARAsettings redirects toDashboard.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R047",
+    "role": "Member",
+    "feature": "Chat whitespace",
+    "expected": "Whitespace cannot send",
+    "actual": "Three spaces leaveSenddisabled; composer cleared without sending.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R048",
+    "role": "Member",
+    "feature": "Channel management restriction",
+    "expected": "Members readable with forbiddenmanagementdisabled",
+    "actual": "sabye/moce listed; Members settings/Deletechannel disabled.",
+    "status": "PASS",
+    "prior": ""
+  },
+  {
+    "id": "R049",
+    "role": "Member",
+    "feature": "Password form labels/empty guard",
+    "expected": "Current/New/Confirm labels; emptyUpdateblocked",
+    "actual": "Three labeledfields, Updatepassworddisabled. No credentialsentered; canceled.",
+    "status": "INSPECTED",
+    "prior": ""
+  },
+  {
+    "id": "R050",
+    "role": "Member",
+    "feature": "Logout",
+    "expected": "Return signedout login",
+    "actual": "Signinformvisible; authenticatedsessionended.",
+    "status": "PASS",
+    "prior": ""
+  }
+]

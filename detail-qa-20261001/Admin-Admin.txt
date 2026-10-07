@@ -1,0 +1,56 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Admin Dashboard" [level=1]
+  - paragraph: System overview and management
+  - link "See users":
+    - /url: /admin/accounts
+    - button "See users":
+      - text: See users
+  - heading "Recent Users" [level=2]
+  - link "View all":
+    - /url: /admin/accounts
+  - paragraph: No user data available
+  - heading "Recent Activity" [level=2]
+  - link "View all":
+    - /url: /admin/audit-logs
+  - paragraph: No audit logs available

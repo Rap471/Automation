@@ -1,0 +1,130 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - button "QARA":
+      - text: QARA
+    - link "Board":
+      - /url: /projects/QARA/board
+      - text: Board
+    - link "Calendar":
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link "Backlog":
+      - /url: /projects/QARA/backlog
+    - link "Epics":
+      - /url: /projects/QARA/epics
+    - link "Issues":
+      - /url: /projects/QARA/issues
+    - link "Sprints":
+      - /url: /projects/QARA/sprints
+    - link "Gantt":
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "2 Notifications":
+    - generic: "2"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA
+    - button:
+  - generic: QARA
+  - heading "Issues" [level=1]
+  - paragraph: 1 active issues • 2 completed sprints
+  - button "Filter":
+    - text: Filter
+  - button "Export"
+  - button "Create Issue":
+    - text: Create Issue
+  - button "Active 4":
+    - text: Active
+    - generic: "4"
+  - button "Archive 0":
+    - text: Archive
+    - generic: "0"
+  - textbox "Search (key or summary)"
+  - combobox "Assignee":
+    - generic: Assignee
+  - combobox "Type":
+    - generic: Type
+  - combobox "Priority":
+    - generic: Priority
+  - combobox "Status":
+    - generic: Status
+  - button "Only my issues" [active]
+  - button "Any update time"
+  - button "Clear filters"
+  - table:
+    - rowgroup:
+      - row "Type Key Summary Status Sprint Comments Assignee Due date Priority Created Updated Reporter":
+        - columnheader "Type"
+        - columnheader "Key"
+        - columnheader "Summary"
+        - columnheader "Status"
+        - columnheader "Sprint"
+        - columnheader "Comments"
+        - columnheader "Assignee"
+        - columnheader "Due date"
+        - columnheader "Priority"
+        - columnheader "Created"
+        - columnheader "Updated"
+        - columnheader "Reporter"
+    - rowgroup:
+      - row "TASK QARA-2 QA Member role lifecycle 20261001 - verified 0% - Blocked by 0/0 - Subtasks 0/1 IN PROGRESS Backlog 0 sabye Oct 3, 2026 MEDIUM Oct 1, 2026 2:32 PM Oct 1, 2026 2:33 PM sabye":
+        - cell "TASK":
+          - generic: TASK
+        - cell "QARA-2":
+          - generic: QARA-2
+        - cell "QA Member role lifecycle 20261001 - verified 0% - Blocked by 0/0 - Subtasks 0/1":
+          - generic: QA Member role lifecycle 20261001 - verified
+          - generic: 0% - Blocked by 0/0 - Subtasks 0/1
+        - cell "IN PROGRESS":
+          - generic: IN PROGRESS
+        - cell "Backlog"
+        - cell "0"
+        - cell "sabye":
+          - generic "sabye":
+          - generic: sabye
+        - cell "Oct 3, 2026"
+        - cell "MEDIUM":
+          - generic: MEDIUM
+        - cell "Oct 1, 2026 2:32 PM"
+        - cell "Oct 1, 2026 2:33 PM"
+        - cell "sabye":
+          - generic "sabye":
+          - generic: sabye
+  - generic: Page 1 of 1 · 1 total
+  - button "Prev" [disabled]
+  - button "Next" [disabled]

@@ -1,0 +1,464 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - button "6 Notifications":
+    - generic: "6"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /admin
+    - button:
+  - heading "Account Management" [level=1]
+  - paragraph: Manage users and their permissions
+  - button "Add User":
+    - text: Add User
+  - textbox "Search users..."
+  - combobox:
+    - option "All Roles" [selected]
+    - option "SuperAdmin"
+    - option "Admin"
+    - option "User"
+  - combobox:
+    - option "All Status" [selected]
+    - option "Active"
+    - option "Inactive"
+  - table:
+    - rowgroup:
+      - row "User Role Status Created Actions":
+        - columnheader "User"
+        - columnheader "Role"
+        - columnheader "Status"
+        - columnheader "Created"
+        - columnheader "Actions"
+    - rowgroup:
+      - row "1A 1ad user2@xfyb.local User Inactive Jan 8, 2026 See user Edit Assign Delete":
+        - cell "1A 1ad user2@xfyb.local":
+          - generic: 1A
+          - generic: 1ad
+          - generic: user2@xfyb.local
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Jan 8, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AA Abe Arao abe.arao@patolomius.com User Inactive Feb 4, 2026 See user Edit Assign Delete":
+        - cell "AA Abe Arao abe.arao@patolomius.com":
+          - generic: AA
+          - generic: Abe Arao
+          - generic: abe.arao@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 4, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AA Abe Ralph Arao abe.ralph.arao@patolomius.com User Inactive Jan 29, 2026 See user Edit Assign Delete":
+        - cell "AA Abe Ralph Arao abe.ralph.arao@patolomius.com":
+          - generic: AA
+          - generic: Abe Ralph Arao
+          - generic: abe.ralph.arao@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Jan 29, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AD Admin opsadmin@xfyb.local Admin Active Jan 9, 2026 See user Edit Assign Delete":
+        - cell "AD Admin opsadmin@xfyb.local":
+          - generic: AD
+          - generic: Admin
+          - generic: opsadmin@xfyb.local
+        - cell "Admin":
+          - text: Admin
+        - cell "Active":
+          - generic: Active
+        - cell "Jan 9, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AJ Adobe XD for Jira adobe.xd.for.jira@patolomius.com User Inactive Jan 27, 2026 See user Edit Assign Delete":
+        - cell "AJ Adobe XD for Jira adobe.xd.for.jira@patolomius.com":
+          - generic: AJ
+          - generic: Adobe XD for Jira
+          - generic: adobe.xd.for.jira@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Jan 27, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AM Adrian Millena adrian.millena@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AM Adrian Millena adrian.millena@patolomius.com":
+          - generic: AM
+          - generic: Adrian Millena
+          - generic: adrian.millena@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AP Adrian Paguiringan adrian.pa@patolomius.com User Active Jan 29, 2026 See user Edit Assign Delete":
+        - cell "AP Adrian Paguiringan adrian.pa@patolomius.com":
+          - generic: AP
+          - generic: Adrian Paguiringan
+          - generic: adrian.pa@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Active":
+          - generic: Active
+        - cell "Jan 29, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AE Adrielle Escaro adrielle.escaro@patolomius.com User Inactive Feb 4, 2026 See user Edit Assign Delete":
+        - cell "AE Adrielle Escaro adrielle.escaro@patolomius.com":
+          - generic: AE
+          - generic: Adrielle Escaro
+          - generic: adrielle.escaro@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 4, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AE Adrielle Kristine Nicolette Escaro adrielle.kristine.nicolette.escaro@patolomius.com User Inactive Jan 29, 2026 See user Edit Assign Delete":
+        - cell "AE Adrielle Kristine Nicolette Escaro adrielle.kristine.nicolette.escaro@patolomius.com":
+          - generic: AE
+          - generic: Adrielle Kristine Nicolette Escaro
+          - generic: adrielle.kristine.nicolette.escaro@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Jan 29, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AE Aiella Escaro aiella.escaro@patolomius.com User Inactive Feb 3, 2026 See user Edit Assign Delete":
+        - cell "AE Aiella Escaro aiella.escaro@patolomius.com":
+          - generic: AE
+          - generic: Aiella Escaro
+          - generic: aiella.escaro@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 3, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AI airelle airelle@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AI airelle airelle@patolomius.com":
+          - generic: AI
+          - generic: airelle
+          - generic: airelle@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AI airielle.b airielle.b@patolomius.com User Inactive Feb 4, 2026 See user Edit Assign Delete":
+        - cell "AI airielle.b airielle.b@patolomius.com":
+          - generic: AI
+          - generic: airielle.b
+          - generic: airielle.b@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 4, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AB Airielle Bonifacio airielle.bonifacio@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AB Airielle Bonifacio airielle.bonifacio@patolomius.com":
+          - generic: AB
+          - generic: Airielle Bonifacio
+          - generic: airielle.bonifacio@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AR Alexander Rubinshtein alexander.rubinshtein@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AR Alexander Rubinshtein alexander.rubinshtein@patolomius.com":
+          - generic: AR
+          - generic: Alexander Rubinshtein
+          - generic: alexander.rubinshtein@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AC Alexandra Dela Cruz alexandra.de@patolomius.com User Active Jan 29, 2026 See user Edit Assign Delete":
+        - cell "AC Alexandra Dela Cruz alexandra.de@patolomius.com":
+          - generic: AC
+          - generic: Alexandra Dela Cruz
+          - generic: alexandra.de@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Active":
+          - generic: Active
+        - cell "Jan 29, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AF Alina Fokina alina.fokina@patolomius.com User Inactive Jan 29, 2026 See user Edit Assign Delete":
+        - cell "AF Alina Fokina alina.fokina@patolomius.com":
+          - generic: AF
+          - generic: Alina Fokina
+          - generic: alina.fokina@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Jan 29, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AA Allyanna Trixie Aduca allyanna.trixie@patolomius.com Admin Active Oct 5, 2026 See user Edit Assign Delete":
+        - cell "AA Allyanna Trixie Aduca allyanna.trixie@patolomius.com":
+          - generic: AA
+          - generic: Allyanna Trixie Aduca
+          - generic: allyanna.trixie@patolomius.com
+        - cell "Admin":
+          - text: Admin
+        - cell "Active":
+          - generic: Active
+        - cell "Oct 5, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AN Andrea andrea@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AN Andrea andrea@patolomius.com":
+          - generic: AN
+          - generic: Andrea
+          - generic: andrea@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AR Andreas Righas andreas.righas@patolomius.com User Inactive Feb 4, 2026 See user Edit Assign Delete":
+        - cell "AR Andreas Righas andreas.righas@patolomius.com":
+          - generic: AR
+          - generic: Andreas Righas
+          - generic: andreas.righas@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 4, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AA Andrew Ayson andrew.ayson@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AA Andrew Ayson andrew.ayson@patolomius.com":
+          - generic: AA
+          - generic: Andrew Ayson
+          - generic: andrew.ayson@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AY Angelica Ylagan angelica.ylagan@patolomius.com User Inactive Feb 2, 2026 See user Edit Assign Delete":
+        - cell "AY Angelica Ylagan angelica.ylagan@patolomius.com":
+          - generic: AY
+          - generic: Angelica Ylagan
+          - generic: angelica.ylagan@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 2, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AG ani gabatashvili ani.gabatashvili@patolomius.com User Inactive Feb 3, 2026 See user Edit Assign Delete":
+        - cell "AG ani gabatashvili ani.gabatashvili@patolomius.com":
+          - generic: AG
+          - generic: ani gabatashvili
+          - generic: ani.gabatashvili@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 3, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AK Ani Kakabadze ani.kakabadze@patolomius.com User Inactive Feb 4, 2026 See user Edit Assign Delete":
+        - cell "AK Ani Kakabadze ani.kakabadze@patolomius.com":
+          - generic: AK
+          - generic: Ani Kakabadze
+          - generic: ani.kakabadze@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 4, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AN anna anna@patolomius.com User Inactive Feb 4, 2026 See user Edit Assign Delete":
+        - cell "AN anna anna@patolomius.com":
+          - generic: AN
+          - generic: anna
+          - generic: anna@patolomius.com
+        - cell "User":
+          - text: User
+        - cell "Inactive":
+          - generic: Inactive
+        - cell "Feb 4, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+      - row "AN Antoine antoine@dijoker.com User Active May 28, 2026 See user Edit Assign Delete":
+        - cell "AN Antoine antoine@dijoker.com":
+          - generic: AN
+          - generic: Antoine
+          - generic: antoine@dijoker.com
+        - cell "User":
+          - text: User
+        - cell "Active":
+          - generic: Active
+        - cell "May 28, 2026"
+        - cell "See user Edit Assign Delete":
+          - button "See user"
+          - button "Edit"
+          - button "Assign"
+          - button "Delete"
+  - generic: Page 1 of 11 · 255 total
+  - button "Prev" [disabled]
+  - button "Next"
+  - heading "User Statistics" [level=2]
+  - paragraph: Total Users
+  - paragraph: "255"
+  - paragraph: Active
+  - paragraph: "41"
+  - paragraph: Inactive
+  - paragraph: "214"
+  - paragraph: Admins
+  - paragraph: "17"

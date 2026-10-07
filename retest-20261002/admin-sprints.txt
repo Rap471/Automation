@@ -1,0 +1,81 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - button "QARA":
+      - text: QARA
+    - link "Board":
+      - /url: /projects/QARA/board
+      - text: Board
+    - link "Calendar":
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link "Backlog":
+      - /url: /projects/QARA/backlog
+    - link "Epics":
+      - /url: /projects/QARA/epics
+    - link "Issues":
+      - /url: /projects/QARA/issues
+    - link "Sprints":
+      - /url: /projects/QARA/sprints
+    - link "Gantt":
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link "Settings":
+      - /url: /projects/QARA/settings
+      - text: Settings
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA
+    - button:
+  - generic: QARA
+  - heading "Sprints" [level=1]
+  - paragraph: 1 sprints
+  - button "Export"
+  - button "Create Sprint":
+    - text: Create Sprint
+  - 'link "QA Role Sprint 20261001 completed Role permission and sprint lifecycle check 0 issues Capacity: 0 SP Oct 1, 2026 - Oct 1, 2026"':
+    - /url: /projects/QARA/sprints/qa-role-sprint-20261001-20261001
+    - heading "QA Role Sprint 20261001" [level=3]
+    - generic: completed
+    - paragraph: Role permission and sprint lifecycle check
+    - generic: 0 issues
+    - generic: "Capacity: 0 SP"
+    - generic: Oct 1, 2026 - Oct 1, 2026

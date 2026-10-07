@@ -1,0 +1,92 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - button "QARA":
+      - text: QARA
+    - link "Board":
+      - /url: /projects/QARA/board
+      - text: Board
+    - link "Calendar":
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link "Backlog":
+      - /url: /projects/QARA/backlog
+    - link "Epics":
+      - /url: /projects/QARA/epics
+    - link "Issues":
+      - /url: /projects/QARA/issues
+    - link "Sprints":
+      - /url: /projects/QARA/sprints
+    - link "Gantt":
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link "Settings":
+      - /url: /projects/QARA/settings
+      - text: Settings
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA
+    - button:
+  - generic: QARA
+  - heading "Board" [level=1]
+  - paragraph: Project issues (no sprint scope)
+  - button "All assignees":
+    - text: All assignees
+  - button "Recently updated":
+    - text: Recently updated
+  - combobox "Assignee":
+    - generic: Assignee
+  - combobox "Type":
+    - generic: Type
+  - combobox "Priority":
+    - generic: Priority
+  - generic: 0 of 0 issues
+  - button "Board"
+  - button "Swimlanes"
+  - heading "To Do" [level=3]
+  - generic: "0"
+  - generic: No issues
+  - heading "In Progress" [level=3]
+  - generic: "0"
+  - generic: No issues
+  - heading "Done" [level=3]
+  - generic: "0"
+  - generic: No issues

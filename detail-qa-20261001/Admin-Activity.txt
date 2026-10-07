@@ -1,0 +1,97 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Activity Feed" [level=1]
+  - paragraph: Global system events and updates
+  - button "Start date":
+    - text: Start date
+  - textbox
+  - button "End date":
+    - text: End date
+  - textbox
+  - button "Refresh":
+    - text: Refresh
+  - generic: Today
+  - generic: rafael.pineda
+  - generic "Project QARA": QARA
+  - generic: Created issue QARA-4 — QA UI text <tag> & summary 20261001
+  - generic: Oct 1, 2026 6:10 PM issue_created
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: Created epic QA Member Epic 20261001
+  - generic: Oct 1, 2026 2:39 PM epic_created
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: Created sub-task QARA-3 — QA Member subtask 20261001
+  - generic: Oct 1, 2026 2:33 PM issue_created
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: SubTaskCreated SubTask to QARA-3
+  - generic: Oct 1, 2026 2:33 PM issue_update
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: WatcherRemoved on Watcher
+  - generic: Oct 1, 2026 2:33 PM issue_update
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: WatcherAdded Watcher to sabye
+  - generic: Oct 1, 2026 2:33 PM issue_update
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: Created issue QARA-2 — QA Member role lifecycle 20261001
+  - generic: Oct 1, 2026 2:32 PM issue_created
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: Created epic QA Role Epic 20261001
+  - generic: Oct 1, 2026 2:30 PM epic_created
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: PriorityChanged Priority to High
+  - generic: Oct 1, 2026 2:29 PM issue_update
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: Created issue QARA-1 — QA Admin role lifecycle 20261001
+  - generic: Oct 1, 2026 2:29 PM issue_created
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: Created project QARA — QA Role Admin 20261001
+  - generic: Oct 1, 2026 2:28 PM project_created

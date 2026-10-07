@@ -1,0 +1,673 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "3 Notifications":
+    - generic: "3"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Activity Feed" [level=1]
+  - paragraph: Global system events and updates
+  - button "Start date":
+    - text: Start date
+  - textbox
+  - button "End date":
+    - text: End date
+  - textbox
+  - button "Refresh":
+    - text: Refresh
+  - generic: Today
+  - generic: rafael.pineda
+  - generic "Project QARA": QARA
+  - generic: Created issue QARA-4 — QA UI text <tag> & summary 20261001
+  - generic: Oct 1, 2026 6:10 PM issue_created
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: Created epic QA Member Epic 20261001
+  - generic: Oct 1, 2026 2:39 PM epic_created
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: Created sub-task QARA-3 — QA Member subtask 20261001
+  - generic: Oct 1, 2026 2:33 PM issue_created
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: SubTaskCreated SubTask to QARA-3
+  - generic: Oct 1, 2026 2:33 PM issue_update
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: WatcherRemoved on Watcher
+  - generic: Oct 1, 2026 2:33 PM issue_update
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: WatcherAdded Watcher to sabye
+  - generic: Oct 1, 2026 2:33 PM issue_update
+  - generic: sabye
+  - generic "Project QARA": QARA
+  - generic: Created issue QARA-2 — QA Member role lifecycle 20261001
+  - generic: Oct 1, 2026 2:32 PM issue_created
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: Created epic QA Role Epic 20261001
+  - generic: Oct 1, 2026 2:30 PM epic_created
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: PriorityChanged Priority to High
+  - generic: Oct 1, 2026 2:29 PM issue_update
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: Created issue QARA-1 — QA Admin role lifecycle 20261001
+  - generic: Oct 1, 2026 2:29 PM issue_created
+  - generic: moce
+  - generic "Project QARA": QARA
+  - generic: Created project QARA — QA Role Admin 20261001
+  - generic: Oct 1, 2026 2:28 PM project_created
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: Created sub-task SPS-20 — QA Regression 20261001 - child task
+  - generic: Oct 1, 2026 1:53 PM issue_created
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: SubTaskCreated SubTask to SPS-20
+  - generic: Oct 1, 2026 1:53 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project QAFYB": QAFYB
+  - generic: Restored project QAFYB — QA Functional Regression 20261001
+  - generic: Oct 1, 2026 1:52 PM project_unarchived
+  - generic: rafael.pineda
+  - generic "Project QAFYB": QAFYB
+  - generic: Archived project QAFYB — QA Functional Regression 20261001
+  - generic: Oct 1, 2026 1:52 PM project_archived
+  - generic: rafael.pineda
+  - generic "Project QAFYB": QAFYB
+  - generic: Created project QAFYB — QA Functional Regression 20261001
+  - generic: Oct 1, 2026 1:51 PM project_created
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: Created epic QA Regression Epic 20261001
+  - generic: Oct 1, 2026 1:44 PM epic_created
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: WatcherRemoved on Watcher
+  - generic: Oct 1, 2026 1:42 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: WatcherAdded Watcher to rafael.pineda
+  - generic: Oct 1, 2026 1:42 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: PriorityChanged Priority to High
+  - generic: Oct 1, 2026 1:41 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project SPS": SPS
+  - generic: Created issue SPS-19 — QA Regression 20261001 - issue lifecycle
+  - generic: Oct 1, 2026 1:40 PM issue_created
+  - generic: Yesterday
+  - generic: John Lester Peralta
+  - generic "Project XFYB": XFYB
+  - generic: Archived project XFYB — XFYB
+  - generic: Sep 30, 2026 5:03 PM project_archived
+  - generic: John Lester Peralta
+  - generic "Project BTL": BTL
+  - generic: Archived project BTL — Big Town Lottery
+  - generic: Sep 30, 2026 5:03 PM project_archived
+  - generic: Tue, Sep 29, 2026
+  - generic: Katheryn Sarmiento
+  - generic "Project TESTES": TESTES
+  - generic: TESTES-1 moved to In Progress
+  - generic: Sep 29, 2026 3:20 PM system
+  - generic: Katheryn Sarmiento
+  - generic "Project TESTES": TESTES
+  - generic: TESTES-1 assigned to Lalen Duero
+  - generic: Sep 29, 2026 3:20 PM assignment
+  - generic: Mon, Sep 28, 2026
+  - generic: rafael.pineda
+  - generic "Project SPK": SPK
+  - generic: WatcherAdded Watcher to rafael.pineda
+  - generic: Sep 28, 2026 6:44 PM issue_update
+  - generic: moce
+  - generic "Project SPK": SPK
+  - generic: WatcherAdded Watcher to moce
+  - generic: Sep 28, 2026 6:41 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-117 assigned to Cyrus Manatad
+  - generic: Sep 28, 2026 6:36 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-152 assigned to Francis Yambao
+  - generic: Sep 28, 2026 6:28 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-152 assigned to Adrian Paguiringan
+  - generic: Sep 28, 2026 6:28 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-152 assigned to Ivan Vestidas
+  - generic: Sep 28, 2026 6:28 PM assignment
+  - generic: Fri, Sep 25, 2026
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherRemoved on Watcher
+  - generic: Sep 25, 2026 6:27 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherAdded Watcher to Katheryn Sarmiento
+  - generic: Sep 25, 2026 6:27 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: Katheryn Sarmiento mentioned you in a comment on FTFYB-3
+  - generic: Sep 25, 2026 6:24 PM mention
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: StoryPointsChanged StoryPoints to 13
+  - generic: Sep 25, 2026 5:00 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: FTFYB-10 assigned to Ivan Vestidas
+  - generic: Sep 25, 2026 4:54 PM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project ASFYB": ASFYB
+  - generic: WatcherRemoved on Watcher
+  - generic: Sep 25, 2026 4:51 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project ASFYB": ASFYB
+  - generic: WatcherAdded Watcher to Katheryn Sarmiento
+  - generic: Sep 25, 2026 4:51 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to FYB-Activity-Feed-Test-Cases.md
+  - generic: Sep 25, 2026 4:50 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentRemoved on Attachment
+  - generic: Sep 25, 2026 4:50 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to insta-stories-viewer.org_Instagram_draped.wrist_3874826596389063173.jpg
+  - generic: Sep 25, 2026 4:49 PM issue_update
+  - generic: moce
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-6 moved to In Progress
+  - generic: Sep 25, 2026 4:48 PM system
+  - generic: moce
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-2 moved to In Progress
+  - generic: Sep 25, 2026 4:48 PM system
+  - generic: moce
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-2 moved to In Progress
+  - generic: Sep 25, 2026 4:48 PM system
+  - generic: moce
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-1 moved to In Progress
+  - generic: Sep 25, 2026 4:48 PM system
+  - generic: moce
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-1 moved to In Progress
+  - generic: Sep 25, 2026 4:48 PM system
+  - generic: moce
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-6 assigned to rafael.pineda
+  - generic: Sep 25, 2026 4:36 PM assignment
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-5 assigned to Katheryn Sarmiento
+  - generic: Sep 25, 2026 4:34 PM assignment
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-4 assigned to Lalen Duero
+  - generic: Sep 25, 2026 4:33 PM assignment
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-3 assigned to tisteng
+  - generic: Sep 25, 2026 4:33 PM assignment
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: SubTaskCreated SubTask to ASFYB-5
+  - generic: Sep 25, 2026 4:10 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: SubTaskCreated SubTask to ASFYB-4
+  - generic: Sep 25, 2026 4:10 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: SubTaskCreated SubTask to ASFYB-3
+  - generic: Sep 25, 2026 4:09 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-10 122230.png
+  - generic: Sep 25, 2026 4:09 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-24 102819.png
+  - generic: Sep 25, 2026 4:09 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-30 093535.png
+  - generic: Sep 25, 2026 4:09 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-08-17 133504.png
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentRemoved on Attachment
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentRemoved on Attachment
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentRemoved on Attachment
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentRemoved on Attachment
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-02 153927.png
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-07-14 101621.png
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-24 102819.png
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-30 101217.png
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: WatcherAdded Watcher to rafael.pineda
+  - generic: Sep 25, 2026 4:08 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-2 assigned to sabye
+  - generic: Sep 25, 2026 4:08 PM assignment
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: EndDateChanged EndDate to 2026-10-13 — BRUH
+  - generic: Sep 25, 2026 4:07 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: PriorityChanged Priority to Highest
+  - generic: Sep 25, 2026 4:07 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: WatcherAdded Watcher to rafael.pineda
+  - generic: Sep 25, 2026 4:07 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project ASFYB": ASFYB
+  - generic: ASFYB-1 assigned to Katheryn Sarmiento
+  - generic: Sep 25, 2026 4:06 PM assignment
+  - generic: rafael.pineda
+  - generic: "Sent a message: ads"
+  - generic: Sep 25, 2026 3:48 PM message
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: FTFYB-5 assigned to Ivan Vestidas
+  - generic: Sep 25, 2026 3:16 PM assignment
+  - generic: moce
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherRemoved on Watcher
+  - generic: Sep 25, 2026 2:42 PM issue_update
+  - generic: moce
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherAdded Watcher to moce
+  - generic: Sep 25, 2026 2:42 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherAdded Watcher to Katheryn Sarmiento
+  - generic: Sep 25, 2026 2:41 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherRemoved on Watcher
+  - generic: Sep 25, 2026 2:41 PM issue_update
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: WatcherAdded Watcher to Katheryn Sarmiento
+  - generic: Sep 25, 2026 2:41 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: FTFYB-3 assigned to Katheryn Sarmiento
+  - generic: Sep 25, 2026 9:35 AM assignment
+  - generic: Thu, Sep 24, 2026
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: FTFYB-3 assigned to rafael.pineda
+  - generic: Sep 24, 2026 7:33 PM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: FTFYB-1 assigned to rafael.pineda
+  - generic: Sep 24, 2026 6:15 PM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: FTFYB-2 assigned to rafael.pineda
+  - generic: Sep 24, 2026 6:15 PM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project DDK": DDK
+  - generic: DDK-150 moved to Complete
+  - generic: Sep 24, 2026 5:33 PM system
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: Katheryn Sarmiento mentioned you in chat
+  - generic: Sep 24, 2026 5:28 PM mention
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: @rafael.pineda"
+  - generic: Sep 24, 2026 5:28 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: ASDASD"
+  - generic: Sep 24, 2026 5:25 PM message
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: GYKHOLJHL"
+  - generic: Sep 24, 2026 5:25 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: rafael.pineda mentioned you in chat
+  - generic: Sep 24, 2026 5:25 PM mention
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: @Katheryn Sarmiento"
+  - generic: Sep 24, 2026 5:25 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: rafael.pineda reacted to Katheryn Sarmiento's message
+  - generic: Sep 24, 2026 5:24 PM reaction
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: Katheryn Sarmiento mentioned you in chat
+  - generic: Sep 24, 2026 5:23 PM mention
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: @rafael.pineda"
+  - generic: Sep 24, 2026 5:23 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: HOTDOG"
+  - generic: Sep 24, 2026 5:22 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: ASDASD"
+  - generic: Sep 24, 2026 5:22 PM message
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: TAYO LANG DITO PATI GENERAL?"
+  - generic: Sep 24, 2026 5:22 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: rafael.pineda mentioned you in chat
+  - generic: Sep 24, 2026 5:21 PM mention
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: @Katheryn Sarmiento"
+  - generic: Sep 24, 2026 5:21 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: ASDASD"
+  - generic: Sep 24, 2026 5:20 PM message
+  - generic: rafael.pineda
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: ASDASD"
+  - generic: Sep 24, 2026 5:20 PM message
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: Katheryn Sarmiento mentioned you in chat
+  - generic: Sep 24, 2026 5:20 PM mention
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: @rafael.pineda"
+  - generic: Sep 24, 2026 5:20 PM message
+  - generic: rafael.pineda
+  - generic "Project TNBLK": TNBLK
+  - generic: "Sent a message: ASDASD"
+  - generic: Sep 24, 2026 5:20 PM message
+  - generic: Katheryn Sarmiento
+  - generic "Project FTFYB": FTFYB
+  - generic: "Sent a message: TESTING"
+  - generic: Sep 24, 2026 5:19 PM message
+  - generic: Katheryn Sarmiento
+  - generic "Project DDK": DDK
+  - generic: DDK-147 assigned to rafael.pineda
+  - generic: Sep 24, 2026 1:15 PM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project DDK": DDK
+  - generic: DDK-147 assigned to Lalen Duero
+  - generic: Sep 24, 2026 1:08 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-147 assigned to Katheryn Sarmiento
+  - generic: Sep 24, 2026 11:26 AM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-148 assigned to Lalen Duero
+  - generic: Sep 24, 2026 11:26 AM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project DDK": DDK
+  - generic: DDK-150 assigned to rafael.pineda
+  - generic: Sep 24, 2026 11:12 AM assignment
+  - generic: Katheryn Sarmiento
+  - generic "Project DDK": DDK
+  - generic: DDK-150 assigned to Avi Asraf
+  - generic: Sep 24, 2026 11:12 AM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-150 assigned to Katheryn Sarmiento
+  - generic: Sep 24, 2026 11:11 AM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-15 assigned to Katheryn Sarmiento
+  - generic: Sep 24, 2026 11:10 AM assignment
+  - generic: Wed, Sep 23, 2026
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-150 moved to QA in Progress
+  - generic: Sep 23, 2026 2:36 PM system
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-150 moved to Ready for QA
+  - generic: Sep 23, 2026 2:36 PM system
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-151 moved to Complete
+  - generic: Sep 23, 2026 2:34 PM system
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DescriptionChanged Description to Added
+  - generic: Sep 23, 2026 1:57 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-151 moved to QA in Progress
+  - generic: Sep 23, 2026 1:57 PM system
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-151 assigned to Ivan Vestidas
+  - generic: Sep 23, 2026 1:57 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-151 assigned to QA
+  - generic: Sep 23, 2026 1:57 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-15 assigned to Ivan Vestidas
+  - generic: Sep 23, 2026 1:55 PM assignment
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DescriptionChanged Description to Added
+  - generic: Sep 23, 2026 1:55 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: EndDateChanged EndDate to 2026-09-30 — qwe
+  - generic: Sep 23, 2026 1:55 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: StartDateChanged StartDate to 2026-09-23 — qwe
+  - generic: Sep 23, 2026 1:55 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: WatcherAdded Watcher to rafael.pineda
+  - generic: Sep 23, 2026 1:55 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: WatcherRemoved on Watcher
+  - generic: Sep 23, 2026 1:55 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: WatcherAdded Watcher to rafael.pineda
+  - generic: Sep 23, 2026 1:55 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: SubTaskCreated SubTask to DDK-151
+  - generic: Sep 23, 2026 1:53 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: AttachmentAdded Attachment to Screenshot 2026-06-30 093535.png
+  - generic: Sep 23, 2026 1:53 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: EndDateChanged EndDate to 2026-09-28 — WALALA
+  - generic: Sep 23, 2026 1:37 PM issue_update
+  - generic: rafael.pineda
+  - generic "Project DDK": DDK
+  - generic: DDK-150 assigned to Ivan Vestidas
+  - generic: Sep 23, 2026 1:36 PM assignment
+  - generic: Thu, Sep 17, 2026
+  - generic: Rommel Ariola
+  - generic "Project DJIK": DJIK
+  - generic: DJIK-10 moved to In Progress
+  - generic: Sep 17, 2026 4:43 PM system
+  - generic: Thu, Sep 10, 2026
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: DDK-3 moved to Complete
+  - generic: Sep 10, 2026 11:43 AM system
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: StartDateChanged StartDate to 2026-06-04
+  - generic: Sep 10, 2026 11:37 AM issue_update
+  - generic: Wed, Sep 9, 2026
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: EndDateChanged EndDate to 2026-06-23 — reason
+  - generic: Sep 9, 2026 4:57 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project SPS": SPS
+  - generic: StartDateChanged StartDate to 2026-08-03
+  - generic: Sep 9, 2026 4:35 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project SPS": SPS
+  - generic: StartDateChanged StartDate to 2026-07-31
+  - generic: Sep 9, 2026 4:06 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project SPS": SPS
+  - generic: EndDateChanged EndDate to 2026-08-07 — START
+  - generic: Sep 9, 2026 4:06 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project SPS": SPS
+  - generic: StartDateChanged StartDate to 2026-08-06
+  - generic: Sep 9, 2026 4:06 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: EndDateChanged EndDate to 2026-08-10 — because
+  - generic: Sep 9, 2026 12:59 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: EndDateChanged EndDate to 2026-08-06 — Resized on Gantt chart
+  - generic: Sep 9, 2026 12:57 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project DDK": DDK
+  - generic: EndDateChanged EndDate to 2026-08-03 — Resized on Gantt chart
+  - generic: Sep 9, 2026 12:57 PM issue_update
+  - generic: Wed, Sep 2, 2026
+  - generic: John Lester Peralta
+  - generic "Project SPK": SPK
+  - generic: DescriptionChanged Description to new version
+  - generic: Sep 2, 2026 5:56 PM issue_update
+  - generic: Wed, Aug 26, 2026
+  - generic: tisteng
+  - generic "Project SPS": SPS
+  - generic: SubTaskCreated SubTask to SPS-17
+  - generic: Aug 26, 2026 7:09 PM issue_update
+  - generic: tisteng
+  - generic "Project SPS": SPS
+  - generic: SubTaskCreated SubTask to SPS-17
+  - generic: Aug 26, 2026 7:05 PM issue_update
+  - generic: tisteng
+  - generic "Project SPS": SPS
+  - generic: AttachmentAdded Attachment to Scratch_Game_Casino_Game_Mechanics_Document.docx
+  - generic: Aug 26, 2026 7:00 PM issue_update
+  - generic: tisteng
+  - generic "Project SPS": SPS
+  - generic: WatcherAdded Watcher to tisteng
+  - generic: Aug 26, 2026 6:33 PM issue_update
+  - generic: tisteng
+  - generic "Project SPS": SPS
+  - generic: WatcherRemoved on Watcher
+  - generic: Aug 26, 2026 6:33 PM issue_update
+  - generic: tisteng
+  - generic "Project SPS": SPS
+  - generic: WatcherAdded Watcher to tisteng
+  - generic: Aug 26, 2026 6:32 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project SPK": SPK
+  - generic: "Sent a message: Hello World!!!"
+  - generic: Aug 26, 2026 3:27 PM message
+  - generic: John Lester Peralta
+  - generic "Project SPS": SPS
+  - generic: EndDateChanged EndDate to 2026-08-25 — Hey Ho Lets Go
+  - generic: Aug 26, 2026 2:55 PM issue_update
+  - generic: John Lester Peralta
+  - generic "Project SPK": SPK
+  - generic: WatcherRemoved on Watcher
+  - generic: Aug 26, 2026 2:47 PM issue_update

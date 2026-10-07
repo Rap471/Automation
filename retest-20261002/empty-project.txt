@@ -1,0 +1,1377 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "3 Notifications":
+    - generic: "3"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Projects" [level=1]
+  - paragraph: Browse and manage your projects
+  - button "Add Project":
+    - text: Add Project
+  - generic: "'Name' must not be empty.; 'Key' must not be empty.; Project key must be 1-20 chars (A-Z, 0-9, '_' or '-')"
+  - heading "Create Project" [level=2]
+  - button "Cancel"
+  - text: Name
+  - textbox "Name"
+  - text: Key
+  - textbox "Key":
+    - /placeholder: E.g. XFYB
+  - text: Summary
+  - textbox "Summary"
+  - text: Project type
+  - combobox "Project type":
+    - option "Scrum" [selected]
+    - option "Kanban"
+  - button "Create"
+  - button "Active projects"
+  - button "Archived"
+  - button "Sort by Newest":
+    - generic: Sort by
+    - generic: Newest
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Name Key Summary Your Role Progress Action":
+        - columnheader "Name"
+        - columnheader "Key"
+        - columnheader "Summary"
+        - columnheader "Your Role"
+        - columnheader "Progress"
+        - columnheader "Action"
+    - rowgroup:
+      - link "Q2 QA Role Admin 20261001 QARA Disposable role-based functional QA fixture. UI summary & description verified 20261001. 0% 3 issues":
+        - cell "Q2 QA Role Admin 20261001":
+          - button "Favorite project":
+          - generic: Q2
+          - generic: QA Role Admin 20261001
+        - cell "QARA":
+          - generic: QARA
+        - cell "Disposable role-based functional QA fixture. UI summary & description verified 20261001.":
+          - generic: Disposable role-based functional QA fixture. UI summary & description verified 20261001.
+        - cell
+        - cell "0% 3 issues":
+          - generic: 0%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/QARA/settings
+          - button "Archive project":
+      - link "QV QA Functional Regression 20261001 - verified QAFYB Authorized functional QA test project Project Admin 0% 0 issues":
+        - cell "QV QA Functional Regression 20261001 - verified":
+          - button "Favorite project":
+          - generic: QV
+          - generic: QA Functional Regression 20261001 - verified
+        - cell "QAFYB":
+          - generic: QAFYB
+        - cell "Authorized functional QA test project":
+          - generic: Authorized functional QA test project
+        - cell "Project Admin":
+          - generic: Project Admin
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/QAFYB/settings
+          - button "Archive project":
+      - link "TE Testing lang eh TESTES Project Admin 50% 2 issues":
+        - cell "TE Testing lang eh":
+          - button "Favorite project":
+          - generic: TE
+          - generic: Testing lang eh
+        - cell "TESTES":
+          - generic: TESTES
+        - cell
+        - cell "Project Admin":
+          - generic: Project Admin
+        - cell "50% 2 issues":
+          - generic: 50%
+          - generic: 2 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/TESTES/settings
+          - button "Archive project":
+      - link "SS SMOKE TESTING SAMPLE STSFYB 0% 3 issues":
+        - cell "SS SMOKE TESTING SAMPLE":
+          - button "Favorite project":
+          - generic: SS
+          - generic: SMOKE TESTING SAMPLE
+        - cell "STSFYB":
+          - generic: STSFYB
+        - cell
+        - cell
+        - cell "0% 3 issues":
+          - generic: 0%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/STSFYB/settings
+          - button "Archive project":
+      - link "TP tempo project TP dfadsfdsaf 0% 1 issues":
+        - cell "TP tempo project":
+          - button "Favorite project":
+          - generic: TP
+          - generic: tempo project
+        - cell "TP":
+          - generic: TP
+        - cell "dfadsfdsaf":
+          - generic: dfadsfdsaf
+        - cell
+        - cell "0% 1 issues":
+          - generic: 0%
+          - generic: 1 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/TP/settings
+          - button "Archive project":
+      - link "NP new proj123 ASFYB TESTENG Project Admin 0% 4 issues":
+        - cell "NP new proj123":
+          - button "Favorite project":
+          - generic: NP
+          - generic: new proj123
+        - cell "ASFYB":
+          - generic: ASFYB
+        - cell "TESTENG":
+          - generic: TESTENG
+        - cell "Project Admin":
+          - generic: Project Admin
+        - cell "0% 4 issues":
+          - generic: 0%
+          - generic: 4 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/ASFYB/settings
+          - button "Archive project":
+      - link "FT FUNCTIONAL TESTING FTFYB Member 0% 11 issues":
+        - cell "FT FUNCTIONAL TESTING":
+          - button "Favorite project":
+          - generic: FT
+          - generic: FUNCTIONAL TESTING
+        - cell "FTFYB":
+          - generic: FTFYB
+        - cell
+        - cell "Member":
+          - generic: Member
+        - cell "0% 11 issues":
+          - generic: 0%
+          - generic: 11 issues
+        - cell:
+          - button "Archive project":
+      - link "SK Sample Project Kanban SPK 20% 4 issues":
+        - cell "SK Sample Project Kanban":
+          - button "Favorite project":
+          - generic: SK
+          - generic: Sample Project Kanban
+        - cell "SPK":
+          - generic: SPK
+        - cell
+        - cell
+        - cell "20% 4 issues":
+          - generic: 20%
+          - generic: 4 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SPK/settings
+          - button "Archive project":
+      - link "SS Sample Project Scrum SPS This is a sample Scrum project 7% 13 issues":
+        - cell "SS Sample Project Scrum":
+          - button "Favorite project":
+          - generic: SS
+          - generic: Sample Project Scrum
+        - cell "SPS":
+          - generic: SPS
+        - cell "This is a sample Scrum project":
+          - generic: This is a sample Scrum project
+        - cell
+        - cell "7% 13 issues":
+          - generic: 7%
+          - generic: 13 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SPS/settings
+          - button "Archive project":
+      - link "D_ DiJoker_Integration _Kanban DJIK 24% 13 issues":
+        - cell "D_ DiJoker_Integration _Kanban":
+          - button "Favorite project":
+          - generic: D_
+          - generic: DiJoker_Integration _Kanban
+        - cell "DJIK":
+          - generic: DJIK
+        - cell
+        - cell
+        - cell "24% 13 issues":
+          - generic: 24%
+          - generic: 13 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJIK/settings
+          - button "Archive project":
+      - link "DI DiJoker_Dev_Kanban DDK Member 74% 37 issues":
+        - cell "DI DiJoker_Dev_Kanban":
+          - button "Favorite project":
+          - generic: DI
+          - generic: DiJoker_Dev_Kanban
+        - cell "DDK":
+          - generic: DDK
+        - cell
+        - cell "Member":
+          - generic: Member
+        - cell "74% 37 issues":
+          - generic: 74%
+          - generic: 37 issues
+        - cell:
+          - button "Archive project":
+      - link "DC DiJoker Contract DJC 30% 7 issues":
+        - cell "DC DiJoker Contract":
+          - button "Favorite project":
+          - generic: DC
+          - generic: DiJoker Contract
+        - cell "DJC":
+          - generic: DJC
+        - cell
+        - cell
+        - cell "30% 7 issues":
+          - generic: 30%
+          - generic: 7 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJC/settings
+          - button "Archive project":
+      - link "CO Comontec CT 40% 3 issues":
+        - cell "CO Comontec":
+          - button "Favorite project":
+          - generic: CO
+          - generic: Comontec
+        - cell "CT":
+          - generic: CT
+        - cell
+        - cell
+        - cell "40% 3 issues":
+          - generic: 40%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CT/settings
+          - button "Archive project":
+      - link "BT BTL BL 0% 0 issues":
+        - cell "BT BTL":
+          - button "Favorite project":
+          - generic: BT
+          - generic: BTL
+        - cell "BL":
+          - generic: BL
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/BL/settings
+          - button "Archive project":
+      - link "DA DiJoker Assets DJA 0% 82 issues":
+        - cell "DA DiJoker Assets":
+          - button "Favorite project":
+          - generic: DA
+          - generic: DiJoker Assets
+        - cell "DJA":
+          - generic: DJA
+        - cell
+        - cell
+        - cell "0% 82 issues":
+          - generic: 0%
+          - generic: 82 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJA/settings
+          - button "Archive project":
+      - link "DI DiJoker Integration DJI 17% 15 issues":
+        - cell "DI DiJoker Integration":
+          - button "Favorite project":
+          - generic: DI
+          - generic: DiJoker Integration
+        - cell "DJI":
+          - generic: DJI
+        - cell
+        - cell
+        - cell "17% 15 issues":
+          - generic: 17%
+          - generic: 15 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJI/settings
+          - button "Archive project":
+      - link "DD DiJoker Development DJ 16% 199 issues":
+        - cell "DD DiJoker Development":
+          - button "Favorite project":
+          - generic: DD
+          - generic: DiJoker Development
+        - cell "DJ":
+          - generic: DJ
+        - cell
+        - cell
+        - cell "16% 199 issues":
+          - generic: 16%
+          - generic: 199 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJ/settings
+          - button "Archive project":
+      - link "TP Test Kanban Project TEST 0% 2 issues":
+        - cell "TP Test Kanban Project":
+          - button "Favorite project":
+          - generic: TP
+          - generic: Test Kanban Project
+        - cell "TEST":
+          - generic: TEST
+        - cell
+        - cell
+        - cell "0% 2 issues":
+          - generic: 0%
+          - generic: 2 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/TEST/settings
+          - button "Archive project":
+      - link "SC Sheraton CTPH SC 0% 0 issues":
+        - cell "SC Sheraton CTPH":
+          - button "Favorite project":
+          - generic: SC
+          - generic: Sheraton CTPH
+        - cell "SC":
+          - generic: SC
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SC/settings
+          - button "Archive project":
+      - link "RS RSlots RSLOT 0% 0 issues":
+        - cell "RS RSlots":
+          - button "Favorite project":
+          - generic: RS
+          - generic: RSlots
+        - cell "RSLOT":
+          - generic: RSLOT
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/RSLOT/settings
+          - button "Archive project":
+      - link "RP Release Planning RP 0% 0 issues":
+        - cell "RP Release Planning":
+          - button "Favorite project":
+          - generic: RP
+          - generic: Release Planning
+        - cell "RP":
+          - generic: RP
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/RP/settings
+          - button "Archive project":
+      - link "RW RSI CORP WEBSITE RCW 0% 0 issues":
+        - cell "RW RSI CORP WEBSITE":
+          - button "Favorite project":
+          - generic: RW
+          - generic: RSI CORP WEBSITE
+        - cell "RCW":
+          - generic: RCW
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/RCW/settings
+          - button "Archive project":
+      - link "PV PH VICIWIN PV 0% 0 issues":
+        - cell "PV PH VICIWIN":
+          - button "Favorite project":
+          - generic: PV
+          - generic: PH VICIWIN
+        - cell "PV":
+          - generic: PV
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PV/settings
+          - button "Archive project":
+      - link "PS PH Production Support PRDSP 0% 0 issues":
+        - cell "PS PH Production Support":
+          - button "Favorite project":
+          - generic: PS
+          - generic: PH Production Support
+        - cell "PRDSP":
+          - generic: PRDSP
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PRDSP/settings
+          - button "Archive project":
+      - link "PC ParisVIP CTPH PC 0% 0 issues":
+        - cell "PC ParisVIP CTPH":
+          - button "Favorite project":
+          - generic: PC
+          - generic: ParisVIP CTPH
+        - cell "PC":
+          - generic: PC
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PC/settings
+          - button "Archive project":
+      - link "IT Integration Tracker INTTKR 0% 0 issues":
+        - cell "IT Integration Tracker":
+          - button "Favorite project":
+          - generic: IT
+          - generic: Integration Tracker
+        - cell "INTTKR":
+          - generic: INTTKR
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/INTTKR/settings
+          - button "Archive project":
+      - link "DG DOS Gaming DG 0% 0 issues":
+        - cell "DG DOS Gaming":
+          - button "Favorite project":
+          - generic: DG
+          - generic: DOS Gaming
+        - cell "DG":
+          - generic: DG
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DG/settings
+          - button "Archive project":
+      - link "CT CTPHGOA765 CTPHGOA7 0% 0 issues":
+        - cell "CT CTPHGOA765":
+          - button "Favorite project":
+          - generic: CT
+          - generic: CTPHGOA765
+        - cell "CTPHGOA7":
+          - generic: CTPHGOA7
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CTPHGOA7/settings
+          - button "Archive project":
+      - link "C( COMONTEC (SCRUM) CS 47% 31 issues":
+        - cell "C( COMONTEC (SCRUM)":
+          - button "Favorite project":
+          - generic: C(
+          - generic: COMONTEC (SCRUM)
+        - cell "CS":
+          - generic: CS
+        - cell
+        - cell
+        - cell "47% 31 issues":
+          - generic: 47%
+          - generic: 31 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CS/settings
+          - button "Archive project":
+      - link "CO Comontec CNB 0% 0 issues":
+        - cell "CO Comontec":
+          - button "Favorite project":
+          - generic: CO
+          - generic: Comontec
+        - cell "CNB":
+          - generic: CNB
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CNB/settings
+          - button "Archive project":
+      - link "CL CTPH LBC CL 0% 0 issues":
+        - cell "CL CTPH LBC":
+          - button "Favorite project":
+          - generic: CL
+          - generic: CTPH LBC
+        - cell "CL":
+          - generic: CL
+        - cell
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CL/settings
+          - button "Archive project":
+      - link "US UI/UX Test Space UIUX Test Test Test 0% 0 issues":
+        - cell "US UI/UX Test Space":
+          - button "Favorite project":
+          - generic: US
+          - generic: UI/UX Test Space
+        - cell "UIUX":
+          - generic: UIUX
+        - cell "Test Test Test":
+          - generic: Test Test Test
+        - cell
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/UIUX/settings
+          - button "Archive project":
+      - link "ZO ZoloBet ZOLO 94% 13 issues":
+        - cell "ZO ZoloBet":
+          - button "Favorite project":
+          - generic: ZO
+          - generic: ZoloBet
+        - cell "ZOLO":
+          - generic: ZOLO
+        - cell
+        - cell
+        - cell "94% 13 issues":
+          - generic: 94%
+          - generic: 13 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/ZOLO/settings
+          - button "Archive project":
+      - link "WI Win7Win W7W 93% 20 issues":
+        - cell "WI Win7Win":
+          - button "Favorite project":
+          - generic: WI
+          - generic: Win7Win
+        - cell "W7W":
+          - generic: W7W
+        - cell
+        - cell
+        - cell "93% 20 issues":
+          - generic: 93%
+          - generic: 20 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/W7W/settings
+          - button "Archive project":
+      - link "WC White Castle Casino WCC 94% 3 issues":
+        - cell "WC White Castle Casino":
+          - button "Favorite project":
+          - generic: WC
+          - generic: White Castle Casino
+        - cell "WCC":
+          - generic: WCC
+        - cell
+        - cell
+        - cell "94% 3 issues":
+          - generic: 94%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/WCC/settings
+          - button "Archive project":
+      - link "VI ViciWin VICI 91% 10 issues":
+        - cell "VI ViciWin":
+          - button "Favorite project":
+          - generic: VI
+          - generic: ViciWin
+        - cell "VICI":
+          - generic: VICI
+        - cell
+        - cell
+        - cell "91% 10 issues":
+          - generic: 91%
+          - generic: 10 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/VICI/settings
+          - button "Archive project":
+      - link "TM TorroSpin Marketing TORM 83% 3 issues":
+        - cell "TM TorroSpin Marketing":
+          - button "Favorite project":
+          - generic: TM
+          - generic: TorroSpin Marketing
+        - cell "TORM":
+          - generic: TORM
+        - cell
+        - cell
+        - cell "83% 3 issues":
+          - generic: 83%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/TORM/settings
+          - button "Archive project":
+      - link "TA TorroSpin Aggregation TRS 91% 123 issues":
+        - cell "TA TorroSpin Aggregation":
+          - button "Favorite project":
+          - generic: TA
+          - generic: TorroSpin Aggregation
+        - cell "TRS":
+          - generic: TRS
+        - cell
+        - cell
+        - cell "91% 123 issues":
+          - generic: 91%
+          - generic: 123 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/TRS/settings
+          - button "Archive project":
+      - link "SC stabilize the while label casino SWLC 10% 70 issues":
+        - cell "SC stabilize the while label casino":
+          - button "Favorite project":
+          - generic: SC
+          - generic: stabilize the while label casino
+        - cell "SWLC":
+          - generic: SWLC
+        - cell
+        - cell
+        - cell "10% 70 issues":
+          - generic: 10%
+          - generic: 70 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SWLC/settings
+          - button "Archive project":
+      - link "ST Strike888 STRK 98% 1 issues":
+        - cell "ST Strike888":
+          - button "Favorite project":
+          - generic: ST
+          - generic: Strike888
+        - cell "STRK":
+          - generic: STRK
+        - cell
+        - cell
+        - cell "98% 1 issues":
+          - generic: 98%
+          - generic: 1 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/STRK/settings
+          - button "Archive project":
+      - link "SD STL - Development STLD 40% 173 issues":
+        - cell "SD STL - Development":
+          - button "Favorite project":
+          - generic: SD
+          - generic: STL - Development
+        - cell "STLD":
+          - generic: STLD
+        - cell
+        - cell
+        - cell "40% 173 issues":
+          - generic: 40%
+          - generic: 173 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/STLD/settings
+          - button "Archive project":
+      - link "SL Small Town Lottery STL 0% 70 issues":
+        - cell "SL Small Town Lottery":
+          - button "Favorite project":
+          - generic: SL
+          - generic: Small Town Lottery
+        - cell "STL":
+          - generic: STL
+        - cell
+        - cell
+        - cell "0% 70 issues":
+          - generic: 0%
+          - generic: 70 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/STL/settings
+          - button "Archive project":
+      - link "SC Sheratons Casino SRTN 74% 12 issues":
+        - cell "SC Sheratons Casino":
+          - button "Favorite project":
+          - generic: SC
+          - generic: Sheratons Casino
+        - cell "SRTN":
+          - generic: SRTN
+        - cell
+        - cell
+        - cell "74% 12 issues":
+          - generic: 74%
+          - generic: 12 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SRTN/settings
+          - button "Archive project":
+      - link "S8 Spider 88 SPDR88 100% 0 issues":
+        - cell "S8 Spider 88":
+          - button "Favorite project":
+          - generic: S8
+          - generic: Spider 88
+        - cell "SPDR88":
+          - generic: SPDR88
+        - cell
+        - cell
+        - cell "100% 0 issues":
+          - generic: 100%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SPDR88/settings
+          - button "Archive project":
+      - link "SA Schedule Activity SCHED 38% 10 issues":
+        - cell "SA Schedule Activity":
+          - button "Favorite project":
+          - generic: SA
+          - generic: Schedule Activity
+        - cell "SCHED":
+          - generic: SCHED
+        - cell
+        - cell
+        - cell "38% 10 issues":
+          - generic: 38%
+          - generic: 10 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SCHED/settings
+          - button "Archive project":
+      - link "RS RSI-CRM RC 43% 69 issues":
+        - cell "RS RSI-CRM":
+          - button "Favorite project":
+          - generic: RS
+          - generic: RSI-CRM
+        - cell "RC":
+          - generic: RC
+        - cell
+        - cell
+        - cell "43% 69 issues":
+          - generic: 43%
+          - generic: 69 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/RC/settings
+          - button "Archive project":
+      - link "QU QueenCasino88 QCEE 92% 10 issues":
+        - cell "QU QueenCasino88":
+          - button "Favorite project":
+          - generic: QU
+          - generic: QueenCasino88
+        - cell "QCEE":
+          - generic: QCEE
+        - cell
+        - cell
+        - cell "92% 10 issues":
+          - generic: 92%
+          - generic: 10 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/QCEE/settings
+          - button "Archive project":
+      - link "PA Playtech Kiosk API PTKA 100% 0 issues":
+        - cell "PA Playtech Kiosk API":
+          - button "Favorite project":
+          - generic: PA
+          - generic: Playtech Kiosk API
+        - cell "PTKA":
+          - generic: PTKA
+        - cell
+        - cell
+        - cell "100% 0 issues":
+          - generic: 100%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PTKA/settings
+          - button "Archive project":
+      - link "PL Playtech24 PT24 62% 5 issues":
+        - cell "PL Playtech24":
+          - button "Favorite project":
+          - generic: PL
+          - generic: Playtech24
+        - cell "PT24":
+          - generic: PT24
+        - cell
+        - cell
+        - cell "62% 5 issues":
+          - generic: 62%
+          - generic: 5 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PT24/settings
+          - button "Archive project":
+      - link "PL PH Product Release Audit Library PPRAL 100% 3 issues":
+        - cell "PL PH Product Release Audit Library":
+          - button "Favorite project":
+          - generic: PL
+          - generic: PH Product Release Audit Library
+        - cell "PPRAL":
+          - generic: PPRAL
+        - cell
+        - cell
+        - cell "100% 3 issues":
+          - generic: 100%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PPRAL/settings
+          - button "Archive project":
+      - link "PG Paris VIP Group PVIP 95% 28 issues":
+        - cell "PG Paris VIP Group":
+          - button "Favorite project":
+          - generic: PG
+          - generic: Paris VIP Group
+        - cell "PVIP":
+          - generic: PVIP
+        - cell
+        - cell
+        - cell "95% 28 issues":
+          - generic: 95%
+          - generic: 28 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PVIP/settings
+          - button "Archive project":
+      - link "PS PH Infrastructure Support PHINFRA 100% 2 issues":
+        - cell "PS PH Infrastructure Support":
+          - button "Favorite project":
+          - generic: PS
+          - generic: PH Infrastructure Support
+        - cell "PHINFRA":
+          - generic: PHINFRA
+        - cell
+        - cell
+        - cell "100% 2 issues":
+          - generic: 100%
+          - generic: 2 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PHINFRA/settings
+          - button "Archive project":
+      - link "PD Patolomius DevOps PDO 0% 9 issues":
+        - cell "PD Patolomius DevOps":
+          - button "Favorite project":
+          - generic: PD
+          - generic: Patolomius DevOps
+        - cell "PDO":
+          - generic: PDO
+        - cell
+        - cell
+        - cell "0% 9 issues":
+          - generic: 0%
+          - generic: 9 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/PDO/settings
+          - button "Archive project":
+      - link "PB PH Infrastructure Board INFRA Official RSI PH Infrastructure Jira Board 72% 62 issues":
+        - cell "PB PH Infrastructure Board":
+          - button "Favorite project":
+          - generic: PB
+          - generic: PH Infrastructure Board
+        - cell "INFRA":
+          - generic: INFRA
+        - cell "Official RSI PH Infrastructure Jira Board":
+          - generic: Official RSI PH Infrastructure Jira Board
+        - cell
+        - cell "72% 62 issues":
+          - generic: 72%
+          - generic: 62 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/INFRA/settings
+          - button "Archive project":
+      - link "OA One Ring to Rule Them All RING Kanban board for All project tasks in one place 25% 9 issues":
+        - cell "OA One Ring to Rule Them All":
+          - button "Favorite project":
+          - generic: OA
+          - generic: One Ring to Rule Them All
+        - cell "RING":
+          - generic: RING
+        - cell "Kanban board for All project tasks in one place":
+          - generic: Kanban board for All project tasks in one place
+        - cell
+        - cell "25% 9 issues":
+          - generic: 25%
+          - generic: 9 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/RING/settings
+          - button "Archive project":
+      - link "NE NETO NETO 87% 6 issues":
+        - cell "NE NETO":
+          - button "Favorite project":
+          - generic: NE
+          - generic: NETO
+        - cell "NETO":
+          - generic: NETO
+        - cell
+        - cell
+        - cell "87% 6 issues":
+          - generic: 87%
+          - generic: 6 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/NETO/settings
+          - button "Archive project":
+      - link "MP My discovery project MDP 0% 6 issues":
+        - cell "MP My discovery project":
+          - button "Favorite project":
+          - generic: MP
+          - generic: My discovery project
+        - cell "MDP":
+          - generic: MDP
+        - cell
+        - cell
+        - cell "0% 6 issues":
+          - generic: 0%
+          - generic: 6 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/MDP/settings
+          - button "Archive project":
+      - link "LP Launch Games Banking / PSP LGBP 100% 0 issues":
+        - cell "LP Launch Games Banking / PSP":
+          - button "Favorite project":
+          - generic: LP
+          - generic: Launch Games Banking / PSP
+        - cell "LGBP":
+          - generic: LGBP
+        - cell
+        - cell
+        - cell "100% 0 issues":
+          - generic: 100%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/LGBP/settings
+          - button "Archive project":
+      - link "LU LuckyBoyCasino LBC 94% 11 issues":
+        - cell "LU LuckyBoyCasino":
+          - button "Favorite project":
+          - generic: LU
+          - generic: LuckyBoyCasino
+        - cell "LBC":
+          - generic: LBC
+        - cell
+        - cell
+        - cell "94% 11 issues":
+          - generic: 94%
+          - generic: 11 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/LBC/settings
+          - button "Archive project":
+      - link "IC iCasino247 IC24 0% 1 issues":
+        - cell "IC iCasino247":
+          - button "Favorite project":
+          - generic: IC
+          - generic: iCasino247
+        - cell "IC24":
+          - generic: IC24
+        - cell
+        - cell
+        - cell "0% 1 issues":
+          - generic: 0%
+          - generic: 1 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/IC24/settings
+          - button "Archive project":
+      - link "GO Goa765 GOA7 96% 7 issues":
+        - cell "GO Goa765":
+          - button "Favorite project":
+          - generic: GO
+          - generic: Goa765
+        - cell "GOA7":
+          - generic: GOA7
+        - cell
+        - cell
+        - cell "96% 7 issues":
+          - generic: 96%
+          - generic: 7 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/GOA7/settings
+          - button "Archive project":
+      - link "GD Game developed GD 27% 11 issues":
+        - cell "GD Game developed":
+          - button "Favorite project":
+          - generic: GD
+          - generic: Game developed
+        - cell "GD":
+          - generic: GD
+        - cell
+        - cell
+        - cell "27% 11 issues":
+          - generic: 27%
+          - generic: 11 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/GD/settings
+          - button "Archive project":
+      - link "FM FYB Marketing FYBM 58% 5 issues":
+        - cell "FM FYB Marketing":
+          - button "Favorite project":
+          - generic: FM
+          - generic: FYB Marketing
+        - cell "FYBM":
+          - generic: FYBM
+        - cell
+        - cell
+        - cell "58% 5 issues":
+          - generic: 58%
+          - generic: 5 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/FYBM/settings
+          - button "Archive project":
+      - link "DD DiJoker - Dev GST 22% 398 issues":
+        - cell "DD DiJoker - Dev":
+          - button "Favorite project":
+          - generic: DD
+          - generic: DiJoker - Dev
+        - cell "GST":
+          - generic: GST
+        - cell
+        - cell
+        - cell "22% 398 issues":
+          - generic: 22%
+          - generic: 398 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/GST/settings
+          - button "Archive project":
+      - link "CM ComonTec Marketing CTQA 88% 3 issues":
+        - cell "CM ComonTec Marketing":
+          - button "Favorite project":
+          - generic: CM
+          - generic: ComonTec Marketing
+        - cell "CTQA":
+          - generic: CTQA
+        - cell
+        - cell
+        - cell "88% 3 issues":
+          - generic: 88%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CTQA/settings
+          - button "Archive project":
+      - link "CO Customer On-boarding COB 55% 21 issues":
+        - cell "CO Customer On-boarding":
+          - button "Favorite project":
+          - generic: CO
+          - generic: Customer On-boarding
+        - cell "COB":
+          - generic: COB
+        - cell
+        - cell
+        - cell "55% 21 issues":
+          - generic: 55%
+          - generic: 21 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/COB/settings
+          - button "Archive project":
+      - link "CS ComonTec Gaming Software CGS 81% 686 issues":
+        - cell "CS ComonTec Gaming Software":
+          - button "Favorite project":
+          - generic: CS
+          - generic: ComonTec Gaming Software
+        - cell "CGS":
+          - generic: CGS
+        - cell
+        - cell
+        - cell "81% 686 issues":
+          - generic: 81%
+          - generic: 686 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CGS/settings
+          - button "Archive project":
+      - link "C( Comontec (Whitelabel) CW 19% 42 issues":
+        - cell "C( Comontec (Whitelabel)":
+          - button "Favorite project":
+          - generic: C(
+          - generic: Comontec (Whitelabel)
+        - cell "CW":
+          - generic: CW
+        - cell
+        - cell
+        - cell "19% 42 issues":
+          - generic: 19%
+          - generic: 42 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CW/settings
+          - button "Archive project":
+      - link "CB Comontec (Old Board) ARSCRM 86% 395 issues":
+        - cell "CB Comontec (Old Board)":
+          - button "Favorite project":
+          - generic: CB
+          - generic: Comontec (Old Board)
+        - cell "ARSCRM":
+          - generic: ARSCRM
+        - cell
+        - cell
+        - cell "86% 395 issues":
+          - generic: 86%
+          - generic: 395 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/ARSCRM/settings
+          - button "Archive project":
+      - link "CH Comontec (New System-On Hold) CP 8% 46 issues":
+        - cell "CH Comontec (New System-On Hold)":
+          - button "Favorite project":
+          - generic: CH
+          - generic: Comontec (New System-On Hold)
+        - cell "CP":
+          - generic: CP
+        - cell
+        - cell
+        - cell "8% 46 issues":
+          - generic: 8%
+          - generic: 46 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/CP/settings
+          - button "Archive project":
+      - link "CM Casino Marriott MRT 93% 6 issues":
+        - cell "CM Casino Marriott":
+          - button "Favorite project":
+          - generic: CM
+          - generic: Casino Marriott
+        - cell "MRT":
+          - generic: MRT
+        - cell
+        - cell
+        - cell "93% 6 issues":
+          - generic: 93%
+          - generic: 6 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/MRT/settings
+          - button "Archive project":
+      - link "CC Casino CRM SSP High level name for CRM product 83% 9 issues":
+        - cell "CC Casino CRM":
+          - button "Favorite project":
+          - generic: CC
+          - generic: Casino CRM
+        - cell "SSP":
+          - generic: SSP
+        - cell "High level name for CRM product":
+          - generic: High level name for CRM product
+        - cell
+        - cell "83% 9 issues":
+          - generic: 83%
+          - generic: 9 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/SSP/settings
+          - button "Archive project":
+      - link "BW bwpwallet BWPWAL 83% 50 issues":
+        - cell "BW bwpwallet":
+          - button "Favorite project":
+          - generic: BW
+          - generic: bwpwallet
+        - cell "BWPWAL":
+          - generic: BWPWAL
+        - cell
+        - cell
+        - cell "83% 50 issues":
+          - generic: 83%
+          - generic: 50 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/BWPWAL/settings
+          - button "Archive project":
+      - link "BE Bet24Star B24S 78% 24 issues":
+        - cell "BE Bet24Star":
+          - button "Favorite project":
+          - generic: BE
+          - generic: Bet24Star
+        - cell "B24S":
+          - generic: B24S
+        - cell
+        - cell
+        - cell "78% 24 issues":
+          - generic: 78%
+          - generic: 24 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/B24S/settings
+          - button "Archive project":
+      - link "AL Alfa6688 ALFA 97% 6 issues":
+        - cell "AL Alfa6688":
+          - button "Favorite project":
+          - generic: AL
+          - generic: Alfa6688
+        - cell "ALFA":
+          - generic: ALFA
+        - cell
+        - cell
+        - cell "97% 6 issues":
+          - generic: 97%
+          - generic: 6 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/ALFA/settings
+          - button "Archive project":
+      - link "9I 90 days Action plan for Head of IT OX90 0% 14 issues":
+        - cell "9I 90 days Action plan for Head of IT":
+          - button "Favorite project":
+          - generic: 9I
+          - generic: 90 days Action plan for Head of IT
+        - cell "OX90":
+          - generic: OX90
+        - cell
+        - cell
+        - cell "0% 14 issues":
+          - generic: 0%
+          - generic: 14 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/OX90/settings
+          - button "Archive project":
+      - link "9F 9 Floor FL9 65% 13 issues":
+        - cell "9F 9 Floor":
+          - button "Favorite project":
+          - generic: 9F
+          - generic: 9 Floor
+        - cell "FL9":
+          - generic: FL9
+        - cell
+        - cell
+        - cell "65% 13 issues":
+          - generic: 65%
+          - generic: 13 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/FL9/settings
+          - button "Archive project":
+      - link "29 29Black TNBLK 0% 104 issues":
+        - cell "29 29Black":
+          - button "Favorite project":
+          - generic: "29"
+          - generic: 29Black
+        - cell "TNBLK":
+          - generic: TNBLK
+        - cell
+        - cell
+        - cell "0% 104 issues":
+          - generic: 0%
+          - generic: 104 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/TNBLK/settings
+          - button "Archive project":
+      - link "88 88QueenCasino EEQC 95% 4 issues":
+        - cell "88 88QueenCasino":
+          - button "Favorite project":
+          - generic: "88"
+          - generic: 88QueenCasino
+        - cell "EEQC":
+          - generic: EEQC
+        - cell
+        - cell
+        - cell "95% 4 issues":
+          - generic: 95%
+          - generic: 4 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/EEQC/settings
+          - button "Archive project":
+      - link "DA DiJoker - Assets DJD 61% 105 issues":
+        - cell "DA DiJoker - Assets":
+          - button "Favorite project":
+          - generic: DA
+          - generic: DiJoker - Assets
+        - cell "DJD":
+          - generic: DJD
+        - cell
+        - cell
+        - cell "61% 105 issues":
+          - generic: 61%
+          - generic: 105 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJD/settings
+          - button "Archive project":

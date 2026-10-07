@@ -1,0 +1,53 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link:
+      - /url: /
+    - link:
+      - /url: /activity
+    - link:
+      - /url: /notifications/inbox
+    - link:
+      - /url: /projects
+    - link:
+      - /url: /slack
+    - link:
+      - /url: /wiki
+  - link:
+    - /url: /settings
+- banner:
+  - searchbox "Search issues..."
+  - button "2 Notifications":
+    - generic: "2"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - complementary:
+    - generic: W
+    - generic: Select a space
+    - button "Filter spaces":
+    - combobox:
+      - option "Select a space" [disabled] [selected]
+      - option "Big Town Lottery"
+      - option "FYB Tech Infrastructure"
+      - option "Game Studio"
+      - option "Tististeng"
+      - option "Torrospin"
+      - option "TorroSpin"
+      - option "Whitelabel Projects"
+    - generic: Content
+    - button "Create at root":
+    - button "More":
+    - searchbox "Search by title"
+    - generic "Wiki pages":
+      - generic: No pages
+    - button "+ Create" [active]:
+      - generic: +
+      - generic: Create
+  - generic: Welcome to Wiki
+  - generic: Choose a space in the sidebar, then open a page to view or edit content. Nothing is selected until you pick one.

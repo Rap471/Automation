@@ -1,0 +1,76 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Audit Logs" [level=1]
+  - paragraph: Track all system activities and changes
+  - button "Export Logs" [disabled]:
+    - text: Export Logs
+  - textbox "Actor email contains..."
+  - textbox "ProjectId (optional)"
+  - combobox:
+    - option "All Entities" [selected]
+    - option "System"
+    - option "Project"
+    - option "Project Member"
+    - option "Sprint"
+    - option "Issue"
+    - option "Issue Comment"
+    - option "Issue Attachment"
+    - option "Issue Link"
+    - option "User"
+  - combobox:
+    - option "All Actions" [selected]
+    - option "Created"
+    - option "Updated"
+    - option "Deleted"
+    - option "Transitioned"
+    - option "Added"
+    - option "Removed"
+    - option "Role Changed"
+  - generic "From":
+    - textbox
+  - generic "To":
+    - textbox
+  - button "Apply" [disabled]:
+    - text: Apply
+  - button "Clear" [disabled]
+  - generic: Loading audit logs…

@@ -1,0 +1,129 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - button "QARA":
+      - text: QARA
+    - link "Board":
+      - /url: /projects/QARA/board
+      - text: Board
+    - link "Calendar":
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link "Backlog":
+      - /url: /projects/QARA/backlog
+    - link "Epics":
+      - /url: /projects/QARA/epics
+    - link "Issues":
+      - /url: /projects/QARA/issues
+    - link "Sprints":
+      - /url: /projects/QARA/sprints
+    - link "Gantt":
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link "Settings":
+      - /url: /projects/QARA/settings
+      - text: Settings
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA
+    - button:
+  - heading "Calendar" [level=1]
+  - paragraph: Plan issues and sprints by date
+  - button "Prev" [disabled]:
+    - text: Prev
+  - button "Today" [disabled]
+  - button "Next" [disabled]:
+    - text: Next
+  - generic: October 2026
+  - generic: Loading…
+  - generic: Issue start
+  - generic: Issue due
+  - generic: Sprint
+  - generic: Mon
+  - generic: Tue
+  - generic: Wed
+  - generic: Thu
+  - generic: Fri
+  - generic: Sat
+  - generic: Sun
+  - generic: "28"
+  - generic: "29"
+  - generic: "30"
+  - generic: "1"
+  - generic: Today
+  - generic: "2"
+  - generic: "3"
+  - generic: "4"
+  - generic: "5"
+  - generic: "6"
+  - generic: "7"
+  - generic: "8"
+  - generic: "9"
+  - generic: "10"
+  - generic: "11"
+  - generic: "12"
+  - generic: "13"
+  - generic: "14"
+  - generic: "15"
+  - generic: "16"
+  - generic: "17"
+  - generic: "18"
+  - generic: "19"
+  - generic: "20"
+  - generic: "21"
+  - generic: "22"
+  - generic: "23"
+  - generic: "24"
+  - generic: "25"
+  - generic: "26"
+  - generic: "27"
+  - generic: "28"
+  - generic: "29"
+  - generic: "30"
+  - generic: "31"
+  - generic: "1"
+  - generic: "2"
+  - generic: "3"
+  - generic: "4"
+  - generic: "5"
+  - generic: "6"
+  - generic: "7"
+  - generic: "8"

@@ -1,0 +1,77 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /admin
+    - button:
+  - heading "Account Management" [level=1]
+  - paragraph: Manage users and their permissions
+  - button "Add User" [disabled]:
+    - text: Add User
+  - textbox "Search users..." [disabled]
+  - combobox [disabled]:
+    - option "All Roles" [selected]
+    - option "SuperAdmin"
+    - option "Admin"
+    - option "User"
+  - combobox [disabled]:
+    - option "All Status" [selected]
+    - option "Active"
+    - option "Inactive"
+  - generic: Loading users…
+  - heading "User Statistics" [level=2]
+  - paragraph: Total Users
+  - paragraph: "0"
+  - paragraph: Active
+  - paragraph: "0"
+  - paragraph: Inactive
+  - paragraph: "0"
+  - paragraph: Admins
+  - paragraph: "0"

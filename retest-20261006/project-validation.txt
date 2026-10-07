@@ -1,0 +1,203 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - button "6 Notifications":
+    - generic: "6"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Projects" [level=1]
+  - paragraph: Browse and manage your projects
+  - button "Add Project":
+    - text: Add Project
+  - generic: "'Name' must not be empty.; 'Key' must not be empty.; Project key must be 1-20 chars (A-Z, 0-9, '_' or '-')"
+  - heading "Create Project" [level=2]
+  - button "Cancel"
+  - text: Name
+  - textbox "Name"
+  - text: Key
+  - textbox "Key":
+    - /placeholder: E.g. XFYB
+  - text: Summary
+  - textbox "Summary"
+  - text: Project type
+  - combobox "Project type":
+    - option "Scrum" [selected]
+    - option "Kanban"
+  - button "Create"
+  - button "Active projects"
+  - button "Archived"
+  - button "Sort by Newest":
+    - generic: Sort by
+    - generic: Newest
+  - textbox "Search"
+  - table:
+    - rowgroup:
+      - row "Name Key Summary Your Role Progress Action":
+        - columnheader "Name"
+        - columnheader "Key"
+        - columnheader "Summary"
+        - columnheader "Your Role"
+        - columnheader "Progress"
+        - columnheader "Action"
+    - rowgroup:
+      - link "Q2 QA Role Admin 20261001 QARA Disposable role-based functional QA fixture. UI summary & description verified 20261001. 0% 3 issues":
+        - cell "Q2 QA Role Admin 20261001":
+          - button "Favorite project":
+          - generic: Q2
+          - generic: QA Role Admin 20261001
+        - cell "QARA":
+          - generic: QARA
+        - cell "Disposable role-based functional QA fixture. UI summary & description verified 20261001.":
+          - generic: Disposable role-based functional QA fixture. UI summary & description verified 20261001.
+        - cell
+        - cell "0% 3 issues":
+          - generic: 0%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/QARA/settings
+          - button "Archive project":
+      - link "QV QA Functional Regression 20261001 - verified QAFYB Authorized functional QA test project Project Admin 0% 0 issues":
+        - cell "QV QA Functional Regression 20261001 - verified":
+          - button "Favorite project":
+          - generic: QV
+          - generic: QA Functional Regression 20261001 - verified
+        - cell "QAFYB":
+          - generic: QAFYB
+        - cell "Authorized functional QA test project":
+          - generic: Authorized functional QA test project
+        - cell "Project Admin":
+          - generic: Project Admin
+        - cell "0% 0 issues":
+          - generic: 0%
+          - generic: 0 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/QAFYB/settings
+          - button "Archive project":
+      - link "SS SMOKE TESTING SAMPLE STSFYB 0% 3 issues":
+        - cell "SS SMOKE TESTING SAMPLE":
+          - button "Favorite project":
+          - generic: SS
+          - generic: SMOKE TESTING SAMPLE
+        - cell "STSFYB":
+          - generic: STSFYB
+        - cell
+        - cell
+        - cell "0% 3 issues":
+          - generic: 0%
+          - generic: 3 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/STSFYB/settings
+          - button "Archive project":
+      - link "FT FUNCTIONAL TESTING FTFYB Member 0% 11 issues":
+        - cell "FT FUNCTIONAL TESTING":
+          - button "Favorite project":
+          - generic: FT
+          - generic: FUNCTIONAL TESTING
+        - cell "FTFYB":
+          - generic: FTFYB
+        - cell
+        - cell "Member":
+          - generic: Member
+        - cell "0% 11 issues":
+          - generic: 0%
+          - generic: 11 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/FTFYB/settings
+          - button "Archive project":
+      - link "D_ DiJoker_Integration _Kanban DJIK 24% 13 issues":
+        - cell "D_ DiJoker_Integration _Kanban":
+          - button "Favorite project":
+          - generic: D_
+          - generic: DiJoker_Integration _Kanban
+        - cell "DJIK":
+          - generic: DJIK
+        - cell
+        - cell
+        - cell "24% 13 issues":
+          - generic: 24%
+          - generic: 13 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJIK/settings
+          - button "Archive project":
+      - link "DI DiJoker_Dev_Kanban DDK Member 75% 27 issues":
+        - cell "DI DiJoker_Dev_Kanban":
+          - button "Favorite project":
+          - generic: DI
+          - generic: DiJoker_Dev_Kanban
+        - cell "DDK":
+          - generic: DDK
+        - cell
+        - cell "Member":
+          - generic: Member
+        - cell "75% 27 issues":
+          - generic: 75%
+          - generic: 27 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DDK/settings
+          - button "Archive project":
+      - link "DC DiJoker Contract DJC 30% 7 issues":
+        - cell "DC DiJoker Contract":
+          - button "Favorite project":
+          - generic: DC
+          - generic: DiJoker Contract
+        - cell "DJC":
+          - generic: DJC
+        - cell
+        - cell
+        - cell "30% 7 issues":
+          - generic: 30%
+          - generic: 7 issues
+        - cell:
+          - link "Project settings":
+            - /url: /projects/DJC/settings
+          - button "Archive project":

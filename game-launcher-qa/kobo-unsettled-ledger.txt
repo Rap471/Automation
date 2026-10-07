@@ -1,0 +1,104 @@
+- generic: Live history
+- generic: Socket snapshot
+- generic: WIN
+- generic: "+2"
+- generic: a70654a4-f48a-4ba9-9ade-f4b0ec73d3cd
+- generic: 2:33:03 PM
+- generic: "Balance: 12578.55"
+- generic: BET
+- generic: "-1"
+- generic: a70654a4-f48a-4ba9-9ade-f4b0ec73d3cd
+- generic: 2:32:35 PM
+- generic: "Balance: 12576.55"
+- generic: BET
+- generic: "-100"
+- generic: 01a0fb4d-db57-732f-b695-11dad572f700
+- generic: 2:29:38 PM
+- generic: "Balance: 12577.55"
+- generic: WIN
+- generic: "+2.5"
+- generic: 01a0fb4d-678b-70fd-a815-c61d749e59ee
+- generic: 2:29:09 PM
+- generic: "Balance: 12677.55"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-678b-70fd-a815-c61d749e59ee
+- generic: 2:29:09 PM
+- generic: "Balance: 12675.05"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb4d-6247-771c-adea-2ef3c324fc2e
+- generic: 2:29:08 PM
+- generic: "Balance: 12676.05"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-6247-771c-adea-2ef3c324fc2e
+- generic: 2:29:07 PM
+- generic: "Balance: 12676.05"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb4d-5d00-77e8-a4a8-aa3921b346c2
+- generic: 2:29:06 PM
+- generic: "Balance: 12677.05"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-5d00-77e8-a4a8-aa3921b346c2
+- generic: 2:29:06 PM
+- generic: "Balance: 12677.05"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb4d-57bd-7158-b09f-a55506549f0f
+- generic: 2:29:05 PM
+- generic: "Balance: 12678.05"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-57bd-7158-b09f-a55506549f0f
+- generic: 2:29:05 PM
+- generic: "Balance: 12678.05"
+- generic: WIN
+- generic: "+0.2"
+- generic: 01a0fb4d-44ea-75b2-ab00-65704f79969e
+- generic: 2:29:00 PM
+- generic: "Balance: 12679.05"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-44ea-75b2-ab00-65704f79969e
+- generic: 2:29:00 PM
+- generic: "Balance: 12678.85"
+- generic: WIN
+- generic: "+8"
+- generic: 01a0fb4d-3bc2-7035-9e7f-0f887523c711
+- generic: 2:28:58 PM
+- generic: "Balance: 12679.85"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-3bc2-7035-9e7f-0f887523c711
+- generic: 2:28:58 PM
+- generic: "Balance: 12671.85"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb4d-3667-74cd-b960-0cc8097882df
+- generic: 2:28:56 PM
+- generic: "Balance: 12672.85"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4d-3667-74cd-b960-0cc8097882df
+- generic: 2:28:56 PM
+- generic: "Balance: 12672.85"
+- generic: WIN
+- generic: "+0"
+- generic: 01a0fb4c-bbc3-736f-9a3b-9dcec496d1fd
+- generic: 2:28:25 PM
+- generic: "Balance: 12673.85"
+- generic: BET
+- generic: "-1"
+- generic: 01a0fb4c-bbc3-736f-9a3b-9dcec496d1fd
+- generic: 2:28:25 PM
+- generic: "Balance: 12673.85"
+- generic: WIN
+- generic: "+0"
+- generic: 473c34be-cbb8-4522-8ea7-53e51cf3f152
+- generic: 2:28:10 PM
+- generic: "Balance: 12674.85"
+- button "Hide live history":
+  - generic: <

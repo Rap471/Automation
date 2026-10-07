@@ -1,0 +1,362 @@
+- complementary:
+  - navigation:
+    - link:
+      - /url: /
+      - generic: Dashboard
+    - link:
+      - /url: /activity
+      - generic: Activity
+    - link:
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link:
+      - /url: /projects
+      - generic: Projects
+    - link:
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link:
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link:
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link:
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link:
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - button:
+      - text: QARA
+    - link:
+      - /url: /projects/QARA/board
+      - text: Board
+    - link:
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link:
+      - /url: /projects/QARA/backlog
+      - text: Backlog
+    - link:
+      - /url: /projects/QARA/epics
+      - text: Epics
+    - link:
+      - /url: /projects/QARA/issues
+      - text: Issues
+    - link:
+      - /url: /projects/QARA/sprints
+      - text: Sprints
+    - link:
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link:
+      - /url: /projects/QARA/settings
+      - text: Settings
+    - link:
+      - /url: /slack
+      - generic: Slack
+    - link:
+      - /url: /wiki
+      - generic: Wiki
+  - link:
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox
+  - button:
+    - generic: "3"
+    - generic: Notifications
+  - button:
+    - generic: Toggle theme
+  - button:
+  - button:
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA
+    - button:
+  - generic: QARA
+  - heading [level=1]: Issues
+  - paragraph: 4 active issues • 1 completed sprints
+  - button:
+    - text: Filter
+  - button: Export
+  - button:
+    - text: Create Issue
+  - button:
+    - text: Active
+    - generic: "4"
+  - button:
+    - text: Archive
+    - generic: "0"
+  - textbox:
+    - /placeholder: Search (key or summary)
+  - combobox:
+    - generic: Assignee
+  - combobox:
+    - generic: Type
+  - combobox:
+    - generic: Priority
+  - combobox:
+    - generic: Status
+  - button: All assignees
+  - button: Any update time
+  - button [disabled]: Clear filters
+  - table:
+    - rowgroup:
+      - row:
+        - columnheader: Type
+        - columnheader: Key
+        - columnheader: Summary
+        - columnheader: Status
+        - columnheader: Sprint
+        - columnheader: Comments
+        - columnheader: Assignee
+        - columnheader: Due date
+        - columnheader: Priority
+        - columnheader: Created
+        - columnheader: Updated
+        - columnheader: Reporter
+    - rowgroup:
+      - row:
+        - cell:
+          - generic: TASK
+        - cell:
+          - generic: QARA-4
+        - cell:
+          - generic: QA UI text <tag> & summary 20261001 - Member verified
+        - cell:
+          - generic: TO DO
+        - cell: Backlog
+        - cell: "1"
+        - cell:
+          - generic: —
+          - generic: Unassigned
+        - cell: Oct 3, 2026
+        - cell:
+          - generic: MEDIUM
+        - cell: Oct 1, 2026 6:10 PM
+        - cell: Oct 1, 2026 6:20 PM
+        - cell:
+          - generic: rafael.pineda
+      - row:
+        - cell:
+          - generic: SUB TASK
+        - cell:
+          - generic: QARA-3
+        - cell:
+          - generic: QA Member subtask 20261001
+        - cell:
+          - generic: TO DO
+        - cell: Backlog
+        - cell: "0"
+        - cell:
+          - generic: —
+          - generic: Unassigned
+        - cell: Oct 3, 2026
+        - cell:
+          - generic: MEDIUM
+        - cell: Oct 1, 2026 2:33 PM
+        - cell: Oct 1, 2026 2:33 PM
+        - cell:
+          - generic: sabye
+      - row:
+        - cell:
+          - generic: TASK
+        - cell:
+          - generic: QARA-2
+        - cell:
+          - generic: QA Member role lifecycle 20261001 - verified
+          - generic: 0% - Blocked by 0/0 - Subtasks 0/1
+        - cell:
+          - generic: IN PROGRESS
+        - cell: Backlog
+        - cell: "0"
+        - cell:
+          - generic: sabye
+        - cell: Oct 3, 2026
+        - cell:
+          - generic: MEDIUM
+        - cell: Oct 1, 2026 2:32 PM
+        - cell: Oct 1, 2026 2:33 PM
+        - cell:
+          - generic: sabye
+      - row:
+        - cell:
+          - generic: TASK
+        - cell:
+          - generic: QARA-1
+        - cell:
+          - generic: QA Admin role lifecycle 20261001 - SuperAdmin verified
+        - cell:
+          - generic: IN PROGRESS
+        - cell: Backlog
+        - cell: "0"
+        - cell:
+          - generic: moce
+        - cell: Oct 3, 2026
+        - cell:
+          - generic: HIGH
+        - cell: Oct 1, 2026 2:29 PM
+        - cell: Oct 1, 2026 2:35 PM
+        - cell:
+          - generic: moce
+  - generic: Page 1 of 1 · 4 total
+  - button [disabled]: Prev
+  - button [disabled]: Next
+- dialog "Issue details":
+  - banner:
+    - generic "Issue meta":
+      - generic: QARA-4
+      - generic: TASK
+      - generic: TO DO
+      - generic "MEDIUM":
+    - heading "QA UI text <tag> & summary 20261001 - Member verified" [level=2]
+    - button "Edit"
+    - button "More actions":
+      - generic: ⋮
+    - button "Close":
+  - heading "Description" [level=3]
+  - button "Add a description…"
+  - heading "Attachments" [level=3]
+  - button "Attach"
+  - generic: —
+  - heading "Linked Issues" [level=3]
+  - button "Add link"
+  - heading "Relates to" [level=4]
+  - button "QARA-1 — QA Admin role lifecycle 20261001 - SuperAdmin verified"
+  - generic: In Progress
+  - button "Remove"
+  - heading "Subtasks" [level=3]
+  - button "Create subtask"
+  - generic: —
+  - heading "Activity" [level=3]
+  - tablist:
+    - tab "All"
+    - tab "Comments" [active] [selected]
+    - tab "History"
+  - tabpanel:
+    - toolbar:
+      - button "bold":
+      - button "italic":
+      - button "underline":
+      - button "strike":
+      - button "code":
+      - button "blockquote":
+      - button "code-block":
+      - button "Normal":
+        - text: Normal
+      - text: Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Normal
+      - 'button "list: ordered"':
+      - 'button "list: bullet"':
+      - 'button "list: check"':
+      - 'button "indent: -1"':
+      - 'button "indent: +1"':
+      - 'button "script: sub"':
+      - 'button "script: super"':
+      - 'button "direction: rtl"':
+      - button:
+      - button "link":
+      - button "image":
+      - button "video":
+      - button:
+      - button:
+      - button "Sans Serif":
+        - text: Sans Serif
+      - text: Sans Serif Serif Monospace
+      - button "Normal":
+        - text: Normal
+      - text: Small Normal Large Huge
+      - button "clean":
+    - text: Add a comment…
+    - paragraph
+    - text: "Visit URL: EditRemove"
+    - button "Add Comment" [disabled]
+    - generic: rafael.pineda
+    - generic: Oct 1, 2026 6:12 PM (edited)
+    - paragraph: QA detail comment edited 20261001
+    - button "Edit"
+    - button "Delete"
+  - complementary:
+    - heading "Status" [level=3]
+    - combobox:
+      - option "To Do" [selected]
+      - option "In Progress"
+    - button "Apply" [disabled]
+    - heading "Details" [level=3]
+    - generic: Project Group
+    - combobox:
+      - option "—" [selected]
+      - option "QA UI"
+    - generic: Assignee
+    - combobox:
+      - option "Unassigned" [selected]
+      - option "Admin"
+      - option "Adrian Paguiringan"
+      - option "Alexandra Dela Cruz"
+      - option "Antoine"
+      - option "Arthur Jorda"
+      - option "Avi Asraf"
+      - option "Cyrus Manatad"
+      - option "Dainiel Lim"
+      - option "Dennis Hermosa"
+      - option "Dev"
+      - option "Edelle B."
+      - option "Edelle Bagunu"
+      - option "Eric Nicdao"
+      - option "Ernan Duran"
+      - option "Francis Yambao"
+      - option "Harold Tejero"
+      - option "Ivan Vestidas"
+      - option "Jeffrey"
+      - option "Jhon Paul Cortezano"
+      - option "John Lester Peralta"
+      - option "Jose Lorenzo"
+      - option "Katheryn Sarmiento"
+      - option "Lalen Duero"
+      - option "Loko Moko"
+      - option "Lorraine"
+      - option "Marck Baniqued"
+      - option "moce"
+      - option "Pau"
+      - option "Phil"
+      - option "QA"
+      - option "rafael.pineda"
+      - option "Rey Oronos"
+      - option "Rom Enriquez"
+      - option "Rommel Ariola"
+      - option "sabye"
+      - option "SuperAdmin"
+      - option "tisteng"
+      - option "Victor Magante"
+    - button "Assign to me"
+    - generic: Reporter
+    - generic: rafael.pineda
+    - generic: Priority
+    - text: MEDIUM
+    - generic: Epic
+    - combobox:
+      - option "—" [selected]
+      - option "QA Member Epic 20261001"
+      - option "QA Role Epic 20261001"
+    - generic: Parent
+    - text: —
+    - generic: Sprint
+    - text: —
+    - generic: Start Date
+    - text: Oct 1, 2026
+    - generic: End Date
+    - text: Oct 3, 2026
+    - heading "Watchers" [level=3]
+    - button "Watch"
+    - generic: —
+    - heading "Metadata" [level=3]
+    - generic: Created
+    - generic: Oct 1, 2026 6:10 PM
+    - generic: Updated
+    - generic: Oct 1, 2026 6:20 PM
+    - heading "Navigation" [level=3]
+    - link "Project":
+      - /url: /projects/d9cdabff-526d-44ba-adb6-6d8ee62d74a8

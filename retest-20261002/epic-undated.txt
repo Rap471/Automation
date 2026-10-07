@@ -1,0 +1,107 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - button "QARA":
+      - text: QARA
+    - link "Board":
+      - /url: /projects/QARA/board
+      - text: Board
+    - link "Calendar":
+      - /url: /projects/QARA/calendar
+      - text: Calendar
+    - link "Backlog":
+      - /url: /projects/QARA/backlog
+    - link "Epics":
+      - /url: /projects/QARA/epics
+    - link "Issues":
+      - /url: /projects/QARA/issues
+    - link "Sprints":
+      - /url: /projects/QARA/sprints
+    - link "Gantt":
+      - /url: /projects/QARA/gantt
+      - text: Gantt
+    - link "Settings":
+      - /url: /projects/QARA/settings
+      - text: Settings
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "3 Notifications":
+    - generic: "3"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - link:
+    - /url: /projects/QARA/epics
+    - button:
+  - generic: QARA-26778F
+  - generic: planned
+  - heading "QA Role Epic 20261001" [level=1]
+  - button "Add Issue":
+    - text: Add Issue
+  - button "Edit"
+  - button "Delete"
+  - heading "Description" [level=2]
+  - button "Edit"
+  - generic: Role QA epic with dates intentionally blank
+  - heading "Progress" [level=3]
+  - generic: Completion
+  - generic: 0%
+  - heading "Timeline" [level=3]
+  - generic: "Start:"
+  - generic: Not set
+  - generic: "End:"
+  - generic: Not set
+  - heading "Issues" [level=3]
+  - paragraph: "0"
+  - paragraph: Total
+  - paragraph: "0"
+  - paragraph: Done
+  - heading "Issues" [level=2]
+  - heading "todo" [level=3]
+  - generic: "0"
+  - heading "in progress" [level=3]
+  - generic: "0"
+  - heading "done" [level=3]
+  - generic: "0"

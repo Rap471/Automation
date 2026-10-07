@@ -1,0 +1,53 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "Notifications":
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Dashboard" [level=1]
+  - link "View Projects":
+    - /url: /projects
+    - button "View Projects"
+  - paragraph: Active Projects
+  - paragraph: "0"
+  - paragraph: Completed Issues
+  - paragraph: "0"
+  - paragraph: In Progress
+  - paragraph: "0"
+  - paragraph: High Priority
+  - paragraph: "0"
+  - heading "Recent Activity" [level=2]
+  - heading "Active Sprints" [level=2]

@@ -1,0 +1,161 @@
+- complementary:
+  - img "Future You Believe"
+  - navigation:
+    - link "Dashboard":
+      - /url: /
+      - generic: Dashboard
+    - link "Activity":
+      - /url: /activity
+      - generic: Activity
+    - link "Notifications":
+      - /url: /notifications/inbox
+      - generic: Notifications
+    - link "Projects":
+      - /url: /projects
+      - generic: Projects
+    - link "Admin":
+      - /url: /admin
+      - generic: Admin
+    - generic: Recent
+    - link "QA Role Admin 20261001":
+      - /url: /projects/QARA
+      - generic: QA Role Admin 20261001
+    - link "Sample Project Scrum":
+      - /url: /projects/SPS
+      - generic: Sample Project Scrum
+    - link "QA Functional Regression 20261001 - verified":
+      - /url: /projects/QAFYB
+      - generic: QA Functional Regression 20261001 - verified
+    - link "FUNCTIONAL TESTING":
+      - /url: /projects/FTFYB
+      - generic: FUNCTIONAL TESTING
+    - link "Slack":
+      - /url: /slack
+      - generic: Slack
+    - link "Wiki":
+      - /url: /wiki
+      - generic: Wiki
+  - link "Settings":
+    - /url: /settings
+    - generic: Settings
+- banner:
+  - searchbox "Search issues..."
+  - button "3 Notifications":
+    - generic: "3"
+    - generic: Notifications
+  - generic "Switch to dark theme":
+    - button "Toggle theme":
+      - generic: Toggle theme
+  - button "Profile settings":
+  - button "Logout":
+    - generic: Logout
+- main:
+  - heading "Inbox" [level=1]
+  - paragraph: Mentions, assignments, and direct messages
+  - button "Refresh":
+    - text: Refresh
+  - generic: Katheryn Sarmiento mentioned you in a comment on FTFYB-3
+  - generic: high
+  - generic: issue
+  - generic: hello @rafael.pineda
+  - generic: Sep 25, 2026 6:24 PM · Katheryn Sarmiento
+  - button "Reply"
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: ASFYB-6 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "moce assigned ASFYB-6: sum"
+  - generic: Sep 25, 2026 4:36 PM · moce
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: FTFYB-3 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "Katheryn Sarmiento assigned FTFYB-3: Priority Highest after Create becomes Medium"
+  - generic: Sep 24, 2026 7:33 PM · Katheryn Sarmiento
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: FTFYB-1 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "Katheryn Sarmiento assigned FTFYB-1: short lng"
+  - generic: Sep 24, 2026 6:15 PM · Katheryn Sarmiento
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: FTFYB-2 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "Katheryn Sarmiento assigned FTFYB-2: JIRA CRASHES"
+  - generic: Sep 24, 2026 6:15 PM · Katheryn Sarmiento
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: Katheryn Sarmiento mentioned you in chat
+  - generic: high
+  - generic: system
+  - generic: "@rafael.pineda"
+  - generic: Sep 24, 2026 5:28 PM · Katheryn Sarmiento
+  - button "Reply"
+  - button "Open"
+  - button:
+  - generic: Katheryn Sarmiento mentioned you in chat
+  - generic: high
+  - generic: system
+  - generic: "@rafael.pineda"
+  - generic: Sep 24, 2026 5:23 PM · Katheryn Sarmiento
+  - button "Reply"
+  - button "Open"
+  - button:
+  - generic: Katheryn Sarmiento mentioned you in chat
+  - generic: high
+  - generic: system
+  - generic: "@rafael.pineda"
+  - generic: Sep 24, 2026 5:20 PM · Katheryn Sarmiento
+  - button "Reply"
+  - button "Open"
+  - button:
+  - generic: DDK-147 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "Katheryn Sarmiento assigned DDK-147: Sample Task - Mars"
+  - generic: Sep 24, 2026 1:15 PM · Katheryn Sarmiento
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: DDK-150 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "Katheryn Sarmiento assigned DDK-150: ASDASD"
+  - generic: Sep 24, 2026 11:12 AM · Katheryn Sarmiento
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: DDK-15 assigned to you
+  - generic: high
+  - generic: issue
+  - generic: "John Lester Peralta assigned DDK-15: Game regression testing"
+  - generic: Jun 2, 2026 6:57 PM · John Lester Peralta
+  - button "Assign"
+  - button "Open"
+  - button:
+  - generic: Ralph Ian Revilleza sent you a message
+  - generic: medium
+  - generic: chat
+  - generic: sdahulul
+  - generic: Apr 7, 2026 9:36 AM · Ralph Ian Revilleza
+  - button "Reply"
+  - button "Open"
+  - button:
+  - generic: Ralph Ian Revilleza sent you a message
+  - generic: medium
+  - generic: chat
+  - generic: hi
+  - generic: Apr 7, 2026 9:35 AM · Ralph Ian Revilleza
+  - button "Reply"
+  - button "Open"
+  - button:
